@@ -1,0 +1,50 @@
+{
+  "schema_version": "stage6_variable_supply_manifest_v1",
+  "missing_required_variables_by_backend": {
+    "alpha": [],
+    "beta": [],
+    "gamma": []
+  },
+  "required_variables_by_backend": {
+    "alpha": [
+      "R006",
+      "R064",
+      "R085",
+      "R133",
+      "R157",
+      "R182",
+      "industry_avg_rating_lag1_self_excl",
+      "cap_change_count_3y",
+      "log_assets",
+      "operating_loss_freq_3y",
+      "ratio_missing_rate"
+    ],
+    "beta": [
+      "R006",
+      "R064",
+      "R085",
+      "R133",
+      "R157",
+      "R182",
+      "industry_avg_rating_lag1_self_excl",
+      "cap_change_count_3y",
+      "log_assets",
+      "operating_loss_freq_3y",
+      "ratio_missing_rate"
+    ],
+    "gamma": [
+      "R006",
+      "R064",
+      "R085",
+      "R133",
+      "R157",
+      "R182",
+      "industry_avg_rating_lag1_self_excl",
+      "cap_change_count_3y",
+      "log_assets",
+      "operating_loss_freq_3y",
+      "ratio_missing_rate"
+    ]
+  },
+  "status": "PASS"
+}

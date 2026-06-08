@@ -1,0 +1,11 @@
+filename,size
+acceptance_gamma.csv,138
+benchmark_firm_year_output_gamma.csv,1540595
+benchmark_firm_year_output_gamma.parquet,411502
+benchmark_gamma_model.joblib,163778
+benchmark_gamma_params.json,5275
+confusion_matrix_gamma_dev.csv,252
+confusion_matrix_gamma_oot.csv,250
+cross_oracle_alpha_gamma_comparison.csv,155
+feature_importance_gamma_ml.csv,1155
+preliminary_dev_oot_metrics_gamma.csv,305

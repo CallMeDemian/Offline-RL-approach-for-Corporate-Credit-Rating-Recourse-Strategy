@@ -1,0 +1,54 @@
+{
+  "stage_name": "stage1_to_stage2_bridge",
+  "contract_version": "stage1_to_stage2_dynamic_selected_variables_v1",
+  "status": "PASS",
+  "created_utc": "2026-06-06T08:32:17.067212+00:00",
+  "input_paths": {
+    "firm_year": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_01_rating_statement_integration\\firm_year_panel_v1.parquet",
+    "ratios": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_02_financial_ratio_engineering\\engineered_financial_ratios.parquet",
+    "nonfinancial": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_03_nonfinancial_metadata\\nonfinancial_metadata_panel.parquet",
+    "alpha_output": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_backends\\alpha\\oracle_firm_year_output_alpha.parquet",
+    "alpha_params": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_backends\\alpha\\oracle_alpha_params.json"
+  },
+  "output_paths": {
+    "bridge_panel": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\alpha_vanilla_input_candidate.parquet",
+    "metadata": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\alpha_vanilla_input_candidate_metadata.json"
+  },
+  "row_counts": {
+    "bridge_rows": 4924,
+    "selected_variables_all_complete_rows": 4315
+  },
+  "key_columns": [
+    "firm_id",
+    "fiscal_year"
+  ],
+  "duplicate_key_count": 0,
+  "selected_variables_used": [
+    "R006",
+    "R064",
+    "R085",
+    "R133",
+    "R157",
+    "R182",
+    "industry_avg_rating_lag1_self_excl",
+    "cap_change_count_3y",
+    "log_assets",
+    "operating_loss_freq_3y",
+    "ratio_missing_rate"
+  ],
+  "selected_variable_master_path": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_04_variable_selection\\selected_variable_master.csv",
+  "alpha_params_selected_variables": [
+    "R006",
+    "R064",
+    "R085",
+    "R133",
+    "R157",
+    "R182",
+    "industry_avg_rating_lag1_self_excl",
+    "cap_change_count_3y",
+    "log_assets",
+    "operating_loss_freq_3y",
+    "ratio_missing_rate"
+  ],
+  "missing_selected_variables": []
+}

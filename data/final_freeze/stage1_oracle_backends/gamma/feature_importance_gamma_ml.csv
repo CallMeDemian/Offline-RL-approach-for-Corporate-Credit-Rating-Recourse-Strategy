@@ -1,0 +1,12 @@
+﻿variable,importance_gain,note
+log_assets,0.35158295755263186,sklearn GradientBoostingRegressor impurity-based feature importance
+R064,0.34631883409042563,sklearn GradientBoostingRegressor impurity-based feature importance
+R085,0.1148988759944738,sklearn GradientBoostingRegressor impurity-based feature importance
+industry_avg_rating_lag1_self_excl,0.04333847447095294,sklearn GradientBoostingRegressor impurity-based feature importance
+operating_loss_freq_3y,0.042945483157266894,sklearn GradientBoostingRegressor impurity-based feature importance
+R157,0.03339526042116726,sklearn GradientBoostingRegressor impurity-based feature importance
+R133,0.025445110611736984,sklearn GradientBoostingRegressor impurity-based feature importance
+cap_change_count_3y,0.02519455734113555,sklearn GradientBoostingRegressor impurity-based feature importance
+ratio_missing_rate,0.006464979556469362,sklearn GradientBoostingRegressor impurity-based feature importance
+R006,0.005555452501838549,sklearn GradientBoostingRegressor impurity-based feature importance
+R182,0.004860014301901126,sklearn GradientBoostingRegressor impurity-based feature importance

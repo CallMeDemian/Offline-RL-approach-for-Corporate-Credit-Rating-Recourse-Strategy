@@ -1,0 +1,36 @@
+{
+  "schema_version": "candidate_library_metadata_v32",
+  "candidate_library_hash": "e3340d5b5a2e5f5ccdaa6d892659de198a50c8c458f7a83153de463164fa8590",
+  "final_action_contract_hash": "3f6958feeecd4101e19278540cab806be1d9a7f6355232334bb896914c43162b",
+  "action_columns": [
+    "action__ppe_pct",
+    "action__inv_turnover_chg",
+    "action__ar_turnover_chg",
+    "action__ap_turnover_chg",
+    "action__short_debt_pct",
+    "action__long_debt_pct",
+    "action__bond_pct",
+    "action__revenue_growth",
+    "action__cogs_ratio_chg",
+    "action__sga_ratio_chg"
+  ],
+  "main_train_labels": [
+    "A0_noop",
+    "DL1_deleverage_mild",
+    "DL2_deleverage_moderate",
+    "RF1_short_debt_refinance",
+    "CX1_capex_discipline",
+    "WC1_working_capital_tightening",
+    "WC2_supplier_financing",
+    "OE1_cost_efficiency_mild",
+    "OE2_cost_efficiency_moderate",
+    "MX1_cost_and_deleverage",
+    "MX2_liquidity_rescue"
+  ],
+  "scenario_candidates_train_label_allowed": false,
+  "diagnostic_candidates_train_label_allowed": false,
+  "c2_projection_label": false,
+  "fixed_candidate_count": 11,
+  "scenario_candidate_count": 3,
+  "diagnostic_candidate_count": 3
+}

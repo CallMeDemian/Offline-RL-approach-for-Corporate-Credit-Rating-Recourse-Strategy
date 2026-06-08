@@ -1,0 +1,34 @@
+﻿variable_name,category,non_missing_count,non_missing_rate,missing_rate,unique_count,mean,std,p1,median,p99,min,max,quality_pass,selected_eligible,diagnostic_only,leakage_safe,expected_direction,exclusion_reason,candidate_but_missingness_caveat,weak_signal_caveat,notes
+industry_avg_rating_lag1_self_excl,산업위험,4902,0.9955,0.0045,494,3.7667,0.4161,2.8462,3.7727,4.5294,2.4,5.9375,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_median_rating_lag1_self_excl,산업위험,4902,0.9955,0.0045,8,3.6438,0.5257,3.0,4.0,5.0,2.0,5.5,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_bad_grade_share_lag1_self_excl,산업위험,4902,0.9955,0.0045,222,0.2454,0.1231,0.0,0.2464,0.55,0.0,0.6364,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_b_or_lower_share_lag1_self_excl,산업위험,4902,0.9955,0.0045,169,0.0734,0.0581,0.0,0.0656,0.2941,0.0,0.5,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_rating_std_lag1_self_excl,산업위험,4902,0.9955,0.0045,890,1.0962,0.2374,0.6667,1.053,1.9573,0.4385,2.8723,True,True,False,True,higher_is_worse_or_uncertain,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_rating_iqr_lag1_self_excl,산업위험,4902,0.9955,0.0045,16,1.3822,0.6175,0.0,1.0,3.0,0.0,6.0,True,True,False,True,higher_is_worse_or_uncertain,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_downgrade_rate_lag1_self_excl,산업위험,4874,0.9898,0.0102,112,0.0734,0.0734,0.0,0.0588,0.375,0.0,0.5,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_upgrade_rate_lag1_self_excl,산업위험,4874,0.9898,0.0102,112,0.0873,0.0601,0.0,0.08,0.25,0.0,0.5,True,True,False,True,higher_is_better,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_net_downgrade_rate_lag1_self_excl,산업위험,4874,0.9898,0.0102,191,-0.014,0.0925,-0.2143,0.0,0.2727,-0.5,0.4167,True,True,False,True,higher_is_worse,,False,False,"v3.2 신규: t-1 lagged, self-excluded, 4-level fallback"
+industry_avg_rating,산업위험,4902,0.9955,0.0045,494,3.7667,0.4161,2.8462,3.7727,4.5294,2.4,5.9375,True,False,True,True,higher_is_worse,diagnostic_only: v2 alias; use industry_avg_rating_lag1_self_excl,False,False,v2 alias (=industry_avg_rating_lag1_self_excl); diagnostic_only; Stage 3 must exclude
+kospi_dummy,산업위험,4924,1.0,0.0,2,0.4131,0.4924,0.0,0.0,1.0,0.0,1.0,True,False,True,True,diagnostic_market_tier,"diagnostic_only: market-tier variable, not industry risk",False,False,binary variable; diagnostic_only; Stage 3 must exclude
+sector_7,산업위험,4924,1.0,0.0,9,,,,,,,,True,False,True,True,diagnostic_nominal_code,"diagnostic_only: nominal sector code, not ordered risk score",False,False,diagnostic_only; Stage 3 must exclude
+sector_year_rating_count,산업위험,4924,1.0,0.0,58,62.0112,51.1826,2.0,44.0,183.0,0.0,183.0,True,False,True,True,diagnostic_coverage,"diagnostic_only: coverage/count variable, not risk proxy",False,False,diagnostic_only; Stage 3 must exclude
+sector_year_rating_count_lag1,산업위험,4924,1.0,0.0,58,62.0112,51.1826,2.0,44.0,183.0,0.0,183.0,True,False,True,True,diagnostic_coverage,"diagnostic_only: coverage/count variable, not risk proxy",False,False,diagnostic_only; Stage 3 must exclude
+firm_age,경영위험,4512,0.9163,0.0837,112,30.4062,18.2191,2.0,26.0,79.0,0.0,127.0,True,True,False,True,higher_is_better,,False,False,
+list_age,경영위험,4430,0.8997,0.1003,64,15.7695,12.2605,0.0,13.0,49.0,0.0,68.0,True,True,False,True,higher_is_better,,False,False,
+cap_change_count_3y,경영위험,4924,1.0,0.0,78,3.9858,10.8,0.0,1.0,47.0,0.0,247.0,True,True,False,True,higher_is_worse,,False,False,
+cap_change_cumulative,경영위험,4924,1.0,0.0,183,29.3158,36.3616,0.0,19.0,165.0,0.0,478.0,True,True,False,True,higher_is_worse,,False,False,
+ma_count_3y,경영위험,4924,1.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,False,True,higher_is_worse_or_uncertain,,False,True,
+ma_cumulative,경영위험,4924,1.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,False,True,higher_is_worse_or_uncertain,,False,True,
+log_emp,영업위험,4521,0.9182,0.0818,536,5.7003,1.3475,2.9444,5.5872,9.3403,0.0,11.2271,True,True,False,True,higher_is_better,,False,False,snapshot — 시간 불변 (KIS 일반사항 dump)
+log_sales,영업위험,4398,0.8932,0.1068,4398,18.8564,1.6701,15.5,18.7298,23.7173,12.2636,25.0935,True,True,False,True,higher_is_better,,False,False,
+log_assets,영업위험,4400,0.8936,0.1064,4400,19.2796,1.4189,16.833,19.0187,23.6218,15.3963,25.2891,True,True,False,True,higher_is_better,,False,False,
+operating_loss_current,재무위험,4400,0.8936,0.1064,2,0.2339,0.4233,0.0,0.0,1.0,0.0,1.0,True,True,False,True,higher_is_worse,,False,False,binary variable
+net_loss_current,재무위험,4400,0.8936,0.1064,2,0.2882,0.453,0.0,0.0,1.0,0.0,1.0,True,True,False,True,higher_is_worse,,False,False,binary variable
+operating_loss_freq_3y,재무위험,4435,0.9007,0.0993,4,0.6379,0.9694,0.0,0.0,3.0,0.0,3.0,True,True,False,True,higher_is_worse,,False,False,
+negative_equity_flag,재무위험,4400,0.8936,0.1064,2,0.0064,0.0795,0.0,0.0,0.0,0.0,1.0,True,True,False,True,higher_is_worse,,False,False,binary variable
+cap_impair_flag,재무위험,4400,0.8936,0.1064,2,0.0357,0.1855,0.0,0.0,1.0,0.0,1.0,True,True,False,True,higher_is_worse,,False,False,binary variable
+lawsuit_count_3y,재무위험,4924,1.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,False,True,higher_is_worse,,False,True,
+financial_data_completeness,신뢰도,4924,1.0,0.0,20,0.8855,0.3039,0.0,1.0,1.0,0.0,1.0,True,True,False,True,higher_is_better,,False,False,Stage 2 134 quality-pass ratio 기준 재정의
+statement_coverage_count,신뢰도,4924,1.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,False,True,higher_is_better,,False,True,
+ratio_available_count,신뢰도,4924,1.0,0.0,20,123.0845,42.2365,0.0,139.0,139.0,0.0,139.0,True,True,False,True,higher_is_better,,False,False,
+ratio_missing_rate,신뢰도,4924,1.0,0.0,20,0.1145,0.3039,0.0,0.0,1.0,0.0,1.0,True,True,False,True,higher_is_worse,,False,False,

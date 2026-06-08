@@ -1,0 +1,177 @@
+﻿ratio_id,ratio_name,category,nice_column,matched_n,pearson_corr,spearman_corr,median_abs_diff,p95_abs_diff,scale_factor_suspected,formula_mismatch_suspected,audit_decision
+R001,매출총이익률,수익성,매출액총이익률(IFRS),0,,,,,,False,no_precomputed_match
+R002,영업이익률,수익성,매출액정상영업이익률(IFRS),0,,,,,,False,no_precomputed_match
+R003,정상영업이익률,수익성,매출액정상영업이익률(IFRS),0,,,,,,False,no_precomputed_match
+R004,EBIT마진,수익성,,0,,,,,,False,no_precomputed_match
+R005,EBITDA마진,수익성,,0,,,,,,False,no_precomputed_match
+R006,세전이익률,수익성,,0,,,,,,False,no_precomputed_match
+R007,순이익률,수익성,매출액순이익률(IFRS),0,,,,,,False,no_precomputed_match
+R008,계속사업이익률,수익성,,0,,,,,,False,no_precomputed_match
+R009,총포괄이익률,수익성,,0,,,,,,False,no_precomputed_match
+R010,영업현금흐름마진,수익성,,0,,,,,,False,no_precomputed_match
+R012,매출총이익/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R013,영업이익/총자산,수익성,총자본정상영업이익률(IFRS),0,,,,,,False,no_precomputed_match
+R014,EBIT/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R015,EBITDA/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R016,세전이익/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R017,당기순이익/총자산(ROA),수익성,총자본순이익률(IFRS),0,,,,,,False,no_precomputed_match
+R018,총포괄이익/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R019,영업현금흐름/총자산,수익성,,0,,,,,,False,no_precomputed_match
+R021,영업이익/자기자본,수익성,,0,,,,,,False,no_precomputed_match
+R022,당기순이익/자기자본(ROE),수익성,자기자본순이익률(IFRS),0,,,,,,False,no_precomputed_match
+R023,총포괄이익/자기자본,수익성,,0,,,,,,False,no_precomputed_match
+R031,현금이익전환율,수익성,,0,,,,,,False,no_precomputed_match
+R032,영업현금흐름/영업이익,수익성,,0,,,,,,False,no_precomputed_match
+R033,EBITDA 대비 OCF,수익성,,0,,,,,,False,no_precomputed_match
+R043,부채비율,안정성,부채비율(IFRS),0,,,,,,False,no_precomputed_match
+R044,총부채/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R045,자기자본비율,안정성,자기자본구성비율(IFRS),0,,,,,,False,no_precomputed_match
+R046,차입금의존도,안정성,차입금의존도(IFRS),0,,,,,,False,no_precomputed_match
+R047,순차입금의존도,안정성,,0,,,,,,False,no_precomputed_match
+R048,유이자부채/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R049,금융부채/총부채,안정성,,0,,,,,,False,no_precomputed_match
+R050,총차입금/자기자본,안정성,,0,,,,,,False,no_precomputed_match
+R051,순차입금/자기자본,안정성,,0,,,,,,False,no_precomputed_match
+R052,유이자부채/자기자본,안정성,,0,,,,,,False,no_precomputed_match
+R053,유동부채비율,안정성,,0,,,,,,False,no_precomputed_match
+R054,비유동부채비율,안정성,비유동부채비율(IFRS),0,,,,,,False,no_precomputed_match
+R055,유동부채/총부채,안정성,,0,,,,,,False,no_precomputed_match
+R056,비유동부채/총부채,안정성,,0,,,,,,False,no_precomputed_match
+R057,단기차입금비중,안정성,,0,,,,,,False,no_precomputed_match
+R058,장기차입금비중,안정성,,0,,,,,,False,no_precomputed_match
+R059,단기금융부채/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R060,장기금융부채/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R061,순차입금/총차입금,안정성,,0,,,,,,False,no_precomputed_match
+R063,유보율,안정성,유보율(IFRS),0,,,,,,False,no_precomputed_match
+R064,이익잉여금/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R065,이익잉여금/자기자본,안정성,,0,,,,,,False,no_precomputed_match
+R067,자본금/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R071,비유동비율,안정성,비유동비율(IFRS),0,,,,,,False,no_precomputed_match
+R076,순운전자본/총자산,안정성,,0,,,,,,False,no_precomputed_match
+R077,운전자본/매출액,안정성,,0,,,,,,False,no_precomputed_match
+R079,이자보상배율,부채상환능력,,0,,,,,,False,no_precomputed_match
+R080,EBIT 이자보상배율,부채상환능력,,0,,,,,,False,no_precomputed_match
+R081,EBITDA 이자보상배율,부채상환능력,,0,,,,,,False,no_precomputed_match
+R082,세전이익 이자보상배율,부채상환능력,,0,,,,,,False,no_precomputed_match
+R083,OCF 이자보상배율,부채상환능력,,0,,,,,,False,no_precomputed_match
+R085,금융비용부담률,부채상환능력,금융비용부담률(IFRS),0,,,,,,False,no_precomputed_match
+R086,이자비용/매출액,부채상환능력,금융비용부담률(IFRS),0,,,,,,False,no_precomputed_match
+R087,이자비용/영업이익,부채상환능력,,0,,,,,,False,no_precomputed_match
+R088,이자비용/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R089,금융비용/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R090,금융비용/영업현금흐름,부채상환능력,,0,,,,,,False,no_precomputed_match
+R091,OCF/총부채,부채상환능력,,0,,,,,,False,no_precomputed_match
+R092,OCF/총차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R093,OCF/순차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R094,OCF/유동부채,부채상환능력,,0,,,,,,False,no_precomputed_match
+R095,OCF/단기차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R099,EBITDA/총차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R100,EBITDA/순차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R101,총차입금/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R102,순차입금/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R103,총부채/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R104,순차입금/OCF,부채상환능력,,0,,,,,,False,no_precomputed_match
+R105,총차입금/OCF,부채상환능력,,0,,,,,,False,no_precomputed_match
+R106,총부채/OCF,부채상환능력,,0,,,,,,False,no_precomputed_match
+R107,단기차입금/OCF,부채상환능력,,0,,,,,,False,no_precomputed_match
+R108,단기금융부채/EBITDA,부채상환능력,,0,,,,,,False,no_precomputed_match
+R109,단기금융부채/현금성자산,부채상환능력,,0,,,,,,False,no_precomputed_match
+R110,현금성자산/총차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R111,현금성자산/단기차입금,부채상환능력,,0,,,,,,False,no_precomputed_match
+R112,내부자금조달률,부채상환능력,,0,,,,,,False,no_precomputed_match
+R114,순차입금상환가능기간,부채상환능력,,0,,,,,,False,no_precomputed_match
+R115,유동비율,유동성,유동비율(IFRS),0,,,,,,False,no_precomputed_match
+R116,당좌비율,유동성,당좌비율(IFRS),0,,,,,,False,no_precomputed_match
+R117,현금비율,유동성,현금비율(IFRS),0,,,,,,False,no_precomputed_match
+R118,순운전자본비율,유동성,,0,,,,,,False,no_precomputed_match
+R119,순운전자본/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R120,유동자산/총자산,유동성,,0,,,,,,False,no_precomputed_match
+R121,유동부채/총자산,유동성,,0,,,,,,False,no_precomputed_match
+R122,유동부채/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R123,유동자산/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R124,현금성자산/총자산,유동성,,0,,,,,,False,no_precomputed_match
+R125,현금성자산/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R126,현금성자산/총부채,유동성,,0,,,,,,False,no_precomputed_match
+R127,현금성자산/유동부채,유동성,,0,,,,,,False,no_precomputed_match
+R128,현금성자산/단기금융부채,유동성,,0,,,,,,False,no_precomputed_match
+R130,즉시가용유동성/단기금융부채,유동성,,0,,,,,,False,no_precomputed_match
+R131,OCF/유동부채,유동성,,0,,,,,,False,no_precomputed_match
+R132,OCF/단기금융부채,유동성,,0,,,,,,False,no_precomputed_match
+R133,FCF/유동부채,유동성,,0,,,,,,False,no_precomputed_match
+R134,재고자산/유동자산,유동성,,0,,,,,,False,no_precomputed_match
+R135,매출채권/유동자산,유동성,,0,,,,,,False,no_precomputed_match
+R136,매입채무/유동부채,유동성,,0,,,,,,False,no_precomputed_match
+R137,재고자산/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R138,매출채권/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R139,매입채무/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R140,순영업운전자본/매출액,유동성,,0,,,,,,False,no_precomputed_match
+R141,영업운전자본/총자산,유동성,,0,,,,,,False,no_precomputed_match
+R143,총자산회전율,활동성,총자본회전률(IFRS),0,,,,,,False,no_precomputed_match
+R145,비유동자산회전율,활동성,비유동자산회전율(IFRS),0,,,,,,False,no_precomputed_match
+R146,유동자산회전율,활동성,,0,,,,,,False,no_precomputed_match
+R147,자기자본회전율,활동성,자기자본회전률(IFRS),0,,,,,,False,no_precomputed_match
+R148,타인자본회전율,활동성,,0,,,,,,False,no_precomputed_match
+R150,운전자본회전율,활동성,,0,,,,,,False,no_precomputed_match
+R152,재고자산회전율,활동성,재고자산회전률(IFRS),0,,,,,,False,no_precomputed_match
+R153,매출채권회전율,활동성,매출채권회전률(IFRS),0,,,,,,False,no_precomputed_match
+R154,매입채무회전율,활동성,매입채무회전률(IFRS),0,,,,,,False,no_precomputed_match
+R155,순영업운전자본회전율,활동성,,0,,,,,,False,no_precomputed_match
+R156,현금성자산회전율,활동성,,0,,,,,,False,no_precomputed_match
+R157,자본금회전율,활동성,,0,,,,,,False,no_precomputed_match
+R158,매출채권회전일수,활동성,,0,,,,,,False,no_precomputed_match
+R159,재고자산회전일수,활동성,,0,,,,,,False,no_precomputed_match
+R160,매입채무회전일수,활동성,,0,,,,,,False,no_precomputed_match
+R163,재고보유기간,활동성,,0,,,,,,False,no_precomputed_match
+R164,매출채권회수기간,활동성,,0,,,,,,False,no_precomputed_match
+R165,매입채무지급기간,활동성,,0,,,,,,False,no_precomputed_match
+R169,매출액증가율,성장성,매출액증가율(IFRS),0,,,,,,False,no_precomputed_match
+R170,매출총이익증가율,성장성,,0,,,,,,False,no_precomputed_match
+R171,영업이익증가율,성장성,정상영업이익증가율(IFRS),0,,,,,,False,no_precomputed_match
+R172,정상영업이익증가율,성장성,정상영업이익증가율(IFRS),0,,,,,,False,no_precomputed_match
+R173,EBIT증가율,성장성,,0,,,,,,False,no_precomputed_match
+R174,EBITDA증가율,성장성,,0,,,,,,False,no_precomputed_match
+R175,세전이익증가율,성장성,,0,,,,,,False,no_precomputed_match
+R176,순이익증가율,성장성,순이익증가율(IFRS),0,,,,,,False,no_precomputed_match
+R177,총포괄이익증가율,성장성,총포괄이익증가율(IFRS),0,,,,,,False,no_precomputed_match
+R178,OCF증가율,성장성,,0,,,,,,False,no_precomputed_match
+R179,FCF증가율,성장성,,0,,,,,,False,no_precomputed_match
+R180,총자산증가율,성장성,총자본증가율(IFRS),0,,,,,,False,no_precomputed_match
+R181,유동자산증가율,성장성,유동자산증가율(IFRS),0,,,,,,False,no_precomputed_match
+R182,비유동자산증가율,성장성,비유동자산증가율(IFRS),0,,,,,,False,no_precomputed_match
+R184,자기자본증가율,성장성,자기자본증가율(IFRS),0,,,,,,False,no_precomputed_match
+R185,이익잉여금증가율,성장성,,0,,,,,,False,no_precomputed_match
+R186,총차입금증가율,성장성,,0,,,,,,False,no_precomputed_match
+R187,순차입금증가율,성장성,,0,,,,,,False,no_precomputed_match
+R188,CAPEX증가율,성장성,,0,,,,,,False,no_precomputed_match
+R196,매출-자산 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R197,영업이익-매출 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R198,EBITDA-매출 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R199,차입금-매출 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R200,순차입금-EBITDA 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R201,자기자본-총자산 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R202,OCF-매출 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R203,FCF-매출 성장괴리,성장성,,0,,,,,,False,no_precomputed_match
+R204,투자부담률,성장성,,0,,,,,,False,no_precomputed_match
+R205,CAPEX/감가상각비,성장성,,0,,,,,,False,no_precomputed_match
+R210,Altman 운전자본/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R211,Altman 이익잉여금/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R212,Altman EBIT/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R213,Altman 매출액/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R214,OCF/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R215,FCF/총자산,기타/복합,,0,,,,,,False,no_precomputed_match
+R216,OCF/매출액,기타/복합,,0,,,,,,False,no_precomputed_match
+R217,FCF/매출액,기타/복합,,0,,,,,,False,no_precomputed_match
+R218,CAPEX/OCF,기타/복합,,0,,,,,,False,no_precomputed_match
+R219,CAPEX/EBITDA,기타/복합,,0,,,,,,False,no_precomputed_match
+R220,OCF/순이익 비율,CF_품질,,0,,,,,,False,no_precomputed_match
+R221,OCF마진,CF_품질,,0,,,,,,False,no_precomputed_match
+R225,OCF이자보상배율,CF_품질,,0,,,,,,False,no_precomputed_match
+R226,이익잉여금/총자산,자본효율성,,0,,,,,,False,no_precomputed_match
+R227,이익잉여금/자본,자본효율성,,0,,,,,,False,no_precomputed_match
+R228,OCF/총자산(평균),자본효율성,,0,,,,,,False,no_precomputed_match
+R236,매입채무회전율,활동성,매입채무회전률(IFRS),0,,,,,,False,no_precomputed_match
+R237,매출채권회전율,활동성,매출채권회전률(IFRS),0,,,,,,False,no_precomputed_match
+R238,재고자산회전율,활동성,재고자산회전률(IFRS),0,,,,,,False,no_precomputed_match
+R239,OCF성장률,성장성,,0,,,,,,False,no_precomputed_match
+R240,총자산성장률,성장성,,0,,,,,,False,no_precomputed_match
+R241,이익잉여금증가율,성장성,,0,,,,,,False,no_precomputed_match

@@ -1,0 +1,431 @@
+{
+  "stage_name": "stage0_canonical_foundation",
+  "contract_version": "stage0_rating_sampling_v32",
+  "status": "PASS",
+  "created_utc": "2026-06-06T06:45:16.882456+00:00",
+  "output_paths": {
+    "canonical_panel": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage0_oracle_foundation\\canonical_panel\\stage0_canonical_panel.parquet",
+    "statement_items_panel": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage0_oracle_foundation\\canonical_panel\\statement_items_panel.parquet"
+  },
+  "row_counts": {
+    "canonical_panel": 4924,
+    "statement_items_panel": 77077533
+  },
+  "key_columns": [
+    "\uac70\ub798\uc18c\ucf54\ub4dc",
+    "year"
+  ],
+  "duplicate_key_count": 0,
+  "rating_sample_counts": {
+    "raw_all": 248239,
+    "files": [
+      {
+        "file": "\ucf54\ub125\uc2a4_\uc804\uc5c5\uc885_\uc2e0\uc6a9\ud3c9\uac00\uc5d0 \uad00\ud55c \uc0ac\ud56d.xlsx",
+        "rows_raw": 1610,
+        "rows_used": 1610,
+        "status": "read"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc804\uc5c5\uc885_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc2e0\uc6a9\ud3c9\uac00\uc5d0 \uad00\ud55c \uc0ac\ud56d.xlsx",
+        "rows_raw": 73392,
+        "rows_used": 73392,
+        "status": "read"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc804\uc5c5\uc885_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc2e0\uc6a9\ud3c9\uac00\uc5d0 \uad00\ud55c \uc0ac\ud56d.xlsx",
+        "rows_raw": 173237,
+        "rows_used": 173237,
+        "status": "read"
+      }
+    ],
+    "icr_security_code_40": 21667,
+    "allowed_agency_codes_10_20_30_60_90": 21291,
+    "rating_notna": 21270,
+    "valid_long_term_grade": 20167,
+    "before_dedup": 20167,
+    "dedup_firm_year": 4924,
+    "grade_distribution_10": {
+      "A": 1560,
+      "BBB": 1554,
+      "BB": 867,
+      "AA": 514,
+      "B": 330,
+      "AAA": 54,
+      "CCC": 25,
+      "C": 15,
+      "D": 5
+    },
+    "agency_distribution": {
+      "90": 2635,
+      "60": 754,
+      "10": 741,
+      "20": 489,
+      "30": 305
+    }
+  },
+  "statement_items": {
+    "files": [
+      {
+        "file": "\ucf54\ub125\uc2a4_\uc190\uc775\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 1178,
+        "numeric_item_columns": 473,
+        "rows_long": 228379,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\ub125\uc2a4_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 1178,
+        "numeric_item_columns": 46,
+        "rows_long": 22402,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\ub125\uc2a4_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 1178,
+        "numeric_item_columns": 99,
+        "rows_long": 48009,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\ub125\uc2a4_\uc7ac\ubb34\uc0c1\ud0dc\ud45c.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 1178,
+        "numeric_item_columns": 824,
+        "rows_long": 398908,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\ub125\uc2a4_\ud604\uae08\ud750\ub984\ud45c.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 1178,
+        "numeric_item_columns": 491,
+        "rows_long": 236941,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c1.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 13060,
+        "numeric_item_columns": 473,
+        "rows_long": 3905766,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c2.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 14026,
+        "numeric_item_columns": 473,
+        "rows_long": 4199926,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c3.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 13376,
+        "numeric_item_columns": 473,
+        "rows_long": 3830014,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 40462,
+        "numeric_item_columns": 46,
+        "rows_long": 1194906,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 40462,
+        "numeric_item_columns": 99,
+        "rows_long": 2502884,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c1.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 9833,
+        "numeric_item_columns": 824,
+        "rows_long": 5221241,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c2.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 10343,
+        "numeric_item_columns": 824,
+        "rows_long": 5440379,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c3.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 9957,
+        "numeric_item_columns": 824,
+        "rows_long": 5096369,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c4.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 10329,
+        "numeric_item_columns": 824,
+        "rows_long": 5258745,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c1.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 8087,
+        "numeric_item_columns": 491,
+        "rows_long": 2540040,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c2.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 10562,
+        "numeric_item_columns": 491,
+        "rows_long": 3262573,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c3.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 10399,
+        "numeric_item_columns": 491,
+        "rows_long": 3216560,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ub2e5_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c4.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 11414,
+        "numeric_item_columns": 491,
+        "rows_long": 3402823,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\ubcf4\ud5d8\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 625,
+        "numeric_item_columns": 426,
+        "rows_long": 112324,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\ubcf4\ud5d8\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 625,
+        "numeric_item_columns": 46,
+        "rows_long": 12742,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\ubcf4\ud5d8\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 625,
+        "numeric_item_columns": 99,
+        "rows_long": 26922,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\ubcf4\ud5d8\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 625,
+        "numeric_item_columns": 366,
+        "rows_long": 100046,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\ubcf4\ud5d8\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 625,
+        "numeric_item_columns": 418,
+        "rows_long": 109774,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc740\ud589\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 739,
+        "numeric_item_columns": 370,
+        "rows_long": 83706,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc740\ud589\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 739,
+        "numeric_item_columns": 46,
+        "rows_long": 10926,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc740\ud589\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 739,
+        "numeric_item_columns": 99,
+        "rows_long": 23126,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc740\ud589\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 739,
+        "numeric_item_columns": 416,
+        "rows_long": 97958,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc740\ud589\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 739,
+        "numeric_item_columns": 471,
+        "rows_long": 107249,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c1.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 16972,
+        "numeric_item_columns": 473,
+        "rows_long": 3459307,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c2.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 14773,
+        "numeric_item_columns": 473,
+        "rows_long": 2962102,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 31745,
+        "numeric_item_columns": 46,
+        "rows_long": 645077,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 31745,
+        "numeric_item_columns": 99,
+        "rows_long": 1345880,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c1.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 7919,
+        "numeric_item_columns": 824,
+        "rows_long": 2885827,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c2.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 9066,
+        "numeric_item_columns": 824,
+        "rows_long": 3214444,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c3.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 6083,
+        "numeric_item_columns": 824,
+        "rows_long": 2057605,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c4.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 8677,
+        "numeric_item_columns": 824,
+        "rows_long": 3165027,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c1.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 11090,
+        "numeric_item_columns": 491,
+        "rows_long": 2460664,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c2.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 9230,
+        "numeric_item_columns": 491,
+        "rows_long": 1810287,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc81c\uc870\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c3.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 11425,
+        "numeric_item_columns": 491,
+        "rows_long": 2416089,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc99d\uad8c\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc190\uc775\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc190\uc775\uacc4\uc0b0\uc11c",
+        "rows_raw": 972,
+        "numeric_item_columns": 484,
+        "rows_long": 187155,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc99d\uad8c\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c.xlsx",
+        "statement_type": "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c",
+        "rows_raw": 972,
+        "numeric_item_columns": 46,
+        "rows_long": 18457,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc99d\uad8c\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc790\ubcf8\ubcc0\ub3d9\ud45c.xlsx",
+        "statement_type": "\uc790\ubcf8\ubcc0\ub3d9\ud45c",
+        "rows_raw": 972,
+        "numeric_item_columns": 99,
+        "rows_long": 38357,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc99d\uad8c\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\uc7ac\ubb34\uc0c1\ud0dc\ud45c.xlsx",
+        "statement_type": "\uc7ac\ubb34\uc0c1\ud0dc\ud45c",
+        "rows_raw": 972,
+        "numeric_item_columns": 439,
+        "rows_long": 174975,
+        "status": "ok"
+      },
+      {
+        "file": "\ucf54\uc2a4\ud53c_\uc99d\uad8c\uc5c5_\ud3d0\uc9c0\uc0ac \ud3ec\ud568_\ud604\uae08\ud750\ub984\ud45c.xlsx",
+        "statement_type": "\ud604\uae08\ud750\ub984\ud45c",
+        "rows_raw": 972,
+        "numeric_item_columns": 463,
+        "rows_long": 177552,
+        "status": "ok"
+      }
+    ],
+    "rows": 77077533,
+    "statement_counts": {
+      "\uc7ac\ubb34\uc0c1\ud0dc\ud45c": 32846934,
+      "\ud604\uae08\ud750\ub984\ud45c": 19578153,
+      "\uc190\uc775\uacc4\uc0b0\uc11c": 18811866,
+      "\uc790\ubcf8\ubcc0\ub3d9\ud45c": 3952119,
+      "\uc774\uc775\uc789\uc5ec\uae08\ucc98\ubd84\uacc4\uc0b0\uc11c": 1888461
+    }
+  },
+  "schema_version": "stage0_canonical_foundation_v1"
+}

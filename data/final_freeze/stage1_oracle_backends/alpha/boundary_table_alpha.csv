@@ -1,0 +1,10 @@
+boundary_id,upper_grade,lower_grade,threshold_score,estimable,fixed,sparse_tail_flag,reason
+0,AAA,AA,94.11,True,True,True,sparse_tail_fixed
+1,AA,A,88.98,True,False,False,joint_optimized
+2,A,BBB,73.38,True,False,False,joint_optimized
+3,BBB,BB,51.01,True,False,False,joint_optimized
+4,BB,B,18.93,True,False,False,joint_optimized
+5,B,CCC,5.72,True,False,False,joint_optimized
+6,CCC,CC,4.44,True,True,True,sparse_tail_fixed
+7,CC,C,3.16,False,True,True,deterministic_tail_extrapolation
+8,C,D,1.88,False,True,True,deterministic_tail_extrapolation

@@ -1,0 +1,25 @@
+{
+  "schema_version": "magnitude_calibration_metadata_v32",
+  "created_utc": "2026-06-06T09:39:38.347801+00:00",
+  "mode": "inner_dev_recalibrated",
+  "policy": "quantile_libraries_materialized_in_stage2_candidate_projection_from_inner_train_pseudo_actions",
+  "quantile_grid": [
+    50,
+    65,
+    75,
+    85
+  ],
+  "selected_quantile": null,
+  "inner_train_year_max": 2022,
+  "inner_dev_year": 2023,
+  "recalibration_method": "per_dimension_favorable_direction_abs_action_quantile",
+  "ratio_preservation": "preserve_candidate_active_dimension_sign_pattern; replace nonzero magnitudes with selected quantile",
+  "oot_used_for_calibration": false,
+  "oracle_outcome_used_for_calibration": false,
+  "automatic_recalibration_performed": true,
+  "action_magnitude_quantiles_json": "action_magnitude_quantiles.json",
+  "candidate_magnitude_audit_csv": "candidate_magnitude_audit.csv",
+  "candidate_library_hash_per_quantile": {},
+  "selected_candidate_library_hash": null,
+  "final_candidate_values_source": "stage2_candidate_projection/final_candidate_library__P{q}.yaml"
+}

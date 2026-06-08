@@ -1,0 +1,24 @@
+{
+  "schema_version": "stage6_policy_pairing_audit_v1",
+  "status": "PASS",
+  "n_row_ids": 575,
+  "n_noop_row_ids": 575,
+  "missing_noop_row_id_count": 0,
+  "missing_noop_row_id_sample": [],
+  "policies": [
+    "C0_noop",
+    "C2_weakest_component_rule",
+    "C3_candidate_iql",
+    "CX1_capex_discipline",
+    "DL1_deleverage_mild",
+    "DL2_deleverage_moderate",
+    "MX1_cost_and_deleverage",
+    "MX2_liquidity_rescue",
+    "OE1_cost_efficiency_mild",
+    "OE2_cost_efficiency_moderate",
+    "RF1_short_debt_refinance",
+    "WC1_working_capital_tightening",
+    "WC2_supplier_financing"
+  ],
+  "c_obs_present": false
+}

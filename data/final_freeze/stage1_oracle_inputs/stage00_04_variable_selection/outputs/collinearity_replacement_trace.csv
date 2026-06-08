@@ -1,0 +1,2 @@
+iteration,high_priority_category,high_priority_var,low_priority_category,low_priority_var,corr,abs_corr,removed_variable_id,removed_variable_name,replacement_variable_id,replacement_variable_name,replacement_score,candidate_max_abs_corr,global_max_abs_corr,candidates_evaluated,reason,status
+1,수익성,R006,부채상환능력,R082,0.8467819095358997,0.8467819095358997,R082,R082,R085,R085,0.9211659165217501,0.4833415454150001,0.5544311054990688,19,threshold_satisfied,resolved

@@ -1,0 +1,57 @@
+{
+  "R006": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.356113874145623
+  },
+  "R064": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.49261389492450613
+  },
+  "R085": {
+    "direction": "value_down_good",
+    "direction_weak": false,
+    "spearman_rho": 0.40122068453168275
+  },
+  "R133": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.2371484930494599
+  },
+  "R157": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.392371233846569
+  },
+  "R182": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.11700867527425418
+  },
+  "industry_avg_rating_lag1_self_excl": {
+    "direction": "value_down_good",
+    "direction_weak": false,
+    "spearman_rho": 0.23605407641391035
+  },
+  "cap_change_count_3y": {
+    "direction": "value_down_good",
+    "direction_weak": false,
+    "spearman_rho": 0.24716545429294223
+  },
+  "log_assets": {
+    "direction": "value_up_good",
+    "direction_weak": false,
+    "spearman_rho": -0.47180168277853535
+  },
+  "operating_loss_freq_3y": {
+    "direction": "value_down_good",
+    "direction_weak": false,
+    "spearman_rho": 0.38219960065199404
+  },
+  "ratio_missing_rate": {
+    "direction": "value_down_good",
+    "direction_weak": true,
+    "spearman_rho": 0.017420949064222688
+  }
+}

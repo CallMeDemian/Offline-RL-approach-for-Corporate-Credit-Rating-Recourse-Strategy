@@ -1,0 +1,18 @@
+﻿alias_ratio_id,canonical_ratio_id,duplicate_alias_type,reason,n_rows_blocked
+R003,R002,exact_value_alias,정상영업이익률 duplicates 영업이익률 under current source mapping.,1
+R004,R002,exact_value_alias,EBIT마진 duplicates 영업이익률 under current source mapping.,1
+R014,R013,exact_value_alias,EBIT/총자산 duplicates 영업이익/총자산.,1
+R216,R010,exact_value_alias,OCF/매출액 duplicates 영업현금흐름마진.,1
+R211,R064,exact_value_alias,Altman 이익잉여금/총자산 duplicates 이익잉여금/총자산.,1
+R118,R076,exact_value_alias,순운전자본비율 duplicates 순운전자본/총자산.,1
+R210,R076,exact_value_alias,Altman 운전자본/총자산 duplicates 순운전자본/총자산.,1
+R119,R077,exact_value_alias,순운전자본/매출액 duplicates 운전자본/매출액.,1
+R080,R079,exact_value_alias,EBIT 이자보상배율 duplicates 이자보상배율 under current EBIT mapping.,1
+R086,R085,exact_value_alias,이자비용/매출액 uses the same numerator item code as 금융비용부담률.,1
+R088,R089,exact_value_alias,이자비용/EBITDA uses the same numerator item code as 금융비용/EBITDA; keep financial-cost wording.,1
+R131,R094,exact_value_alias,OCF/유동부채 duplicates debt-service OCF/유동부채.,1
+R114,R102,exact_value_alias,순차입금상환가능기간 duplicates 순차입금/EBITDA.,1
+R127,R117,exact_value_alias,현금성자산/유동부채 duplicates 현금비율.,1
+R164,R158,exact_value_alias,매출채권회수기간 duplicates 매출채권회전일수.,1
+R163,R159,exact_value_alias,재고보유기간 duplicates 재고자산회전일수.,1
+R165,R160,exact_value_alias,매입채무지급기간 duplicates 매입채무회전일수.,1

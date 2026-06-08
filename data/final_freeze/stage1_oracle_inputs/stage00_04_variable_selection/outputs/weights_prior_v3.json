@@ -1,0 +1,49 @@
+{
+  "version": "v3",
+  "method": "4-metric composite score (0.3·|ρ| + 0.3·IV + 0.2·KW_η² + 0.2·mono), normalized per block with iterative cap/floor redistribution",
+  "block_combine": "0.70 × financial_score + 0.30 × nonfinancial_score",
+  "cap": 0.3,
+  "default_floor": 0.05,
+  "custom_floors": {
+    "R185": 0.02,
+    "financial_data_completeness": 0.02,
+    "R241": 0.02,
+    "ratio_missing_rate": 0.02
+  },
+  "score_overrides": {
+    "R185": 0.0,
+    "financial_data_completeness": 0.0,
+    "R241": 0.0,
+    "ratio_missing_rate": 0.0
+  },
+  "financial_block": {
+    "R006": 0.186346,
+    "R064": 0.186534,
+    "R085": 0.187786,
+    "R133": 0.116109,
+    "R157": 0.195702,
+    "R182": 0.127522
+  },
+  "nonfinancial_block": {
+    "industry_avg_rating_lag1_self_excl": 0.163372,
+    "cap_change_count_3y": 0.281596,
+    "log_assets": 0.281596,
+    "operating_loss_freq_3y": 0.253436,
+    "ratio_missing_rate": 0.02
+  },
+  "financial_block_v2_baseline": {
+    "R006": 0.186346,
+    "R064": 0.186534,
+    "R085": 0.187786,
+    "R133": 0.116109,
+    "R157": 0.195702,
+    "R182": 0.127522
+  },
+  "nonfinancial_block_v2_baseline": {
+    "industry_avg_rating_lag1_self_excl": 0.138702,
+    "cap_change_count_3y": 0.239072,
+    "log_assets": 0.239072,
+    "operating_loss_freq_3y": 0.215165,
+    "ratio_missing_rate": 0.167988
+  }
+}

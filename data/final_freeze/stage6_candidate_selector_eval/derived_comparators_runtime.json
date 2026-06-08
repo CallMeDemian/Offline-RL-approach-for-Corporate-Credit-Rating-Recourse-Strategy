@@ -1,0 +1,301 @@
+{
+  "stage": "final_stage6_derived_comparators",
+  "status": "PASS",
+  "metric": "no-op-adjusted Oracle score change",
+  "comparators": {
+    "C_fix": "single fixed v32 candidate with the highest mean no-op-adjusted score",
+    "oracle_best": "per-firm-year maximum no-op-adjusted score over fixed v32 candidates"
+  },
+  "note": "C_fix/oracle_best are derived from already-scored fixed candidate policies; no simulator call is made here.",
+  "fixed_candidate_policy_set": [
+    "DL1_deleverage_mild",
+    "DL2_deleverage_moderate",
+    "RF1_short_debt_refinance",
+    "CX1_capex_discipline",
+    "WC1_working_capital_tightening",
+    "WC2_supplier_financing",
+    "OE1_cost_efficiency_mild",
+    "OE2_cost_efficiency_moderate",
+    "MX1_cost_and_deleverage",
+    "MX2_liquidity_rescue"
+  ],
+  "per_backend": {
+    "alpha": {
+      "backend": "alpha",
+      "status": "PASS",
+      "metric": "delta_R_score_alpha",
+      "c_fix_label": "MX2_liquidity_rescue",
+      "c_fix_mean_noop_adjusted_score": 0.6012683719027198,
+      "oracle_best_mean_noop_adjusted_score": 1.1305592387821486,
+      "selection_headroom_oracle_best_minus_c_fix": 0.5292908668794288,
+      "n_fixed_candidate_labels": 10,
+      "fixed_candidate_labels": [
+        "DL1_deleverage_mild",
+        "DL2_deleverage_moderate",
+        "RF1_short_debt_refinance",
+        "CX1_capex_discipline",
+        "WC1_working_capital_tightening",
+        "WC2_supplier_financing",
+        "OE1_cost_efficiency_mild",
+        "OE2_cost_efficiency_moderate",
+        "MX1_cost_and_deleverage",
+        "MX2_liquidity_rescue"
+      ],
+      "rl_policy_label": "C3_candidate_iql",
+      "rl_gap_to_c_fix": 0.02904417430371442,
+      "c_obs_gap_to_c_fix": null,
+      "policy_means": {
+        "C0_noop": {
+          "mean_noop_adjusted_score": 0.0,
+          "gap_to_c_fix": -0.6012683719027198,
+          "gap_to_oracle_best": -1.1305592387821486
+        },
+        "C2_weakest_component_rule": {
+          "mean_noop_adjusted_score": 0.5056158577227726,
+          "gap_to_c_fix": -0.09565251417994713,
+          "gap_to_oracle_best": -0.624943381059376
+        },
+        "C3_candidate_iql": {
+          "mean_noop_adjusted_score": 0.6303125462064342,
+          "gap_to_c_fix": 0.02904417430371442,
+          "gap_to_oracle_best": -0.5002466925757144
+        },
+        "CX1_capex_discipline": {
+          "mean_noop_adjusted_score": 0.2001823390214032,
+          "gap_to_c_fix": -0.40108603288131656,
+          "gap_to_oracle_best": -0.9303768997607453
+        },
+        "DL1_deleverage_mild": {
+          "mean_noop_adjusted_score": 0.278087953131393,
+          "gap_to_c_fix": -0.32318041877132675,
+          "gap_to_oracle_best": -0.8524712856507556
+        },
+        "DL2_deleverage_moderate": {
+          "mean_noop_adjusted_score": 0.5199164154439276,
+          "gap_to_c_fix": -0.08135195645879212,
+          "gap_to_oracle_best": -0.610642823338221
+        },
+        "MX1_cost_and_deleverage": {
+          "mean_noop_adjusted_score": 0.5003369498189852,
+          "gap_to_c_fix": -0.10093142208373451,
+          "gap_to_oracle_best": -0.6302222889631633
+        },
+        "MX2_liquidity_rescue": {
+          "mean_noop_adjusted_score": 0.6012683719027198,
+          "gap_to_c_fix": 0.0,
+          "gap_to_oracle_best": -0.5292908668794288
+        },
+        "OE1_cost_efficiency_mild": {
+          "mean_noop_adjusted_score": 0.3063735540393277,
+          "gap_to_c_fix": -0.29489481786339206,
+          "gap_to_oracle_best": -0.8241856847428208
+        },
+        "OE2_cost_efficiency_moderate": {
+          "mean_noop_adjusted_score": 0.5699558321810946,
+          "gap_to_c_fix": -0.03131253972162518,
+          "gap_to_oracle_best": -0.560603406601054
+        },
+        "RF1_short_debt_refinance": {
+          "mean_noop_adjusted_score": 0.12406111963650954,
+          "gap_to_c_fix": -0.4772072522662102,
+          "gap_to_oracle_best": -1.006498119145639
+        },
+        "WC1_working_capital_tightening": {
+          "mean_noop_adjusted_score": 0.306767620885109,
+          "gap_to_c_fix": -0.29450075101761075,
+          "gap_to_oracle_best": -0.8237916178970396
+        },
+        "WC2_supplier_financing": {
+          "mean_noop_adjusted_score": 0.47945899986772117,
+          "gap_to_c_fix": -0.12180937203499859,
+          "gap_to_oracle_best": -0.6511002389144274
+        }
+      }
+    },
+    "beta": {
+      "backend": "beta",
+      "status": "PASS",
+      "metric": "delta_R_score_beta",
+      "c_fix_label": "OE2_cost_efficiency_moderate",
+      "c_fix_mean_noop_adjusted_score": 0.17639279765194868,
+      "oracle_best_mean_noop_adjusted_score": 0.17744750418039468,
+      "selection_headroom_oracle_best_minus_c_fix": 0.0010547065284459978,
+      "n_fixed_candidate_labels": 10,
+      "fixed_candidate_labels": [
+        "DL1_deleverage_mild",
+        "DL2_deleverage_moderate",
+        "RF1_short_debt_refinance",
+        "CX1_capex_discipline",
+        "WC1_working_capital_tightening",
+        "WC2_supplier_financing",
+        "OE1_cost_efficiency_mild",
+        "OE2_cost_efficiency_moderate",
+        "MX1_cost_and_deleverage",
+        "MX2_liquidity_rescue"
+      ],
+      "rl_policy_label": "C3_candidate_iql",
+      "rl_gap_to_c_fix": -0.10056248739811223,
+      "c_obs_gap_to_c_fix": null,
+      "policy_means": {
+        "C0_noop": {
+          "mean_noop_adjusted_score": 0.0,
+          "gap_to_c_fix": -0.17639279765194868,
+          "gap_to_oracle_best": -0.17744750418039468
+        },
+        "C2_weakest_component_rule": {
+          "mean_noop_adjusted_score": 0.13483052759910066,
+          "gap_to_c_fix": -0.041562270052848016,
+          "gap_to_oracle_best": -0.042616976581294014
+        },
+        "C3_candidate_iql": {
+          "mean_noop_adjusted_score": 0.07583031025383645,
+          "gap_to_c_fix": -0.10056248739811223,
+          "gap_to_oracle_best": -0.10161719392655823
+        },
+        "CX1_capex_discipline": {
+          "mean_noop_adjusted_score": 0.012758629853506717,
+          "gap_to_c_fix": -0.16363416779844198,
+          "gap_to_oracle_best": -0.16468887432688795
+        },
+        "DL1_deleverage_mild": {
+          "mean_noop_adjusted_score": 0.02500300416523162,
+          "gap_to_c_fix": -0.15138979348671705,
+          "gap_to_oracle_best": -0.15244450001516305
+        },
+        "DL2_deleverage_moderate": {
+          "mean_noop_adjusted_score": 0.04398951117756971,
+          "gap_to_c_fix": -0.13240328647437896,
+          "gap_to_oracle_best": -0.13345799300282496
+        },
+        "MX1_cost_and_deleverage": {
+          "mean_noop_adjusted_score": 0.10906710298316606,
+          "gap_to_c_fix": -0.06732569466878262,
+          "gap_to_oracle_best": -0.06838040119722862
+        },
+        "MX2_liquidity_rescue": {
+          "mean_noop_adjusted_score": 0.02403786731745209,
+          "gap_to_c_fix": -0.1523549303344966,
+          "gap_to_oracle_best": -0.1534096368629426
+        },
+        "OE1_cost_efficiency_mild": {
+          "mean_noop_adjusted_score": 0.08885496411561965,
+          "gap_to_c_fix": -0.08753783353632903,
+          "gap_to_oracle_best": -0.08859254006477503
+        },
+        "OE2_cost_efficiency_moderate": {
+          "mean_noop_adjusted_score": 0.17639279765194868,
+          "gap_to_c_fix": 0.0,
+          "gap_to_oracle_best": -0.0010547065284459978
+        },
+        "RF1_short_debt_refinance": {
+          "mean_noop_adjusted_score": 0.01381926643754477,
+          "gap_to_c_fix": -0.1625735312144039,
+          "gap_to_oracle_best": -0.1636282377428499
+        },
+        "WC1_working_capital_tightening": {
+          "mean_noop_adjusted_score": 0.01844851847617632,
+          "gap_to_c_fix": -0.15794427917577236,
+          "gap_to_oracle_best": -0.15899898570421836
+        },
+        "WC2_supplier_financing": {
+          "mean_noop_adjusted_score": -0.014031487727643278,
+          "gap_to_c_fix": -0.19042428537959197,
+          "gap_to_oracle_best": -0.19147899190803797
+        }
+      }
+    },
+    "gamma": {
+      "backend": "gamma",
+      "status": "PASS",
+      "metric": "delta_R_score_gamma",
+      "c_fix_label": "DL2_deleverage_moderate",
+      "c_fix_mean_noop_adjusted_score": 0.5840357107997962,
+      "oracle_best_mean_noop_adjusted_score": 0.9704753827859585,
+      "selection_headroom_oracle_best_minus_c_fix": 0.38643967198616225,
+      "n_fixed_candidate_labels": 10,
+      "fixed_candidate_labels": [
+        "DL1_deleverage_mild",
+        "DL2_deleverage_moderate",
+        "RF1_short_debt_refinance",
+        "CX1_capex_discipline",
+        "WC1_working_capital_tightening",
+        "WC2_supplier_financing",
+        "OE1_cost_efficiency_mild",
+        "OE2_cost_efficiency_moderate",
+        "MX1_cost_and_deleverage",
+        "MX2_liquidity_rescue"
+      ],
+      "rl_policy_label": "C3_candidate_iql",
+      "rl_gap_to_c_fix": 0.010744948169606805,
+      "c_obs_gap_to_c_fix": null,
+      "policy_means": {
+        "C0_noop": {
+          "mean_noop_adjusted_score": 0.0,
+          "gap_to_c_fix": -0.5840357107997962,
+          "gap_to_oracle_best": -0.9704753827859585
+        },
+        "C2_weakest_component_rule": {
+          "mean_noop_adjusted_score": 0.4017421310637086,
+          "gap_to_c_fix": -0.18229357973608762,
+          "gap_to_oracle_best": -0.5687332517222499
+        },
+        "C3_candidate_iql": {
+          "mean_noop_adjusted_score": 0.594780658969403,
+          "gap_to_c_fix": 0.010744948169606805,
+          "gap_to_oracle_best": -0.37569472381655544
+        },
+        "CX1_capex_discipline": {
+          "mean_noop_adjusted_score": 0.18641058262141205,
+          "gap_to_c_fix": -0.39762512817838414,
+          "gap_to_oracle_best": -0.7840648001645464
+        },
+        "DL1_deleverage_mild": {
+          "mean_noop_adjusted_score": 0.3440374370593469,
+          "gap_to_c_fix": -0.2399982737404493,
+          "gap_to_oracle_best": -0.6264379457266116
+        },
+        "DL2_deleverage_moderate": {
+          "mean_noop_adjusted_score": 0.5840357107997962,
+          "gap_to_c_fix": 0.0,
+          "gap_to_oracle_best": -0.38643967198616225
+        },
+        "MX1_cost_and_deleverage": {
+          "mean_noop_adjusted_score": 0.43885221715340567,
+          "gap_to_c_fix": -0.14518349364639055,
+          "gap_to_oracle_best": -0.5316231656325527
+        },
+        "MX2_liquidity_rescue": {
+          "mean_noop_adjusted_score": 0.5664823889678758,
+          "gap_to_c_fix": -0.017553321831920377,
+          "gap_to_oracle_best": -0.4039929938180826
+        },
+        "OE1_cost_efficiency_mild": {
+          "mean_noop_adjusted_score": 0.1743508145505508,
+          "gap_to_c_fix": -0.4096848962492454,
+          "gap_to_oracle_best": -0.7961245682354077
+        },
+        "OE2_cost_efficiency_moderate": {
+          "mean_noop_adjusted_score": 0.3728252985148242,
+          "gap_to_c_fix": -0.211210412284972,
+          "gap_to_oracle_best": -0.5976500842711343
+        },
+        "RF1_short_debt_refinance": {
+          "mean_noop_adjusted_score": 0.15929321793516144,
+          "gap_to_c_fix": -0.4247424928646348,
+          "gap_to_oracle_best": -0.8111821648507971
+        },
+        "WC1_working_capital_tightening": {
+          "mean_noop_adjusted_score": 0.26895526443152656,
+          "gap_to_c_fix": -0.31508044636826965,
+          "gap_to_oracle_best": -0.701520118354432
+        },
+        "WC2_supplier_financing": {
+          "mean_noop_adjusted_score": 0.41635916658742633,
+          "gap_to_c_fix": -0.16767654421236988,
+          "gap_to_oracle_best": -0.5541162161985321
+        }
+      }
+    }
+  },
+  "errors": []
+}

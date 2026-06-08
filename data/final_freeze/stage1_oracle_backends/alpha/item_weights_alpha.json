@@ -1,0 +1,13 @@
+{
+  "R006": 0.256565,
+  "R064": 0.234449,
+  "R085": 0.113237,
+  "R133": 0.093102,
+  "R157": 0.194177,
+  "R182": 0.108471,
+  "industry_avg_rating_lag1_self_excl": 0.224625,
+  "cap_change_count_3y": 0.278382,
+  "log_assets": 0.299395,
+  "operating_loss_freq_3y": 0.145493,
+  "ratio_missing_rate": 0.052105
+}

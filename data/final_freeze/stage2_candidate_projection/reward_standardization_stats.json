@@ -1,0 +1,41 @@
+{
+  "lambda_phi": 0.0,
+  "reward_mean_train": 0.0001905285222588919,
+  "reward_std_train": 0.6464818149965522,
+  "stats_source": "phase3_iql_inner_train_only",
+  "inner_train_year_max": 2022,
+  "inner_train_rows": 2654,
+  "aux_reward_stats": {
+    "lambda_merton": 0.05,
+    "lambda_fcff": 0.45,
+    "lambda_liquidity": 0.45,
+    "merton_aux_enabled": true,
+    "fcff_aux_enabled": true,
+    "liquidity_aux_enabled": true,
+    "merton_aux_clip": [
+      -1.0,
+      1.0
+    ],
+    "fcff_aux_clip": [
+      -0.5,
+      0.5
+    ],
+    "liquidity_aux_clip": [
+      -0.5,
+      0.5
+    ],
+    "aux_reward_stats_source": "phase3_iql_inner_train_only",
+    "aux_reward_inner_train_rows": 2654,
+    "aux_reward_theory": "Merton/KMV structural credit risk with OCF-minus-Capex cash-flow capacity proxy and liquid-asset capacity proxy",
+    "merton_default_point_proxy": "sim__short_term_debt + 0.5 * sim__long_term_debt + sim__bonds",
+    "merton_asset_proxy": "sim__total_assets",
+    "fcff_capacity_proxy": "(sim__operating_cf - sim__capex) / sim__total_assets",
+    "liquidity_capacity_proxy": "(sim__cash + sim__short_term_investments) / sim__total_assets",
+    "reference_oracle_scores_used": false,
+    "reference_oracle_variables_used": false,
+    "r_code_fallback_allowed": false,
+    "merton_aux_scale_p95_abs": 0.17128604773572176,
+    "fcff_aux_scale_p95_abs": 0.24894541524107494,
+    "liquidity_aux_scale_p95_abs": 0.1778868211598696
+  }
+}

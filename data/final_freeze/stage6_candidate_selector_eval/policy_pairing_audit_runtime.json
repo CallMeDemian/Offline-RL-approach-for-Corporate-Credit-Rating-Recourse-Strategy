@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "n_row_ids": 575,
+  "n_noop_row_ids": 575,
+  "c_obs_present": false,
+  "c_obs_policy": "secondary_inner_dev_only"
+}

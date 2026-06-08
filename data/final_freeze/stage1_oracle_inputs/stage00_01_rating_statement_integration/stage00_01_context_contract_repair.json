@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rows": 4924,
+  "market_known": 4924,
+  "sector_known": 0,
+  "columns_added": [],
+  "columns_present": [
+    "거래소코드",
+    "year",
+    "시장",
+    "sector_7",
+    "산업코드",
+    "산업명",
+    "업종코드",
+    "stage00_01_context_source"
+  ],
+  "raw_context": {
+    "code_year_lookup_rows": 76954,
+    "code_static_lookup_rows": 4130
+  }
+}

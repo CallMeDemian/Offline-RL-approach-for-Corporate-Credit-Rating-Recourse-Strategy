@@ -1,0 +1,27 @@
+{
+  "train_mode": "final_refit",
+  "selected_seed": 2,
+  "best_critic_proxy_value": 0.5597976012311436,
+  "selected_actor_argmax_population_entropy": 1.5232469268241322,
+  "selection_report": {
+    "epoch": 76,
+    "q": 0.6325448448494899,
+    "entropy": 1.5232469268241322,
+    "selection_score": 0.5597976012311436,
+    "q_norm": 0.5597976012311436,
+    "entropy_norm": 0.6672017201929702,
+    "frontier_size": 9,
+    "q_min": 0.5732405633802067,
+    "q_max": 0.6791793550771653,
+    "entropy_min": 0.97510129366273,
+    "entropy_max": 1.796660376278503
+  },
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.002,
+  "lr_scheduler": "none",
+  "selection_checkpoint_rule": "q_pareto_knee over Phase gamma grid setting/seed",
+  "final_eval_checkpoint_rule": "Stage6 must load stage5_candidate_iql_final_refit_fulltrain.pt; candidate_iql_policy.pt is compatibility alias only",
+  "main_checkpoint": "stage5_candidate_iql_final_refit_fulltrain.pt",
+  "legacy_alias": "candidate_iql_policy.pt"
+}

@@ -1,0 +1,38 @@
+﻿ratio_id,ratio_name,category,reason,missing_rate,zero_denom_rate
+R057,단기차입금비중,안정성,zero_denom_high=27.1%,0.2709,0.2709
+R058,장기차입금비중,안정성,zero_denom_high=27.1%,0.2709,0.2709
+R061,순차입금/총차입금,안정성,zero_denom_high=27.1%,0.2709,0.2709
+R092,OCF/총차입금,부채상환능력,zero_denom_high=27.1%,0.2709,0.2709
+R093,OCF/순차입금,부채상환능력,zero_denom_high=10.6%,0.1064,0.1064
+R095,OCF/단기차입금,부채상환능력,high_missing=38.0%|zero_denom_high=27.4%,0.3804,0.274
+R099,EBITDA/총차입금,부채상환능력,zero_denom_high=27.1%,0.2709,0.2709
+R100,EBITDA/순차입금,부채상환능력,zero_denom_high=10.6%,0.1064,0.1064
+R110,현금성자산/총차입금,부채상환능력,zero_denom_high=27.1%,0.2709,0.2709
+R111,현금성자산/단기차입금,부채상환능력,high_missing=38.0%|zero_denom_high=27.4%,0.3804,0.274
+R128,현금성자산/단기금융부채,유동성,zero_denom_high=29.9%,0.2987,0.2987
+R130,즉시가용유동성/단기금융부채,유동성,zero_denom_high=29.9%,0.2987,0.2987
+R132,OCF/단기금융부채,유동성,zero_denom_high=29.9%,0.2987,0.2987
+R152,재고자산회전율,활동성,zero_denom_high=7.3%,0.1966,0.0731
+R155,순영업운전자본회전율,활동성,zero_denom_high=10.6%,0.1064,0.1064
+R171,영업이익증가율,성장성,high_missing=31.3%,0.313,0.0
+R172,정상영업이익증가율,성장성,high_missing=31.3%,0.313,0.0
+R173,EBIT증가율,성장성,high_missing=31.3%,0.313,0.0
+R175,세전이익증가율,성장성,high_missing=35.9%,0.3595,0.0
+R176,순이익증가율,성장성,high_missing=35.9%,0.3595,0.0
+R177,총포괄이익증가율,성장성,high_missing=37.0%,0.37,0.0022
+R178,OCF증가율,성장성,high_missing=36.6%,0.366,0.0
+R179,FCF증가율,성장성,high_missing=50.6%,0.5057,0.0
+R186,총차입금증가율,성장성,zero_denom_high=28.6%,0.2855,0.2855
+R187,순차입금증가율,성장성,high_missing=49.0%|zero_denom_high=12.3%,0.4896,0.1235
+R196,매출-자산 성장괴리,성장성,high_missing=40.7%,0.4074,0.0
+R197,영업이익-매출 성장괴리,성장성,high_missing=58.7%,0.5869,0.0
+R198,EBITDA-매출 성장괴리,성장성,high_missing=57.7%,0.5774,0.0
+R199,차입금-매출 성장괴리,성장성,high_missing=58.0%,0.5804,0.0
+R200,순차입금-EBITDA 성장괴리,성장성,high_missing=81.3%,0.8132,0.0
+R201,자기자본-총자산 성장괴리,성장성,high_missing=40.9%,0.4092,0.0
+R202,OCF-매출 성장괴리,성장성,high_missing=61.8%,0.618,0.0
+R203,FCF-매출 성장괴리,성장성,high_missing=70.2%,0.7021,0.0
+R238,재고자산회전율,활동성,zero_denom_high=8.3%,0.1897,0.0833
+R239,OCF성장률,성장성,high_missing=35.5%|low_variance=100.0%,0.3548,0.0
+R240,총자산성장률,성장성,low_variance=100.0%,0.1064,0.0
+R241,이익잉여금증가율,성장성,low_variance=100.0%,0.2673,0.0002

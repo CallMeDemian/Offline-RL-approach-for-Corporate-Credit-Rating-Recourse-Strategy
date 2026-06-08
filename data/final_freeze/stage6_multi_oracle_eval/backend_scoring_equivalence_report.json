@@ -1,0 +1,9 @@
+{
+  "status": "PASS_RUNTIME_SCORERS_USED",
+  "checked_backends": [
+    "alpha",
+    "beta",
+    "gamma"
+  ],
+  "note": "Stage6 uses backend scorer functions/artifacts directly; row-level Stage1 equivalence requires overlapping benchmark rows and is audited during full data run."
+}

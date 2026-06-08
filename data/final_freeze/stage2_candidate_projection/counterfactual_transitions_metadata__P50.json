@@ -1,0 +1,43 @@
+{
+  "stage": "final_stage2_counterfactual_transitions",
+  "created_utc": "2026-06-06T09:52:08.377352+00:00",
+  "status": "PASS",
+  "input_phase3": "data\\final_freeze\\stage2_candidate_projection\\phase3_iql_candidate__P50.parquet",
+  "input_phase3_sha256": "a7a1e7a5de307f56e9f32e5c255a6e606d09db8ef167b998c851d380395ba91a",
+  "output": "data\\final_freeze\\stage2_candidate_projection\\phase3_iql_counterfactual_candidate__P50.parquet",
+  "output_sha256": "9888656cea176bb263342d1a3641cfc0acfa1691bbb1ef677eeafef7804efe72",
+  "base_rows": 3159,
+  "candidate_count": 11,
+  "rows": 34749,
+  "observed_real_rows": 3159,
+  "simulated_rows": 31590,
+  "matched_cell_reward_source": "real_rating_plus_real_nextstate_phi_merton_optional_fcff_liquidity",
+  "nonobserved_cell_reward_source": "simulated_phi_merton_optional_fcff_liquidity_no_rating",
+  "magnitude_quantile": 50,
+  "reward_mode": "phi_merton_fcff_liquidity",
+  "done_mode": "terminal",
+  "fidelity_gate": "warn",
+  "fidelity_gate_metadata": {
+    "fidelity_gate": "warn",
+    "max_rel_err_assets": 0.05,
+    "gate_checked_components": [
+      "phi",
+      "merton",
+      "fcff"
+    ],
+    "strict_gate_enforced": false,
+    "numeric_loopA_summary_required_for_strict": true,
+    "gate_policy": "component_group_worst_dimension_median_abs_err_over_assets",
+    "status": "MISSING_LOOPA_SUMMARY",
+    "message": "Missing loopA_dimension_bias_summary.csv for counterfactual fidelity gate. Run credit_recourse.oracle.verification.verify_stage2_substrate_loopA_loopB2 with the same --sim-business-plan-mode before using strict counterfactual training."
+  },
+  "sim_business_plan_mode": "calibrated",
+  "preserve_current_non_current_residual": true,
+  "candidate_library_hash": "e3340d5b5a2e5f5ccdaa6d892659de198a50c8c458f7a83153de463164fa8590",
+  "final_action_contract_hash": "3f6958feeecd4101e19278540cab806be1d9a7f6355232334bb896914c43162b",
+  "reference_oracle_scores_used": false,
+  "frozen_cdf_source": "existing_stage2_projection_inner_train_cdf_in_memory_reconstruction_no_new_artifact",
+  "new_frozen_cdf_artifact_written": false,
+  "reward_stats_source": "stage2_candidate_projection/reward_standardization_stats.json (required; no identity fallback)",
+  "final_paper_run_allowed": true
+}

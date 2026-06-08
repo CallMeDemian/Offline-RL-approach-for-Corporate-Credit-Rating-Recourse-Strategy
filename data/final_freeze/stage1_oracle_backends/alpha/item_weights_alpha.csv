@@ -1,0 +1,12 @@
+variable_id,block,weight_prior,weight_optimized,delta,delta_pct
+R006,financial,0.186346,0.256565,0.070218,37.68
+R064,financial,0.186534,0.234449,0.047915,25.69
+R085,financial,0.187786,0.113237,-0.074549,-39.7
+R133,financial,0.116109,0.093102,-0.023008,-19.82
+R157,financial,0.195702,0.194177,-0.001525,-0.78
+R182,financial,0.127522,0.108471,-0.019051,-14.94
+industry_avg_rating_lag1_self_excl,nonfinancial,0.138702,0.224625,0.085924,61.95
+cap_change_count_3y,nonfinancial,0.239072,0.278382,0.039309,16.44
+log_assets,nonfinancial,0.239072,0.299395,0.060323,25.23
+operating_loss_freq_3y,nonfinancial,0.215165,0.145493,-0.069672,-32.38
+ratio_missing_rate,nonfinancial,0.167988,0.052105,-0.115884,-68.98

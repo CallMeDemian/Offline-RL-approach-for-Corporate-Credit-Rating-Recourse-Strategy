@@ -1,0 +1,319 @@
+contract_version: final_candidate_library_v32_controllability_ladder
+source_of_truth: data/final_freeze/configs/final_candidate_library.yaml
+action_columns:
+- action__ppe_pct
+- action__inv_turnover_chg
+- action__ar_turnover_chg
+- action__ap_turnover_chg
+- action__short_debt_pct
+- action__long_debt_pct
+- action__bond_pct
+- action__revenue_growth
+- action__cogs_ratio_chg
+- action__sga_ratio_chg
+main_train_labels:
+- A0_noop
+- DL1_deleverage_mild
+- DL2_deleverage_moderate
+- RF1_short_debt_refinance
+- CX1_capex_discipline
+- WC1_working_capital_tightening
+- WC2_supplier_financing
+- OE1_cost_efficiency_mild
+- OE2_cost_efficiency_moderate
+- MX1_cost_and_deleverage
+- MX2_liquidity_rescue
+final_rl_label: C3_candidate_iql
+fixed_candidates:
+  A0_noop:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: baseline
+    paper_role: main
+    intent: No managerial intervention. Counterfactual reference for every firm.
+  DL1_deleverage_mild:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: -0.6211619638917112
+    action__long_debt_pct: -0.25
+    action__bond_pct: -0.33333333333333337
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: A_financial_policy
+    paper_role: main
+    intent: Repay across the debt stack, weighted to short-term borrowings.
+  DL2_deleverage_moderate:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: -0.993859142226738
+    action__long_debt_pct: -0.5
+    action__bond_pct: -0.5
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: A_financial_policy
+    paper_role: main
+    intent: Aggressive one-year deleveraging across short/long/bond debt.
+  RF1_short_debt_refinance:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: -0.7453943566700534
+    action__long_debt_pct: 0.37499999999999994
+    action__bond_pct: 0.33333333333333337
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: A_financial_policy
+    paper_role: main
+    intent: 'Maturity restructuring: cut short-term debt, partly replace with long-term
+      debt and bonds. Net leverage roughly flat; reduces rollover and coverage risk.'
+  CX1_capex_discipline:
+    action__ppe_pct: -0.20426969519944266
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: A_investment_policy
+    paper_role: main
+    intent: Defer / trim tangible investment to conserve cash.
+  WC1_working_capital_tightening:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 3.0
+    action__ar_turnover_chg: 2.919766629163704
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: B_working_capital
+    paper_role: main
+    intent: Faster inventory turnover and receivables collection. Frees cash.
+  WC2_supplier_financing:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 3.0
+    action__ar_turnover_chg: 2.919766629163704
+    action__ap_turnover_chg: -3.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: B_working_capital
+    paper_role: main
+    intent: 'WC1 plus stretched supplier payment period (payables financing). NOTE:
+      simulator does not model supplier-relationship risk; treat the AP component
+      as a liquidity lever, not a free lunch.'
+  OE1_cost_efficiency_mild:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: -0.015
+    action__sga_ratio_chg: -0.01
+    tier: B_operating_efficiency
+    paper_role: main
+    intent: 'Mild bounded operating-efficiency plan: COGS -0.75pp, SG&A -0.50pp.'
+  OE2_cost_efficiency_moderate:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: -0.03
+    action__sga_ratio_chg: -0.02
+    tier: B_operating_efficiency
+    paper_role: main
+    intent: 'Moderate bounded operating-efficiency plan: COGS -1.5pp, SG&A -1.0pp.'
+  MX1_cost_and_deleverage:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: -0.6211619638917112
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: -0.015
+    action__sga_ratio_chg: -0.01
+    tier: AB_combo
+    paper_role: main
+    intent: 'Classic distressed-firm playbook: mild deleverage + mild cost cut.'
+  MX2_liquidity_rescue:
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 3.0
+    action__ar_turnover_chg: 2.919766629163704
+    action__ap_turnover_chg: -1.5
+    action__short_debt_pct: -0.6211619638917112
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+    tier: AB_combo
+    paper_role: main
+    intent: 'Liquidity-crisis playbook: cut short debt + free working capital.'
+scenario_candidates:
+  SC1_revenue_up_conservative:
+    tier: C_revenue_scenario
+    paper_role: scenario_robustness
+    action__revenue_growth: 0.025
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+  SC2_revenue_up_with_efficiency:
+    tier: C_revenue_scenario
+    paper_role: scenario_robustness
+    action__revenue_growth: 0.025
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__cogs_ratio_chg: -0.0075
+    action__sga_ratio_chg: -0.005
+  SC3_revenue_down_stress:
+    tier: C_revenue_scenario
+    paper_role: stress_robustness
+    action__revenue_growth: -0.025
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+diagnostic_candidates:
+  AB1_cogs_only:
+    tier: B_operating_efficiency
+    paper_role: axis_ablation
+    action__cogs_ratio_chg: -0.015
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__sga_ratio_chg: 0.0
+  AB2_sga_only:
+    tier: B_operating_efficiency
+    paper_role: axis_ablation
+    action__sga_ratio_chg: -0.01
+    action__ppe_pct: 0.0
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__short_debt_pct: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+  AB3_expansion_anchor:
+    tier: anti_recourse_anchor
+    paper_role: diagnostic_only
+    action__short_debt_pct: 0.2
+    action__ppe_pct: 0.1
+    action__inv_turnover_chg: 0.0
+    action__ar_turnover_chg: 0.0
+    action__ap_turnover_chg: 0.0
+    action__long_debt_pct: 0.0
+    action__bond_pct: 0.0
+    action__revenue_growth: 0.0
+    action__cogs_ratio_chg: 0.0
+    action__sga_ratio_chg: 0.0
+row_conditional_baselines:
+  C2_weakest_component_rule:
+    generator: sector_phi_weakest_component_top1_rule
+    projection_label: false
+    mapping:
+      derived__debt_to_assets: DL1_deleverage_mild
+      derived__financial_cost_to_revenue: DL1_deleverage_mild
+      derived__cogs_to_revenue: OE2_cost_efficiency_moderate
+      derived__sga_to_revenue: OE2_cost_efficiency_moderate
+      derived__operating_margin: OE2_cost_efficiency_moderate
+      derived__roa_proxy: OE2_cost_efficiency_moderate
+magnitude_audit_calibration:
+  source: stage2 input_splits observed pseudo-actions (favorable direction only)
+  rule:
+    default_policy: Use runnable defaults unless train-period favorable-direction
+      quantiles are stable and sufficiently supported.
+    mild_magnitude: If recalibrated, use P65 of favorable-direction observed one-year
+      changes.
+    moderate_magnitude: If recalibrated, use P85 of favorable-direction observed one-year
+      changes.
+  favorable_direction:
+    ppe_pct: negative
+    inv_turnover_chg: positive
+    ar_turnover_chg: positive
+    ap_turnover_chg: negative
+    short_debt_pct: negative
+    long_debt_pct: negative
+    bond_pct: negative
+    cogs_ratio_chg: negative
+    sga_ratio_chg: negative
+  clip_to_action_bounds: true
+  report: appendix table of P50/P65/P85 and chosen magnitude per dimension
+lean_9_fallback_drop:
+- RF1_short_debt_refinance
+- MX2_liquidity_rescue
+verifier_guards:
+- fixed_candidates keys == main_train_labels (exact set equality)
+- scenario_candidates and diagnostic_candidates keys MUST NOT appear in train_labels
+- 'working-capital candidates (WCx, MX2, X-style): inv_turnover_chg >= 0 and ar_turnover_chg
+  >= 0'
+- ap_turnover_chg < 0 allowed only for supplier-financing candidates (WC2, MX2)
+- no active training candidate may use a deprecated prefix or row-conditional baseline
+  prefix
+- AB3_expansion_anchor MUST NOT appear in train_labels or in C2 mapping
+- every projection label seen in Stage2 output must be in main_train_labels
+magnitude_recalibration:
+  mode: inner_train_quantile_recalibrated
+  selected_quantile: 75
+  method: tier_preserving_per_dimension_inner_train_abs_action_quantile
+  tier_geometry_preservation: scale empirical per-dimension quantile by base candidate
+    abs(value)/max_abs(value) before clipping
+  unique_action_vector_count: 11
+  fallback_to_base_dimensions: []
+  oot_used_for_calibration: false
+  oracle_outcome_used_for_calibration: false

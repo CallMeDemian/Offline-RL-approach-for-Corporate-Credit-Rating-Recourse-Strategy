@@ -1,0 +1,156 @@
+{
+  "schema_version": "stage6_firm_state_input_audit_v2_alias_aware",
+  "status": "PASS",
+  "rows": [
+    {
+      "field": "revenue",
+      "matched_columns": [
+        "raw__revenue",
+        "sim__revenue"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "cogs",
+      "matched_columns": [
+        "raw__cogs",
+        "sim__cogs"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "sga",
+      "matched_columns": [
+        "raw__sga",
+        "sim__sga"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "total_assets",
+      "matched_columns": [
+        "raw__total_assets",
+        "sim__total_assets"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "current_assets",
+      "matched_columns": [
+        "raw__current_assets",
+        "sim__current_assets"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "current_liabilities",
+      "matched_columns": [
+        "raw__current_liabilities",
+        "sim__current_liabilities"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "cash",
+      "matched_columns": [
+        "raw__cash",
+        "raw__avs__U01A111010000__토지_IFRS_천원",
+        "sim__cash"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "inventory",
+      "matched_columns": [
+        "raw__inventory",
+        "sim__inventory"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "receivables",
+      "matched_columns": [
+        "raw__accounts_receivable",
+        "raw__receivables",
+        "sim__receivables"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "payables",
+      "matched_columns": [
+        "raw__accounts_payable",
+        "raw__payables",
+        "sim__payables"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "ppe",
+      "matched_columns": [
+        "raw__ppe",
+        "sim__ppe"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "short_term_debt",
+      "matched_columns": [
+        "raw__short_debt",
+        "raw__short_term_debt",
+        "sim__short_term_debt"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "long_term_debt",
+      "matched_columns": [
+        "raw__long_debt",
+        "raw__long_term_debt",
+        "sim__long_term_debt"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "bonds",
+      "matched_columns": [
+        "raw__bond",
+        "raw__bonds",
+        "sim__bonds"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "total_liabilities",
+      "matched_columns": [
+        "raw__total_liabilities",
+        "sim__total_liabilities"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    },
+    {
+      "field": "total_equity",
+      "matched_columns": [
+        "raw__total_equity",
+        "sim__total_equity"
+      ],
+      "coverage": 1.0,
+      "status": "PASS"
+    }
+  ]
+}

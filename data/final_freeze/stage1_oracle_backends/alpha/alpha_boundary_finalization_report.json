@@ -1,0 +1,18 @@
+{
+  "exact_boost_enabled": true,
+  "sparse_tail_guard_enabled": false,
+  "sparse_tail_min_dev_n": 20,
+  "sparse_tail_floor_grade": "CCC",
+  "dev_metrics_before_exact_boost": {
+    "exact": 0.4670275590551181,
+    "within1": 0.9020669291338582,
+    "mae": 0.6707677165354331
+  },
+  "dev_metrics_after_exact_boost_candidate": {
+    "exact": 0.4704724409448819,
+    "within1": 0.9114173228346457,
+    "mae": 0.655511811023622
+  },
+  "exact_boost_accepted": true,
+  "sparse_tail_collapse_map": {}
+}

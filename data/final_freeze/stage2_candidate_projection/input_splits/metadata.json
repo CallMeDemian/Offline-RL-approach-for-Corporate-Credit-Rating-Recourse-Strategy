@@ -1,0 +1,1023 @@
+{
+  "created_utc": "2026-06-06T09:39:38.355147+00:00",
+  "final_stage": "Stage2",
+  "stage_role": "final Stage2 input split for candidate projection / BC / IQL",
+  "builder_module": "credit_recourse.rl.pipelines.final_stage2_input_splits.pipeline",
+  "split_builder_inside_stage2": false,
+  "next_state_contract": "all selected Stage3 ACD features must have next__<feature> or <feature>__next",
+  "schema_version": "FINAL_STAGE2_INPUT_SPLIT_V4_SEEDLESS_PHASE2_BC",
+  "stage": "final_stage2_input_splits",
+  "temporal_contract_path": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\configs\\temporal_split.yaml",
+  "temporal_contract_sha256": "6a0d597a59ef55fcea973a6da11af246b0447e864b32cbb9f1d85bdad752452f",
+  "eval_base_year": 2024,
+  "inner_train_year_max": 2022,
+  "inner_dev_year": 2023,
+  "train_transition_year_max": 2023,
+  "split_policy": "inner_train_le_inner_train_year_max_dev_eq_inner_dev_year_final_refit_le_train_transition_year_max",
+  "input": "data\\final_freeze\\stage1_oracle_inputs\\alpha_vanilla_input_candidate.parquet",
+  "transition_rows": 3159,
+  "broad_transition_rows": 40753,
+  "split": {
+    "schema_version": "stage2_split_broad_ssl_bc_rated_iql_v2_seedless_phase2_default",
+    "eval_start_year": 2024,
+    "bc_frac": 1.0,
+    "bc_split_policy": "all",
+    "stage2_split_seed": null,
+    "stage2_seedless_default": true,
+    "phase2_bc_split": {
+      "bc_split_policy": "all",
+      "bc_frac_requested": 1.0,
+      "stage2_split_seed_used": null,
+      "selection_unit": "firm_id",
+      "available_firms": 3239,
+      "selected_firms": 3239,
+      "selected_firm_fraction": 1.0,
+      "seed_free": true,
+      "deterministic_detail": "all_broad_train_firms",
+      "model_training_seed_coupling_forbidden": true
+    },
+    "universe_policy": {
+      "phase1_pretrain": "broad_raw_financial_transition_universe_no_external_rating_required",
+      "phase2_bc": "broad_raw_action_labeled_transition_universe_no_external_rating_required",
+      "phase3_iql": "rated_reward_bearing_train_transition_universe",
+      "phase_eval": "current_state_serving_universe_at_eval_base_year_no_tplus1_rating_required"
+    },
+    "phase_eval_source": "rated_current_state_panel",
+    "phase_eval_state_meta": {
+      "schema_version": "stage2_phase_eval_current_state_v1",
+      "eval_base_year": 2024,
+      "source_policy": "rated_current_firm_states_at_eval_base_year_no_tplus1_rating_required",
+      "stage1_complete_state_rows": 4315,
+      "stage1_complete_state_years": [
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "phase_eval_current_state_rows_before_raw_merge": 575,
+      "requires_tplus1_external_rating": false,
+      "status": "PASS",
+      "raw_panel": "data\\final_freeze\\stage2_candidate_projection\\action_sources\\stage2_raw_action_source_panel.parquet",
+      "raw_panel_years": [
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "raw_state_columns_merged": [
+        "has_next_raw_all_core",
+        "has_next_raw_any",
+        "has_next_raw_avs_any",
+        "raw__accounts_payable",
+        "raw__accounts_receivable",
+        "raw__avs__U01A111010000__토지_IFRS_천원",
+        "raw__avs__U01A111010100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111010200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111010300__건물_및_부속설비_IFRS_천원",
+        "raw__avs__U01A111010400__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111010500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111010600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111010700__구축물_IFRS_천원",
+        "raw__avs__U01A111010800__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111010900__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111011000__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111011100__기계장치_IFRS_천원",
+        "raw__avs__U01A111011200__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111011300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111011400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111011500__중장비_IFRS_천원",
+        "raw__avs__U01A111011600__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111011700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111011800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111011900__시설장치_IFRS_천원",
+        "raw__avs__U01A111012000__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111012100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111012200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111012300__제설비_IFRS_천원",
+        "raw__avs__U01A111012400__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111012500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111012600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111012700__미착자산_IFRS_천원",
+        "raw__avs__U01A111012800__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111012900__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111013000__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111013100__차량운반구_IFRS_천원",
+        "raw__avs__U01A111013200__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111013300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111013400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111013500__선박_IFRS_천원",
+        "raw__avs__U01A111013600__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111013700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111013800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111013900__항공기_IFRS_천원",
+        "raw__avs__U01A111014000__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111014100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111014200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111014300__공구_기구_비품_IFRS_천원",
+        "raw__avs__U01A111014400__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111014500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111014600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111014700__리스자산_IFRS_천원",
+        "raw__avs__U01A111014800__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111014900__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111015000__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111015100__리스개량자산_IFRS_천원",
+        "raw__avs__U01A111015200__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111015300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111015400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111015500__건설중인자산_IFRS_천원",
+        "raw__avs__U01A111015600__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111015700__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111015800__유형탐사평가자산_IFRS_천원",
+        "raw__avs__U01A111015900__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111016000__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111016100__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111016200__임대주택용지_IFRS_천원",
+        "raw__avs__U01A111016300__미완성임대주택_IFRS_천원",
+        "raw__avs__U01A111016400__임대주택토지_IFRS_천원",
+        "raw__avs__U01A111016500__완성임대주택_IFRS_천원",
+        "raw__avs__U01A111016600__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111016700__임대주택_IFRS_천원",
+        "raw__avs__U01A111016800__임대자산조정_IFRS_천원",
+        "raw__avs__U01A111016900__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111017000__기타임대주택자산_IFRS_천원",
+        "raw__avs__U01A111017200__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111017300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111017400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111017500__투자부동산_IFRS_천원",
+        "raw__avs__U01A111017600__토지_IFRS_천원",
+        "raw__avs__U01A111017700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111017800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111017900__건물_IFRS_천원",
+        "raw__avs__U01A111018000__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111018100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111018200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111018300__기타투자부동산_IFRS_천원",
+        "raw__avs__U01A111018400__감가상각누계액_IFRS_천원",
+        "raw__avs__U01A111018500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111018600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111018700__영업권_IFRS_천원",
+        "raw__avs__U01A111018800__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111018900__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111019000__무형자산_IFRS_천원",
+        "raw__avs__U01A111019100__개발비_IFRS_천원",
+        "raw__avs__U01A111019200__상각누계액_IFRS_천원",
+        "raw__avs__U01A111019300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111019400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111019500__특허권_IFRS_천원",
+        "raw__avs__U01A111019600__상각누계액_IFRS_천원",
+        "raw__avs__U01A111019700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111019800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111019900__기타산업재산권_IFRS_천원",
+        "raw__avs__U01A111020000__상각누계액_IFRS_천원",
+        "raw__avs__U01A111020100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111020200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111020300__컴퓨터소프트웨어_IFRS_천원",
+        "raw__avs__U01A111020400__상각누계액_IFRS_천원",
+        "raw__avs__U01A111020500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111020600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111020700__브랜드_IFRS_천원",
+        "raw__avs__U01A111020800__상각누계액_IFRS_천원",
+        "raw__avs__U01A111020900__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111021000__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111021100__라이선스와_프랜차이즈_IFRS_천원",
+        "raw__avs__U01A111021200__상각누계액_IFRS_천원",
+        "raw__avs__U01A111021300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111021400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111021500__저작권_IFRS_천원",
+        "raw__avs__U01A111021600__상각누계액_IFRS_천원",
+        "raw__avs__U01A111021700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111021800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111021900__회원권_IFRS_천원",
+        "raw__avs__U01A111022000__상각누계액_IFRS_천원",
+        "raw__avs__U01A111022100__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111022200__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111022300__제이용권_사용권_IFRS_천원",
+        "raw__avs__U01A111022400__상각누계액_IFRS_천원",
+        "raw__avs__U01A111022500__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111022600__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111022700__개발중인_무형자산_IFRS_천원",
+        "raw__avs__U01A111022800__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111022900__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111023000__무형탐사평가자산_IFRS_천원",
+        "raw__avs__U01A111023100__상각누계액_IFRS_천원",
+        "raw__avs__U01A111023200__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111023300__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111023400__제호와_출판표제_IFRS_천원",
+        "raw__avs__U01A111023500__상각누계액_IFRS_천원",
+        "raw__avs__U01A111023600__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111023700__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111023800__조리법_공식_모형_설계_및_시제품_IFRS_천원",
+        "raw__avs__U01A111023900__상각누계액_IFRS_천원",
+        "raw__avs__U01A111024000__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111024100__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111024200__기타무형자산_IFRS_천원",
+        "raw__avs__U01A111024300__상각누계액_IFRS_천원",
+        "raw__avs__U01A111024400__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111024500__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111024600__비유동생물자산_IFRS_천원",
+        "raw__avs__U01A111024700__식물_조림_IFRS_천원",
+        "raw__avs__U01A111024800__상각누계액_IFRS_천원",
+        "raw__avs__U01A111024900__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111025000__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111025100__축산물_IFRS_천원",
+        "raw__avs__U01A111025200__상각누계액_IFRS_천원",
+        "raw__avs__U01A111025300__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111025400__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111025500__수산물_IFRS_천원",
+        "raw__avs__U01A111025600__상각누계액_IFRS_천원",
+        "raw__avs__U01A111025700__손상차손누계액_IFRS_천원",
+        "raw__avs__U01A111025800__정부보조금_등_IFRS_천원",
+        "raw__avs__U01A111025900__기타생물자산_IFRS_천원",
+        "raw__avs__U01A111026000__상각누계액_IFRS_천원",
+        "raw__bond",
+        "raw__bonds",
+        "raw__cash",
+        "raw__cogs",
+        "raw__current_assets",
+        "raw__current_liabilities",
+        "raw__financial_cost",
+        "raw__inventory",
+        "raw__long_debt",
+        "raw__long_term_debt",
+        "raw__net_income",
+        "raw__operating_income",
+        "raw__payables",
+        "raw__ppe",
+        "raw__receivables",
+        "raw__revenue",
+        "raw__sga",
+        "raw__short_debt",
+        "raw__short_term_debt",
+        "raw__total_assets",
+        "raw__total_equity",
+        "raw__total_liabilities"
+      ],
+      "raw_state_column_count": 187,
+      "raw_state_match_rows": 575,
+      "raw_state_match_rate": 1.0,
+      "phase_eval_current_state_rows_after_raw_merge": 575
+    },
+    "phase1_rows": 38190,
+    "phase2_rows": 38190,
+    "phase3_rows": 3159,
+    "phase_eval_rows": 575,
+    "phase1_firms": 3239,
+    "phase2_firms": 3239,
+    "phase3_firms": 723,
+    "phase_eval_firms": 575,
+    "broad_to_rated_row_ratio_phase1_vs_phase3": 12.089268755935423,
+    "broad_to_rated_row_ratio_phase2_vs_phase3": 12.089268755935423,
+    "deprecated_seed_arg_provided": true,
+    "deprecated_seed_arg_ignored": true,
+    "phase_eval_avs256_enrichment": {
+      "schema_version": "stage2_avs256_enrichment_v2",
+      "n_continuous_features": 129,
+      "n_categorical_fields": 2,
+      "n_acd_targets": 118,
+      "transition_proximity_status": "computed",
+      "transition_proximity_metadata": {
+        "transition_proximity_status": "computed",
+        "method": "deterministic_1d_transition_signal_prototypes",
+        "positive_origin": 0.0,
+        "anti_origin": 0.0,
+        "scale": 1.0,
+        "n_rows": 575,
+        "n_positive_signal": 0,
+        "n_anti_signal": 0
+      },
+      "missing_contract_columns_created_with_imputation": [],
+      "categorical_columns": [
+        "market",
+        "industry_class"
+      ],
+      "phi_critical_account_diagnostics": {
+        "sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9947826086956522,
+          "all_missing_before_impute": false
+        },
+        "sim__operating_cf": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9947826086956522,
+          "all_missing_before_impute": false
+        },
+        "derived__ocf_to_total_debt": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "next__sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        },
+        "next__sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        },
+        "next__derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        },
+        "next__derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        }
+      },
+      "phi_critical_alias_policy": "account_registry_resolver_for_net_income_financial_cost_plus_existing_cf_join",
+      "phi_critical_all_nan_guard": "hard_fail_before_imputation_current_net_income_financial_cost_plus_optional_next_guard",
+      "require_next_phi_critical": false
+    },
+    "phase_eval_stage6_serving_features_materialized": true,
+    "phase_eval_state_only": true,
+    "dropped_forbidden_columns": [
+      "next__balance_sheet__[U01A110000000]   비유동자산(*)(IFRS)(천원)",
+      "next__balance_sheet__[U01A111019000]      무형자산(*)(IFRS)(천원)",
+      "next__balance_sheet__[U01A611000000]   자본금(*)(IFRS)(천원)",
+      "next__balance_sheet__[U01A810000000]   비유동부채 (*)(IFRS)(천원)",
+      "next__balance_sheet__[U01A811027400]      유동성장기부채(*)(IFRS)(천원)",
+      "next__cash_flow__[U01D200000000]투자활동으로 인한 현금흐름(*)(IFRS)(천원)",
+      "next__cash_flow__[U01D300000000]재무활동으로 인한 현금흐름(*)(IFRS)(천원)",
+      "next__delta_1y__derived__bond_to_total_debt",
+      "next__delta_1y__derived__cash_to_short_debt",
+      "next__delta_1y__derived__cogs_to_revenue",
+      "next__delta_1y__derived__current_ratio",
+      "next__delta_1y__derived__debt_to_assets",
+      "next__delta_1y__derived__financial_cost_to_revenue",
+      "next__delta_1y__derived__inventory_turnover_proxy",
+      "next__delta_1y__derived__long_debt_to_total_debt",
+      "next__delta_1y__derived__ocf_to_total_debt",
+      "next__delta_1y__derived__operating_margin",
+      "next__delta_1y__derived__payables_turnover_proxy",
+      "next__delta_1y__derived__receivables_turnover_proxy",
+      "next__delta_1y__derived__roa_proxy",
+      "next__delta_1y__derived__sga_to_revenue",
+      "next__delta_1y__derived__short_debt_to_total_debt",
+      "next__derived__bond_to_total_debt",
+      "next__derived__borrowings_to_assets",
+      "next__derived__capex_to_revenue",
+      "next__derived__cash_ratio",
+      "next__derived__cash_to_current_liabilities",
+      "next__derived__cash_to_short_debt",
+      "next__derived__cogs_to_revenue",
+      "next__derived__current_liabilities_to_assets",
+      "next__derived__current_ratio",
+      "next__derived__debt_to_assets",
+      "next__derived__equity_to_assets",
+      "next__derived__financial_cost_to_debt",
+      "next__derived__financial_cost_to_revenue",
+      "next__derived__gross_margin",
+      "next__derived__interest_coverage_proxy",
+      "next__derived__inventory_to_revenue",
+      "next__derived__inventory_turnover_proxy",
+      "next__derived__long_debt_to_total_debt",
+      "next__derived__net_margin",
+      "next__derived__ocf_to_total_debt",
+      "next__derived__operating_margin",
+      "next__derived__payables_to_revenue",
+      "next__derived__payables_turnover_proxy",
+      "next__derived__ppe_to_assets",
+      "next__derived__receivables_to_revenue",
+      "next__derived__receivables_turnover_proxy",
+      "next__derived__roa_proxy",
+      "next__derived__sga_to_revenue",
+      "next__derived__short_debt_to_total_debt",
+      "next__equity_change__[U01C100000000]기말자본금(*)(IFRS)(천원)",
+      "next__equity_change__[U01C200000000]기말자본잉여금(*)(IFRS)(천원)",
+      "next__equity_change__[U01C300000000]기말기타자본(*)(IFRS)(천원)",
+      "next__equity_change__[U01C400000000]기말기타포괄손익누계액(*)(IFRS)(천원)",
+      "next__equity_change__[U01C500000000]기말이익잉여금(결손금)(*)(IFRS)(천원)",
+      "next__income_statement__[U01B201014400]매출총이익(손실)(IFRS)(천원)",
+      "next__income_statement__[U01B350014100]   감가상각비(IFRS)(천원)",
+      "next__income_statement__[U01B350014300]   기타무형자산상각비(IFRS)(천원)",
+      "next__income_statement__[U01B500010000]   이자수익(IFRS)(천원)",
+      "next__income_statement__[U01B500010100]   배당금수익(IFRS)(천원)",
+      "next__income_statement__[U01B700000000]법인세비용차감전순이익(손실)(IFRS)(천원)",
+      "next__income_statement__[U01B750000000]법인세비용(IFRS)(천원)",
+      "next__income_statement__[U01B900000000]총포괄손익(IFRS)(천원)",
+      "next__peer_pct__derived__bond_to_total_debt",
+      "next__peer_pct__derived__cash_to_short_debt",
+      "next__peer_pct__derived__cogs_to_revenue",
+      "next__peer_pct__derived__current_ratio",
+      "next__peer_pct__derived__debt_to_assets",
+      "next__peer_pct__derived__financial_cost_to_revenue",
+      "next__peer_pct__derived__inventory_turnover_proxy",
+      "next__peer_pct__derived__long_debt_to_total_debt",
+      "next__peer_pct__derived__ocf_to_total_debt",
+      "next__peer_pct__derived__operating_margin",
+      "next__peer_pct__derived__payables_turnover_proxy",
+      "next__peer_pct__derived__receivables_turnover_proxy",
+      "next__peer_pct__derived__roa_proxy",
+      "next__peer_pct__derived__sga_to_revenue",
+      "next__peer_pct__derived__short_debt_to_total_debt",
+      "next__sim__bonds",
+      "next__sim__capex",
+      "next__sim__cash",
+      "next__sim__cash_dividends",
+      "next__sim__cogs",
+      "next__sim__current_assets",
+      "next__sim__current_liabilities",
+      "next__sim__financial_cost",
+      "next__sim__inventory",
+      "next__sim__long_term_debt",
+      "next__sim__net_income",
+      "next__sim__operating_cf",
+      "next__sim__operating_income",
+      "next__sim__payables",
+      "next__sim__ppe",
+      "next__sim__receivables",
+      "next__sim__retained_earnings",
+      "next__sim__revenue",
+      "next__sim__sga",
+      "next__sim__short_term_debt",
+      "next__sim__short_term_investments",
+      "next__sim__total_assets",
+      "next__sim__total_equity",
+      "next__sim__total_liabilities",
+      "next__trend_1y__derived__bond_to_total_debt",
+      "next__trend_1y__derived__cash_to_short_debt",
+      "next__trend_1y__derived__cogs_to_revenue",
+      "next__trend_1y__derived__current_ratio",
+      "next__trend_1y__derived__debt_to_assets",
+      "next__trend_1y__derived__financial_cost_to_revenue",
+      "next__trend_1y__derived__inventory_turnover_proxy",
+      "next__trend_1y__derived__long_debt_to_total_debt",
+      "next__trend_1y__derived__ocf_to_total_debt",
+      "next__trend_1y__derived__operating_margin",
+      "next__trend_1y__derived__payables_turnover_proxy",
+      "next__trend_1y__derived__receivables_turnover_proxy",
+      "next__trend_1y__derived__roa_proxy",
+      "next__trend_1y__derived__sga_to_revenue",
+      "next__trend_1y__derived__short_debt_to_total_debt"
+    ],
+    "forbidden_column_count": 118
+  },
+  "bc_split_policy": "all",
+  "stage2_seedless_default": true,
+  "stage2_split_seed": null,
+  "action_dims": [
+    "ppe_pct",
+    "inv_turnover_chg",
+    "ar_turnover_chg",
+    "ap_turnover_chg",
+    "short_debt_pct",
+    "long_debt_pct",
+    "bond_pct",
+    "revenue_growth",
+    "cogs_ratio_chg",
+    "sga_ratio_chg"
+  ],
+  "action_columns": [
+    "action__ppe_pct",
+    "action__inv_turnover_chg",
+    "action__ar_turnover_chg",
+    "action__ap_turnover_chg",
+    "action__short_debt_pct",
+    "action__long_debt_pct",
+    "action__bond_pct",
+    "action__revenue_growth",
+    "action__cogs_ratio_chg",
+    "action__sga_ratio_chg"
+  ],
+  "action_bounds": {
+    "ppe_pct": [
+      -0.5,
+      0.5
+    ],
+    "inv_turnover_chg": [
+      -3.0,
+      3.0
+    ],
+    "ar_turnover_chg": [
+      -3.0,
+      3.0
+    ],
+    "ap_turnover_chg": [
+      -3.0,
+      3.0
+    ],
+    "short_debt_pct": [
+      -1.0,
+      1.0
+    ],
+    "long_debt_pct": [
+      -0.5,
+      0.5
+    ],
+    "bond_pct": [
+      -0.5,
+      0.5
+    ],
+    "revenue_growth": [
+      -0.15,
+      0.15
+    ],
+    "cogs_ratio_chg": [
+      -0.03,
+      0.03
+    ],
+    "sga_ratio_chg": [
+      -0.02,
+      0.02
+    ]
+  },
+  "final_action_contract_hash": "3f6958feeecd4101e19278540cab806be1d9a7f6355232334bb896914c43162b",
+  "final_action_contract_path": "data/final_freeze/configs/final_action_contract.yaml",
+  "magnitude_calibration_metadata_json": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\magnitude_calibration_metadata.json",
+  "action_source_coverage": [
+    {
+      "action_dim": "ppe_pct",
+      "source_column": "action__ppe_pct",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 37971,
+      "observed_rate": 0.931735086987461,
+      "nonzero_rate": 0.9313424778543911
+    },
+    {
+      "action_dim": "inv_turnover_chg",
+      "source_column": "action__inv_turnover_chg",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 32427,
+      "observed_rate": 0.7956960223787206,
+      "nonzero_rate": 0.7811204083134984
+    },
+    {
+      "action_dim": "ar_turnover_chg",
+      "source_column": "action__ar_turnover_chg",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 36033,
+      "observed_rate": 0.8841803057443623,
+      "nonzero_rate": 0.8841803057443623
+    },
+    {
+      "action_dim": "ap_turnover_chg",
+      "source_column": "action__ap_turnover_chg",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 33409,
+      "observed_rate": 0.8197924079208893,
+      "nonzero_rate": 0.8028120629156136
+    },
+    {
+      "action_dim": "short_debt_pct",
+      "source_column": "action__short_debt_pct",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 27887,
+      "observed_rate": 0.68429318087012,
+      "nonzero_rate": 0.641621475719579
+    },
+    {
+      "action_dim": "long_debt_pct",
+      "source_column": "action__long_debt_pct",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 21828,
+      "observed_rate": 0.5356170097906903,
+      "nonzero_rate": 0.5163055480578117
+    },
+    {
+      "action_dim": "bond_pct",
+      "source_column": "action__bond_pct",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 11041,
+      "observed_rate": 0.27092483988908794,
+      "nonzero_rate": 0.2529629720511373
+    },
+    {
+      "action_dim": "revenue_growth",
+      "source_column": "action__revenue_growth",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 37140,
+      "observed_rate": 0.9113439501386401,
+      "nonzero_rate": 0.9112212597845557
+    },
+    {
+      "action_dim": "cogs_ratio_chg",
+      "source_column": "action__cogs_ratio_chg",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 37054,
+      "observed_rate": 0.9092336760483891,
+      "nonzero_rate": 0.8487473314847986
+    },
+    {
+      "action_dim": "sga_ratio_chg",
+      "source_column": "action__sga_ratio_chg",
+      "source_method": "direct_data_raw_all_xlsx_stage2a_broad_panel",
+      "observed_count": 37054,
+      "observed_rate": 0.9092336760483891,
+      "nonzero_rate": 0.9092336760483891
+    }
+  ],
+  "sector_phi_components_materialized": [
+    "derived__roa_proxy",
+    "derived__operating_margin",
+    "derived__cogs_to_revenue",
+    "derived__sga_to_revenue",
+    "derived__financial_cost_to_revenue",
+    "derived__debt_to_assets"
+  ],
+  "sector_phi_contract_enforced_in_builder": true,
+  "sector_phi_component_mapping": [
+    {
+      "component": "derived__roa_proxy",
+      "current_source_column": "R006",
+      "next_source_column": "next__R006",
+      "current_non_null": 3159,
+      "next_non_null": 3159
+    },
+    {
+      "component": "derived__operating_margin",
+      "current_source_column": "R136",
+      "next_source_column": "next__R136",
+      "current_non_null": 3159,
+      "next_non_null": 3159
+    },
+    {
+      "component": "derived__cogs_to_revenue",
+      "current_source_column": "R157",
+      "next_source_column": "next__R157",
+      "current_non_null": 3159,
+      "next_non_null": 3159
+    },
+    {
+      "component": "derived__sga_to_revenue",
+      "current_source_column": "R185",
+      "next_source_column": "next__R185",
+      "current_non_null": 2658,
+      "next_non_null": 2634
+    },
+    {
+      "component": "derived__financial_cost_to_revenue",
+      "current_source_column": "R085",
+      "next_source_column": "next__R085",
+      "current_non_null": 3159,
+      "next_non_null": 3159
+    },
+    {
+      "component": "derived__debt_to_assets",
+      "current_source_column": "R064",
+      "next_source_column": "next__R064",
+      "current_non_null": 3159,
+      "next_non_null": 3159
+    }
+  ],
+  "feature_manifest": "data\\final_freeze\\stage2_candidate_projection\\feature_manifest.json",
+  "cash_flow_substrate_join": {
+    "cash_flow_substrate_joined": true,
+    "cash_flow_source_path": "data\\final_freeze\\stage1_oracle_inputs\\stage00_01_rating_statement_integration\\cleaned_statement_panels\\현금흐름표_clean.parquet",
+    "cash_flow_source_sha256": "ad1976739b89efc2dcd4af9bf13b345612a918dc8bd08c83ae998be3d79b7a8b",
+    "cash_flow_encoder_mode": "reward_only",
+    "operating_cf_nonzero_rate_after_join": 0.8935824532900081,
+    "capex_joined": true,
+    "default_off_regression_policy": "no --join-cash-flow-substrate leaves prior substrate untouched",
+    "reward_only_encoder_guard": {
+      "enabled": true,
+      "phase1": {
+        "enabled": true,
+        "scrubbed_columns": [
+          "sim__operating_cf",
+          "derived__ocf_to_total_debt",
+          "delta_1y__derived__ocf_to_total_debt",
+          "trend_1y__derived__ocf_to_total_debt",
+          "peer_pct__derived__ocf_to_total_debt",
+          "next__sim__operating_cf",
+          "next__derived__ocf_to_total_debt",
+          "next__delta_1y__derived__ocf_to_total_debt",
+          "next__trend_1y__derived__ocf_to_total_debt",
+          "next__peer_pct__derived__ocf_to_total_debt"
+        ],
+        "policy": "reward_only_cf_aliases_retained_for_reward_and_ocf_encoder_columns_zeroed_to_preserve_legacy_encoder_distribution",
+        "reward_alias_columns": [
+          "reward_only__sim__operating_cf",
+          "reward_only__sim__capex",
+          "next__reward_only__sim__operating_cf",
+          "next__reward_only__sim__capex"
+        ]
+      },
+      "phase2": {
+        "enabled": true,
+        "scrubbed_columns": [
+          "sim__operating_cf",
+          "derived__ocf_to_total_debt",
+          "delta_1y__derived__ocf_to_total_debt",
+          "trend_1y__derived__ocf_to_total_debt",
+          "peer_pct__derived__ocf_to_total_debt",
+          "next__sim__operating_cf",
+          "next__derived__ocf_to_total_debt",
+          "next__delta_1y__derived__ocf_to_total_debt",
+          "next__trend_1y__derived__ocf_to_total_debt",
+          "next__peer_pct__derived__ocf_to_total_debt"
+        ],
+        "policy": "reward_only_cf_aliases_retained_for_reward_and_ocf_encoder_columns_zeroed_to_preserve_legacy_encoder_distribution",
+        "reward_alias_columns": [
+          "reward_only__sim__operating_cf",
+          "reward_only__sim__capex",
+          "next__reward_only__sim__operating_cf",
+          "next__reward_only__sim__capex"
+        ]
+      },
+      "phase3": {
+        "enabled": true,
+        "scrubbed_columns": [
+          "cash_flow__[U01D100000000]영업활동현금흐름(IFRS)(천원)",
+          "cash_flow__[U01D100000000]영업활동현금흐름(IFRS)(천원)__next",
+          "next__cash_flow__[U01D100000000]영업활동현금흐름(IFRS)(천원)",
+          "sim__operating_cf",
+          "derived__ocf_to_total_debt",
+          "delta_1y__derived__ocf_to_total_debt",
+          "trend_1y__derived__ocf_to_total_debt",
+          "peer_pct__derived__ocf_to_total_debt",
+          "next__sim__operating_cf",
+          "next__derived__ocf_to_total_debt",
+          "next__delta_1y__derived__ocf_to_total_debt",
+          "next__trend_1y__derived__ocf_to_total_debt",
+          "next__peer_pct__derived__ocf_to_total_debt"
+        ],
+        "policy": "reward_only_cf_aliases_retained_for_reward_and_ocf_encoder_columns_zeroed_to_preserve_legacy_encoder_distribution",
+        "reward_alias_columns": [
+          "reward_only__sim__operating_cf",
+          "reward_only__sim__capex",
+          "reward_only__sim__operating_cf__next",
+          "reward_only__sim__capex__next",
+          "next__reward_only__sim__operating_cf",
+          "next__reward_only__sim__capex"
+        ]
+      },
+      "phase_eval": {
+        "enabled": true,
+        "scrubbed_columns": [
+          "cash_flow__[U01D100000000]영업활동현금흐름(IFRS)(천원)",
+          "sim__operating_cf",
+          "derived__ocf_to_total_debt",
+          "delta_1y__derived__ocf_to_total_debt",
+          "trend_1y__derived__ocf_to_total_debt",
+          "peer_pct__derived__ocf_to_total_debt"
+        ],
+        "policy": "reward_only_cf_aliases_retained_for_reward_and_ocf_encoder_columns_zeroed_to_preserve_legacy_encoder_distribution",
+        "reward_alias_columns": [
+          "reward_only__sim__operating_cf",
+          "reward_only__sim__capex"
+        ]
+      }
+    }
+  },
+  "avs256_enrichment": {
+    "broad": {
+      "schema_version": "stage2_avs256_enrichment_v2",
+      "n_continuous_features": 129,
+      "n_categorical_fields": 2,
+      "n_acd_targets": 118,
+      "transition_proximity_status": "computed",
+      "transition_proximity_metadata": {
+        "transition_proximity_status": "computed",
+        "method": "deterministic_1d_transition_signal_prototypes",
+        "positive_origin": 0.06901752717765774,
+        "anti_origin": -0.07218799478897994,
+        "scale": 47.22867657077642,
+        "n_rows": 40753,
+        "n_positive_signal": 17327,
+        "n_anti_signal": 17467
+      },
+      "missing_contract_columns_created_with_imputation": [],
+      "categorical_columns": [
+        "market",
+        "industry_class"
+      ],
+      "phi_critical_account_diagnostics": {
+        "sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9999018477167325,
+          "all_missing_before_impute": false
+        },
+        "sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9587269648860207,
+          "all_missing_before_impute": false
+        },
+        "sim__operating_cf": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        },
+        "derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9999263857875493,
+          "all_missing_before_impute": false
+        },
+        "derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.979044487522391,
+          "all_missing_before_impute": false
+        },
+        "derived__ocf_to_total_debt": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.0,
+          "all_missing_before_impute": true
+        },
+        "next__sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9999754619291831,
+          "all_missing_before_impute": false
+        },
+        "next__sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9576718278408951,
+          "all_missing_before_impute": false
+        },
+        "next__derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "next__derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9789708733099404,
+          "all_missing_before_impute": false
+        }
+      },
+      "phi_critical_alias_policy": "account_registry_resolver_for_net_income_financial_cost_plus_existing_cf_join",
+      "phi_critical_all_nan_guard": "hard_fail_before_imputation_current_net_income_financial_cost_plus_optional_next_guard",
+      "require_next_phi_critical": true
+    },
+    "rated": {
+      "schema_version": "stage2_avs256_enrichment_v2",
+      "n_continuous_features": 129,
+      "n_categorical_fields": 2,
+      "n_acd_targets": 118,
+      "transition_proximity_status": "computed",
+      "transition_proximity_metadata": {
+        "transition_proximity_status": "computed",
+        "method": "deterministic_1d_transition_signal_prototypes",
+        "positive_origin": 0.062238431218609114,
+        "anti_origin": -0.06735604099423567,
+        "scale": 0.7613048607449256,
+        "n_rows": 3159,
+        "n_positive_signal": 1172,
+        "n_anti_signal": 1264
+      },
+      "missing_contract_columns_created_with_imputation": [],
+      "categorical_columns": [
+        "market",
+        "industry_class"
+      ],
+      "phi_critical_account_diagnostics": {
+        "sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9787907565685343,
+          "all_missing_before_impute": false
+        },
+        "sim__operating_cf": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9787907565685343,
+          "all_missing_before_impute": false
+        },
+        "derived__ocf_to_total_debt": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "next__sim__net_income": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "next__sim__financial_cost": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9810066476733144,
+          "all_missing_before_impute": false
+        },
+        "next__derived__roa_proxy": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 1.0,
+          "all_missing_before_impute": false
+        },
+        "next__derived__financial_cost_to_revenue": {
+          "non_null_rate": 1.0,
+          "nonzero_rate": 0.9810066476733144,
+          "all_missing_before_impute": false
+        }
+      },
+      "phi_critical_alias_policy": "account_registry_resolver_for_net_income_financial_cost_plus_existing_cf_join",
+      "phi_critical_all_nan_guard": "hard_fail_before_imputation_current_net_income_financial_cost_plus_optional_next_guard",
+      "require_next_phi_critical": true
+    }
+  },
+  "action_magnitude_audit_required": true,
+  "action_magnitude_quantiles_json": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\action_magnitude_quantiles.json",
+  "candidate_magnitude_audit_csv": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\candidate_magnitude_audit.csv",
+  "candidate_library_sha256": "e3340d5b5a2e5f5ccdaa6d892659de198a50c8c458f7a83153de463164fa8590",
+  "automatic_recalibration_performed": false,
+  "recalibration_policy": "audit_only_with_explicit_acceptance_reason",
+  "main_candidate_rows_requiring_review": 12,
+  "unaccepted_recalibration_required_rows": 0,
+  "final_result_allowed": true,
+  "warnings": [],
+  "outputs": {
+    "phase1_pretrain": {
+      "path": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\phase1_pretrain.parquet",
+      "sha256": "370ee1bae63972b4fb3489b1fd2ba21dad07da96c1cfc99e4eb02aabe6dfe784",
+      "bytes": 79474007
+    },
+    "phase2_bc": {
+      "path": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\phase2_bc.parquet",
+      "sha256": "370ee1bae63972b4fb3489b1fd2ba21dad07da96c1cfc99e4eb02aabe6dfe784",
+      "bytes": 79474007
+    },
+    "phase3_iql": {
+      "path": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\phase3_iql.parquet",
+      "sha256": "52fbfc4b0896c9a0ecfdd174cfd0437f3ed41646da55956473340e76a5338105",
+      "bytes": 23150800
+    },
+    "phase_eval": {
+      "path": "data\\final_freeze\\stage2_candidate_projection\\input_splits\\phase_eval.parquet",
+      "sha256": "63eb71b3a2517fd8db053eb7576d05aa86be2a18020be83003d4f5612673b9a9",
+      "bytes": 1822577
+    }
+  }
+}

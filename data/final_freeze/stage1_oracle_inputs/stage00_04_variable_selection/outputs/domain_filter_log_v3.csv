@@ -1,0 +1,21 @@
+variable_id,category,source,action,matched_term,reason
+R140,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R119,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R122,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R123,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R125,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R137,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R138,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R139,유동성,financial,blocked_by_exclusion,매출액,liquidity ratio contains sales/revenue/cost term and overlaps profitability/activity concepts
+R136,유동성,financial,blocked_by_gameable_liquidity_r_code,R136,explicit liquidity exclusion: R122/R136 must not be eligible for oracle liquidity selection; R133 remains eligible
+R122,유동성,financial,blocked_by_gameable_liquidity_r_code,R122,explicit liquidity exclusion: R122/R136 must not be eligible for oracle liquidity selection; R133 remains eligible
+kospi_dummy,산업위험,nonfinancial,blocked_by_allowlist,,industry-risk candidate not in Stage 1C v3.2 lag1 self-excluded allowlist
+sector_7,산업위험,nonfinancial,blocked_by_allowlist,,industry-risk candidate not in Stage 1C v3.2 lag1 self-excluded allowlist
+sector_year_rating_count,산업위험,nonfinancial,blocked_by_allowlist,,industry-risk candidate not in Stage 1C v3.2 lag1 self-excluded allowlist
+sector_year_rating_count_lag1,산업위험,nonfinancial,blocked_by_allowlist,,industry-risk candidate not in Stage 1C v3.2 lag1 self-excluded allowlist
+industry_avg_rating,산업위험,nonfinancial,blocked_by_allowlist,,industry-risk candidate not in Stage 1C v3.2 lag1 self-excluded allowlist
+kospi_dummy,산업위험,nonfinancial,blocked_by_diagnostic_only,,diagnostic-only variable is not eligible for scorecard selection
+sector_7,산업위험,nonfinancial,blocked_by_diagnostic_only,,diagnostic-only variable is not eligible for scorecard selection
+sector_year_rating_count,산업위험,nonfinancial,blocked_by_diagnostic_only,,diagnostic-only variable is not eligible for scorecard selection
+sector_year_rating_count_lag1,산업위험,nonfinancial,blocked_by_diagnostic_only,,diagnostic-only variable is not eligible for scorecard selection
+industry_avg_rating,산업위험,nonfinancial,blocked_by_diagnostic_only,,diagnostic-only variable is not eligible for scorecard selection

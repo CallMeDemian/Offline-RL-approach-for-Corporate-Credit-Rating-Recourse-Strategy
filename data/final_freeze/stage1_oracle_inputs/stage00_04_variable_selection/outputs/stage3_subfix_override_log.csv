@@ -1,0 +1,2 @@
+variable_id,category,action,weight_prior_v2,weight_prior_v3,weight_floor_v2,weight_floor_v3,score_override,note
+ratio_missing_rate,신뢰도,floor_reduced,0.167988,0.02,0.05,0.02,0.0,

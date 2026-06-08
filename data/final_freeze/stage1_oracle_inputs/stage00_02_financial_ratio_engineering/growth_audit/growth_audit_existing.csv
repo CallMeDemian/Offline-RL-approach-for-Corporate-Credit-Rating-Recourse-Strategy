@@ -1,0 +1,12 @@
+﻿ratio_id,exists,missing_rate_all,missing_rate_dev,n_dev,unique_count,inf_rate,denom_instability,p01,p99,spearman_with_rating_num,main_eligible,exclusion_reason
+R169,True,0.0768,0.1282,2114,4546,0.0,False,-0.7084,2.0429,-0.0786,True,
+R180,True,0.1235,0.1913,1961,4316,0.0,False,-0.4237,1.3205,-0.1104,True,
+R184,True,0.1271,0.1942,1954,4298,0.0,False,-0.7692,2.2539,-0.0448,True,
+R174,True,0.2959,0.3237,1640,3467,0.0,False,-8.2858,8.1745,-0.1122,False,miss_dev=32.4%>=30%
+R204,True,0.1068,0.1625,2031,4359,0.0,False,0.0,0.5708,-0.0447,True,
+R181,True,0.1235,0.1913,1961,4316,0.0,False,-0.6688,1.8954,-0.0578,True,
+R182,True,0.1235,0.1913,1961,4316,0.0,False,-0.5117,2.2424,-0.117,True,
+R205,True,0.1249,0.181,1986,4271,0.0,True,0.0063,279.6578,-0.0738,False,denom_instability
+R188,True,0.1304,0.1959,1950,4258,0.0,False,-0.9897,38.3423,-0.0339,True,
+R170,True,0.1501,0.2153,1903,4185,0.0,False,-1.7033,7.0123,-0.0116,True,
+R185,True,0.2738,0.3126,1667,3576,0.0,False,-4.2139,4.246,-0.1261,False,miss_dev=31.3%>=30%

@@ -1,0 +1,12 @@
+variable_id,n_bins_requested,n_bins_actual,n_empty_bins_dev,min_bin_count_dev,median_bin_count_dev,max_bin_count_dev,n_unique_dev,special_handling_flag,binning_method
+R006,50,50,5,0,5,581,1991,False,equal_width_50
+R064,50,50,0,1,18,139,1992,False,equal_width_50
+R085,50,50,6,0,2,926,1943,False,equal_width_50
+R133,50,50,1,0,9,273,1992,False,equal_width_50
+R157,50,50,2,0,8,273,1923,False,equal_width_50
+R182,50,50,4,0,9,360,1923,False,equal_width_50
+industry_avg_rating_lag1_self_excl,50,50,9,0,41,134,314,False,equal_width_50
+cap_change_count_3y,50,50,15,0,4,992,35,False,equal_width_50
+log_assets,50,50,1,0,28,115,1992,False,equal_width_50
+operating_loss_freq_3y,4,4,0,103,270,1389,4,True,reduced_unique_value
+ratio_missing_rate,13,13,0,1,33,1337,13,True,reduced_unique_value

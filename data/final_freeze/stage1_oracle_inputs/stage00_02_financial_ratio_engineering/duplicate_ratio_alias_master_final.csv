@@ -1,0 +1,177 @@
+﻿alias_ratio_id,ratio_name_ko,category,canonical_ratio_id,duplicate_alias_type,duplicate_alias_reason,stage3_exclude,quality_pass,selected_eligible
+R001,매출총이익률,수익성,R001,,,False,True,True
+R002,영업이익률,수익성,R002,,,False,True,True
+R003,정상영업이익률,수익성,R002,exact_value_alias,정상영업이익률 maps to the same executable formula as 영업이익률 in the current source mapping.,True,True,False
+R004,EBIT마진,수익성,R002,exact_value_alias,EBIT마진 maps to the same executable formula as 영업이익률 in the current source mapping.,True,True,False
+R005,EBITDA마진,수익성,R005,,,False,True,True
+R006,세전이익률,수익성,R006,,,False,True,True
+R007,순이익률,수익성,R007,,,False,True,True
+R008,계속사업이익률,수익성,R008,,,False,True,True
+R009,총포괄이익률,수익성,R009,,,False,True,True
+R010,영업현금흐름마진,수익성,R010,,,False,True,True
+R012,매출총이익/총자산,수익성,R012,,,False,True,True
+R013,영업이익/총자산,수익성,R013,,,False,True,True
+R014,EBIT/총자산,수익성,R013,exact_value_alias,EBIT/총자산 maps to the same executable formula as 영업이익/총자산.,True,True,False
+R015,EBITDA/총자산,수익성,R015,,,False,True,True
+R016,세전이익/총자산,수익성,R016,,,False,True,True
+R017,당기순이익/총자산(ROA),수익성,R017,,,False,True,True
+R018,총포괄이익/총자산,수익성,R018,,,False,True,True
+R019,영업현금흐름/총자산,수익성,R019,,,False,True,True
+R021,영업이익/자기자본,수익성,R021,,,False,True,True
+R022,당기순이익/자기자본(ROE),수익성,R022,,,False,True,True
+R023,총포괄이익/자기자본,수익성,R023,,,False,True,True
+R031,현금이익전환율,수익성,R031,,,False,True,True
+R032,영업현금흐름/영업이익,수익성,R032,,,False,True,True
+R033,EBITDA 대비 OCF,수익성,R033,,,False,True,True
+R043,부채비율,안정성,R043,,,False,True,True
+R044,총부채/총자산,안정성,R044,,,False,True,True
+R045,자기자본비율,안정성,R045,,,False,True,True
+R046,차입금의존도,안정성,R046,,,False,True,True
+R047,순차입금의존도,안정성,R047,,,False,True,True
+R048,유이자부채/총자산,안정성,R048,,,False,True,True
+R049,금융부채/총부채,안정성,R049,,,False,True,True
+R050,총차입금/자기자본,안정성,R050,,,False,True,True
+R051,순차입금/자기자본,안정성,R051,,,False,True,True
+R052,유이자부채/자기자본,안정성,R052,,,False,True,True
+R053,유동부채비율,안정성,R053,,,False,True,True
+R054,비유동부채비율,안정성,R054,,,False,True,True
+R055,유동부채/총부채,안정성,R055,,,False,True,True
+R056,비유동부채/총부채,안정성,R056,,,False,True,True
+R057,단기차입금비중,안정성,R057,,,False,False,False
+R058,장기차입금비중,안정성,R058,,,False,False,False
+R059,단기금융부채/총자산,안정성,R059,,,False,True,True
+R060,장기금융부채/총자산,안정성,R060,,,False,True,True
+R061,순차입금/총차입금,안정성,R061,,,False,False,False
+R063,유보율,안정성,R063,,,False,True,True
+R064,이익잉여금/총자산,안정성,R064,,,False,True,True
+R065,이익잉여금/자기자본,안정성,R065,,,False,True,True
+R067,자본금/총자산,안정성,R067,,,False,True,True
+R071,비유동비율,안정성,R071,,,False,True,True
+R076,순운전자본/총자산,안정성,R076,,,False,True,True
+R077,운전자본/매출액,안정성,R077,,,False,True,True
+R079,이자보상배율,부채상환능력,R079,,,False,True,True
+R080,EBIT 이자보상배율,부채상환능력,R079,exact_value_alias,EBIT 이자보상배율 is identical to 이자보상배율 under the current EBIT mapping.,True,True,False
+R081,EBITDA 이자보상배율,부채상환능력,R081,,,False,True,True
+R082,세전이익 이자보상배율,부채상환능력,R082,,,False,True,True
+R083,OCF 이자보상배율,부채상환능력,R083,,,False,True,True
+R085,금융비용부담률,부채상환능력,R085,,,False,True,True
+R086,이자비용/매출액,부채상환능력,R085,exact_value_alias,이자비용/매출액 uses the same numerator item code as 금융비용부담률; not an independent ratio in the current source mapping.,True,True,False
+R087,이자비용/영업이익,부채상환능력,R087,,,False,True,True
+R088,이자비용/EBITDA,부채상환능력,R089,exact_value_alias,이자비용/EBITDA uses the same numerator item code as 금융비용/EBITDA; keep the semantically accurate financial-cost ratio.,True,True,False
+R089,금융비용/EBITDA,부채상환능력,R089,,,False,True,True
+R090,금융비용/영업현금흐름,부채상환능력,R090,,,False,True,True
+R091,OCF/총부채,부채상환능력,R091,,,False,True,True
+R092,OCF/총차입금,부채상환능력,R092,,,False,False,False
+R093,OCF/순차입금,부채상환능력,R093,,,False,False,False
+R094,OCF/유동부채,부채상환능력,R094,,,False,True,True
+R095,OCF/단기차입금,부채상환능력,R095,,,False,False,False
+R099,EBITDA/총차입금,부채상환능력,R099,,,False,False,False
+R100,EBITDA/순차입금,부채상환능력,R100,,,False,False,False
+R101,총차입금/EBITDA,부채상환능력,R101,,,False,True,True
+R102,순차입금/EBITDA,부채상환능력,R102,,,False,True,True
+R103,총부채/EBITDA,부채상환능력,R103,,,False,True,True
+R104,순차입금/OCF,부채상환능력,R104,,,False,True,True
+R105,총차입금/OCF,부채상환능력,R105,,,False,True,True
+R106,총부채/OCF,부채상환능력,R106,,,False,True,True
+R107,단기차입금/OCF,부채상환능력,R107,,,False,True,True
+R108,단기금융부채/EBITDA,부채상환능력,R108,,,False,True,True
+R109,단기금융부채/현금성자산,부채상환능력,R109,,,False,True,True
+R110,현금성자산/총차입금,부채상환능력,R110,,,False,False,False
+R111,현금성자산/단기차입금,부채상환능력,R111,,,False,False,False
+R112,내부자금조달률,부채상환능력,R112,,,False,True,True
+R114,순차입금상환가능기간,부채상환능력,R102,exact_value_alias,순차입금상환가능기간 is identical to 순차입금/EBITDA.,True,True,False
+R115,유동비율,유동성,R115,,,False,True,True
+R116,당좌비율,유동성,R116,,,False,True,True
+R117,현금비율,유동성,R117,,,False,True,True
+R118,순운전자본비율,유동성,R076,exact_value_alias,순운전자본비율 is identical to 순운전자본/총자산.,True,True,False
+R119,순운전자본/매출액,유동성,R077,exact_value_alias,순운전자본/매출액 is identical to 운전자본/매출액.,True,True,False
+R120,유동자산/총자산,유동성,R120,,,False,True,True
+R121,유동부채/총자산,유동성,R121,,,False,True,True
+R122,유동부채/매출액,유동성,R122,,,False,True,True
+R123,유동자산/매출액,유동성,R123,,,False,True,True
+R124,현금성자산/총자산,유동성,R124,,,False,True,True
+R125,현금성자산/매출액,유동성,R125,,,False,True,True
+R126,현금성자산/총부채,유동성,R126,,,False,True,True
+R127,현금성자산/유동부채,유동성,R117,exact_value_alias,현금성자산/유동부채 is identical to 현금비율.,True,True,False
+R128,현금성자산/단기금융부채,유동성,R128,,,False,False,False
+R130,즉시가용유동성/단기금융부채,유동성,R130,,,False,False,False
+R131,OCF/유동부채,유동성,R094,exact_value_alias,OCF/유동부채 duplicates the debt-service OCF/유동부채 ratio.,True,True,False
+R132,OCF/단기금융부채,유동성,R132,,,False,False,False
+R133,FCF/유동부채,유동성,R133,,,False,True,True
+R134,재고자산/유동자산,유동성,R134,,,False,True,True
+R135,매출채권/유동자산,유동성,R135,,,False,True,True
+R136,매입채무/유동부채,유동성,R136,,,False,True,True
+R137,재고자산/매출액,유동성,R137,,,False,True,True
+R138,매출채권/매출액,유동성,R138,,,False,True,True
+R139,매입채무/매출액,유동성,R139,,,False,True,True
+R140,순영업운전자본/매출액,유동성,R140,,,False,True,True
+R141,영업운전자본/총자산,유동성,R141,,,False,True,True
+R143,총자산회전율,활동성,R143,,,False,True,True
+R145,비유동자산회전율,활동성,R145,,,False,True,True
+R146,유동자산회전율,활동성,R146,,,False,True,True
+R147,자기자본회전율,활동성,R147,,,False,True,True
+R148,타인자본회전율,활동성,R148,,,False,True,True
+R150,운전자본회전율,활동성,R150,,,False,True,True
+R152,재고자산회전율,활동성,R152,,,False,False,False
+R153,매출채권회전율,활동성,R153,,,False,True,True
+R154,매입채무회전율,활동성,R154,,,False,True,True
+R155,순영업운전자본회전율,활동성,R155,,,False,False,False
+R156,현금성자산회전율,활동성,R156,,,False,True,True
+R157,자본금회전율,활동성,R157,,,False,True,True
+R158,매출채권회전일수,활동성,R158,,,False,True,True
+R159,재고자산회전일수,활동성,R159,,,False,True,True
+R160,매입채무회전일수,활동성,R160,,,False,True,True
+R163,재고보유기간,활동성,R159,exact_value_alias,재고보유기간 is identical to 재고자산회전일수.,True,True,False
+R164,매출채권회수기간,활동성,R158,exact_value_alias,매출채권회수기간 is identical to 매출채권회전일수.,True,True,False
+R165,매입채무지급기간,활동성,R160,exact_value_alias,매입채무지급기간 is identical to 매입채무회전일수.,True,True,False
+R169,매출액증가율,성장성,R169,,,False,True,True
+R170,매출총이익증가율,성장성,R170,,,False,True,True
+R171,영업이익증가율,성장성,R171,,,False,False,False
+R172,정상영업이익증가율,성장성,R171,exact_value_alias,정상영업이익증가율 maps to the same executable formula as 영업이익증가율.,True,False,False
+R173,EBIT증가율,성장성,R171,exact_value_alias,EBIT증가율 maps to the same executable formula as 영업이익증가율.,True,False,False
+R174,EBITDA증가율,성장성,R174,,,False,True,True
+R175,세전이익증가율,성장성,R175,,,False,False,False
+R176,순이익증가율,성장성,R176,,,False,False,False
+R177,총포괄이익증가율,성장성,R177,,,False,False,False
+R178,OCF증가율,성장성,R178,,,False,False,False
+R179,FCF증가율,성장성,R179,,,False,False,False
+R180,총자산증가율,성장성,R180,,,False,True,True
+R181,유동자산증가율,성장성,R181,,,False,True,True
+R182,비유동자산증가율,성장성,R182,,,False,True,True
+R184,자기자본증가율,성장성,R184,,,False,True,True
+R185,이익잉여금증가율,성장성,R241,exact_value_alias,R185 and R241 are both 이익잉여금증가율 and value-identical in current Stage00_02 artifacts; keep R241 as current canonical selected growth variable.,True,True,False
+R186,총차입금증가율,성장성,R186,,,False,False,False
+R187,순차입금증가율,성장성,R187,,,False,False,False
+R188,CAPEX증가율,성장성,R188,,,False,True,True
+R196,매출-자산 성장괴리,성장성,R196,,,False,False,False
+R197,영업이익-매출 성장괴리,성장성,R197,,,False,False,False
+R198,EBITDA-매출 성장괴리,성장성,R198,,,False,False,False
+R199,차입금-매출 성장괴리,성장성,R199,,,False,False,False
+R200,순차입금-EBITDA 성장괴리,성장성,R200,,,False,False,False
+R201,자기자본-총자산 성장괴리,성장성,R201,,,False,False,False
+R202,OCF-매출 성장괴리,성장성,R202,,,False,False,False
+R203,FCF-매출 성장괴리,성장성,R203,,,False,False,False
+R204,투자부담률,성장성,R204,,,False,True,True
+R205,CAPEX/감가상각비,성장성,R205,,,False,True,True
+R210,Altman 운전자본/총자산,기타/복합,R076,exact_value_alias,Altman 운전자본/총자산 is identical to 순운전자본/총자산.,True,True,False
+R211,Altman 이익잉여금/총자산,기타/복합,R064,exact_value_alias,Altman 이익잉여금/총자산 is identical to 이익잉여금/총자산.,True,True,False
+R212,Altman EBIT/총자산,기타/복합,R212,,,False,True,True
+R213,Altman 매출액/총자산,기타/복합,R213,,,False,True,True
+R214,OCF/총자산,기타/복합,R214,,,False,True,True
+R215,FCF/총자산,기타/복합,R215,,,False,True,True
+R216,OCF/매출액,기타/복합,R010,exact_value_alias,OCF/매출액 is identical to 영업현금흐름마진.,True,True,False
+R217,FCF/매출액,기타/복합,R217,,,False,True,True
+R218,CAPEX/OCF,기타/복합,R218,,,False,True,True
+R219,CAPEX/EBITDA,기타/복합,R219,,,False,True,True
+R220,OCF/순이익 비율,CF_품질,R220,,,False,True,True
+R221,OCF마진,CF_품질,R221,,,False,True,True
+R225,OCF이자보상배율,CF_품질,R225,,,False,True,True
+R226,이익잉여금/총자산,자본효율성,R226,,,False,True,True
+R227,이익잉여금/자본,자본효율성,R227,,,False,True,True
+R228,OCF/총자산(평균),자본효율성,R228,,,False,True,True
+R236,매입채무회전율,활동성,R236,,,False,True,True
+R237,매출채권회전율,활동성,R237,,,False,True,True
+R238,재고자산회전율,활동성,R238,,,False,False,False
+R239,OCF성장률,성장성,R239,,,False,False,False
+R240,총자산성장률,성장성,R240,,,False,False,False
+R241,이익잉여금증가율,성장성,R241,,,False,False,False

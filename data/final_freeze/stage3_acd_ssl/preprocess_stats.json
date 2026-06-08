@@ -1,0 +1,776 @@
+{
+  "sim__total_assets": {
+    "median": 125815397.5,
+    "iqr": 239369219.25,
+    "lo": 7307114.245,
+    "hi": 40572455718.655136
+  },
+  "sim__current_assets": {
+    "median": 53387639.0,
+    "iqr": 85323930.0,
+    "lo": 2144616.3299999996,
+    "hi": 7973067720.0
+  },
+  "balance_sheet__[U01A110000000]   비유동자산(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__cash": {
+    "median": 7443637.0,
+    "iqr": 16447704.5,
+    "lo": 0.0,
+    "hi": 1187144455.0000048
+  },
+  "sim__short_term_investments": {
+    "median": 0.0,
+    "iqr": 20819.5,
+    "lo": 0.0,
+    "hi": 14306770.000000004
+  },
+  "sim__receivables": {
+    "median": 13284697.5,
+    "iqr": 30048173.0,
+    "lo": 0.0,
+    "hi": 2983138240.0000057
+  },
+  "sim__inventory": {
+    "median": 7701593.0,
+    "iqr": 20062899.0,
+    "lo": 0.0,
+    "hi": 1482260622.2050002
+  },
+  "sim__ppe": {
+    "median": 24839842.0,
+    "iqr": 58622760.5,
+    "lo": 16952.55,
+    "hi": 9334621750.000051
+  },
+  "balance_sheet__[U01A111019000]      무형자산(*)(IFRS)(천원)": {
+    "median": 1136580.0,
+    "iqr": 2881188.5,
+    "lo": 0.0,
+    "hi": 645234213.82
+  },
+  "sim__total_liabilities": {
+    "median": 43470271.0,
+    "iqr": 97576882.75,
+    "lo": 1079214.185,
+    "hi": 26539992527.705097
+  },
+  "sim__current_liabilities": {
+    "median": 31600631.0,
+    "iqr": 63703054.5,
+    "lo": 495442.08,
+    "hi": 6765298686.030004
+  },
+  "balance_sheet__[U01A810000000]   비유동부채 (*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__short_term_debt": {
+    "median": 5282945.0,
+    "iqr": 22000000.0,
+    "lo": 0.0,
+    "hi": 1168121016.2000008
+  },
+  "balance_sheet__[U01A811027400]      유동성장기부채(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__long_term_debt": {
+    "median": 187557.0,
+    "iqr": 6195570.75,
+    "lo": 0.0,
+    "hi": 898209484.8350006
+  },
+  "sim__bonds": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 2593706300.000003
+  },
+  "sim__payables": {
+    "median": 5108276.0,
+    "iqr": 14782360.0,
+    "lo": 0.0,
+    "hi": 1641817429.7800002
+  },
+  "sim__total_equity": {
+    "median": 74858239.0,
+    "iqr": 139322471.5,
+    "lo": -10881266.805,
+    "hi": 16772086114.925003
+  },
+  "balance_sheet__[U01A611000000]   자본금(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__retained_earnings": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__revenue": {
+    "median": 79609135.0,
+    "iqr": 167926892.0,
+    "lo": 186110.91,
+    "hi": 20010520752.745033
+  },
+  "sim__cogs": {
+    "median": 54467058.0,
+    "iqr": 129420906.25,
+    "lo": 0.0,
+    "hi": 17408931430.775024
+  },
+  "income_statement__[U01B201014400]매출총이익(손실)(IFRS)(천원)": {
+    "median": 15948593.0,
+    "iqr": 32074022.25,
+    "lo": -16558758.265,
+    "hi": 3627177222.4950004
+  },
+  "sim__sga": {
+    "median": 12362432.0,
+    "iqr": 22072640.75,
+    "lo": 1098801.005,
+    "hi": 2419617640.115007
+  },
+  "sim__operating_income": {
+    "median": 3530595.5,
+    "iqr": 12022820.0,
+    "lo": -105802813.065,
+    "hi": 1150459472.1450026
+  },
+  "sim__financial_cost": {
+    "median": 1656746.0,
+    "iqr": 4429928.5,
+    "lo": 0.0,
+    "hi": 586882550.4700007
+  },
+  "income_statement__[U01B700000000]법인세비용차감전순이익(손실)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "income_statement__[U01B750000000]법인세비용(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__net_income": {
+    "median": 3130775.5,
+    "iqr": 12281709.75,
+    "lo": -265980165.35,
+    "hi": 1217555655.0000014
+  },
+  "income_statement__[U01B900000000]총포괄손익(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "income_statement__[U01B350014100]   감가상각비(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "income_statement__[U01B350014300]   기타무형자산상각비(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "income_statement__[U01B500010000]   이자수익(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "income_statement__[U01B500010100]   배당금수익(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__operating_cf": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "cash_flow__[U01D200000000]투자활동으로 인한 현금흐름(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "cash_flow__[U01D300000000]재무활동으로 인한 현금흐름(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__capex": {
+    "median": 44809.0,
+    "iqr": 3304208.0,
+    "lo": -302481321.13,
+    "hi": 659248178.9950007
+  },
+  "equity_change__[U01C100000000]기말자본금(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "equity_change__[U01C200000000]기말자본잉여금(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "equity_change__[U01C300000000]기말기타자본(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "equity_change__[U01C400000000]기말기타포괄손익누계액(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "equity_change__[U01C500000000]기말이익잉여금(결손금)(*)(IFRS)(천원)": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "sim__cash_dividends": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "derived__ppe_to_assets": {
+    "median": 0.22353920683207504,
+    "iqr": 0.2667264916144083,
+    "lo": 8.485521782599615e-05,
+    "hi": 0.821301769259592
+  },
+  "derived__capex_to_revenue": {
+    "median": 0.0006380452605033676,
+    "iqr": 0.03198255941402265,
+    "lo": -3.853548865883899,
+    "hi": 1.8195737752058658
+  },
+  "derived__inventory_to_revenue": {
+    "median": 0.09959927256963384,
+    "iqr": 0.1383283209932486,
+    "lo": 0.0,
+    "hi": 1.1401380929546772
+  },
+  "derived__receivables_to_revenue": {
+    "median": 0.17405572751159393,
+    "iqr": 0.14202420086356288,
+    "lo": 0.0,
+    "hi": 1.4264643382254274
+  },
+  "derived__payables_to_revenue": {
+    "median": 0.06647356201387064,
+    "iqr": 0.0745452279192857,
+    "lo": 0.0,
+    "hi": 0.5503432112287551
+  },
+  "derived__inventory_turnover_proxy": {
+    "median": 6.426847894198238,
+    "iqr": 7.172729542423224,
+    "lo": 0.0,
+    "hi": 2028.2018722782095
+  },
+  "derived__receivables_turnover_proxy": {
+    "median": 5.635900617666941,
+    "iqr": 4.345001148510472,
+    "lo": 0.6891671281013535,
+    "hi": 257.03678923146833
+  },
+  "derived__payables_turnover_proxy": {
+    "median": 10.060729827384018,
+    "iqr": 8.055632961600358,
+    "lo": 0.0,
+    "hi": 1032.0062786260673
+  },
+  "derived__short_debt_to_total_debt": {
+    "median": 0.6995925239932945,
+    "iqr": 0.42272047348144365,
+    "lo": 0.0,
+    "hi": 1.0
+  },
+  "derived__long_debt_to_total_debt": {
+    "median": 0.11743981209630065,
+    "iqr": 0.2733780569524401,
+    "lo": 0.0,
+    "hi": 1.0
+  },
+  "derived__bond_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 1.0
+  },
+  "derived__operating_margin": {
+    "median": 0.04211233511973523,
+    "iqr": 0.0868539757100873,
+    "lo": -12.763957780852955,
+    "hi": 0.7552568129040652
+  },
+  "derived__gross_margin": {
+    "median": 0.19704664640437186,
+    "iqr": 0.22284476344491122,
+    "lo": -0.34875929566251623,
+    "hi": 1.0
+  },
+  "derived__net_margin": {
+    "median": 0.03183774927249748,
+    "iqr": 0.099078571776094,
+    "lo": -18.714091202171158,
+    "hi": 1.484664882911636
+  },
+  "derived__roa_proxy": {
+    "median": 0.02358862310088461,
+    "iqr": 0.07344029697738665,
+    "lo": -1.2823523534995647,
+    "hi": 0.334161101608898
+  },
+  "derived__cogs_to_revenue": {
+    "median": 0.8029533535956281,
+    "iqr": 0.22284476344491122,
+    "lo": 0.0,
+    "hi": 1.348759295662518
+  },
+  "derived__sga_to_revenue": {
+    "median": 0.15520845767626595,
+    "iqr": 0.2159510602961232,
+    "lo": 0.016607020811218242,
+    "hi": 13.171441252782248
+  },
+  "derived__financial_cost_to_revenue": {
+    "median": 0.019602336488606726,
+    "iqr": 0.03688306453517955,
+    "lo": 0.0,
+    "hi": 5.214753966054251
+  },
+  "derived__financial_cost_to_debt": {
+    "median": 0.08766286956521739,
+    "iqr": 0.07381066687521971,
+    "lo": 0.0,
+    "hi": 27.206175963582865
+  },
+  "derived__debt_to_assets": {
+    "median": 0.39186326604786953,
+    "iqr": 0.30665578148805195,
+    "lo": 0.019119398447290565,
+    "hi": 1.5609728240713427
+  },
+  "derived__equity_to_assets": {
+    "median": 0.6081367339521305,
+    "iqr": 0.30665577475293254,
+    "lo": -0.5609727833907779,
+    "hi": 0.9808806015527095
+  },
+  "derived__current_liabilities_to_assets": {
+    "median": 0.2722092800646698,
+    "iqr": 0.23168370402605382,
+    "lo": 0.004518210750276387,
+    "hi": 1.1286275349565869
+  },
+  "derived__borrowings_to_assets": {
+    "median": 0.11672670909037497,
+    "iqr": 0.2304069367157061,
+    "lo": 0.0,
+    "hi": 0.6547749466046251
+  },
+  "derived__current_ratio": {
+    "median": 1.6079515087189793,
+    "iqr": 1.7133225310291567,
+    "lo": 0.12187407841718689,
+    "hi": 45.11879618871121
+  },
+  "derived__cash_ratio": {
+    "median": 0.24913908258412923,
+    "iqr": 0.4952763297853247,
+    "lo": 0.0005339137442155867,
+    "hi": 13.092699344256166
+  },
+  "derived__cash_to_current_liabilities": {
+    "median": 0.2441272095982159,
+    "iqr": 0.49061232677987443,
+    "lo": 0.00038427217019455816,
+    "hi": 13.092699344256166
+  },
+  "derived__cash_to_short_debt": {
+    "median": 0.47023972103064865,
+    "iqr": 0.48037220527270974,
+    "lo": 0.0007897390075615794,
+    "hi": 226.20839088909574
+  },
+  "derived__ocf_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "derived__interest_coverage_proxy": {
+    "median": 1.9199591250514714,
+    "iqr": 6.7695021635829535,
+    "lo": -236.3121314393285,
+    "hi": 5142.78046119867
+  },
+  "derived__retained_earnings_to_assets": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "derived__retained_earnings_negative_flag": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "derived__dividend_to_net_income": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "delta_1y__derived__operating_margin": {
+    "median": -0.002573547129046602,
+    "iqr": 0.04625454728333246,
+    "lo": -2.795040967686831,
+    "hi": 2.3625544803249277
+  },
+  "trend_1y__derived__operating_margin": {
+    "median": -0.0354457161571629,
+    "iqr": 0.6608509325318948,
+    "lo": -9.808826529297408,
+    "hi": 7.640485830407952
+  },
+  "delta_1y__derived__cogs_to_revenue": {
+    "median": 0.0,
+    "iqr": 0.033758622447737,
+    "lo": -0.58780105120067,
+    "hi": 0.5144544875459028
+  },
+  "trend_1y__derived__cogs_to_revenue": {
+    "median": 0.0017114117947647086,
+    "iqr": 0.044401220598733096,
+    "lo": -1.0,
+    "hi": 0.78316619474914
+  },
+  "delta_1y__derived__sga_to_revenue": {
+    "median": 0.0012225357832752054,
+    "iqr": 0.02425105455290045,
+    "lo": -2.0140287433943938,
+    "hi": 2.4133175211937234
+  },
+  "trend_1y__derived__sga_to_revenue": {
+    "median": 0.009553281830502207,
+    "iqr": 0.18328749680427026,
+    "lo": -1.6509274460480325,
+    "hi": 3.135597277586655
+  },
+  "delta_1y__derived__financial_cost_to_revenue": {
+    "median": 0.0,
+    "iqr": 0.008193397642269853,
+    "lo": -2.021230675065555,
+    "hi": 1.8301757937750525
+  },
+  "trend_1y__derived__financial_cost_to_revenue": {
+    "median": 0.0042890248819658265,
+    "iqr": 0.659559953518775,
+    "lo": -12.287566239983397,
+    "hi": 39.45514713046151
+  },
+  "delta_1y__derived__debt_to_assets": {
+    "median": -0.0024919118474109186,
+    "iqr": 0.05845671710386449,
+    "lo": -0.5997974487544597,
+    "hi": 0.5002980511248218
+  },
+  "trend_1y__derived__debt_to_assets": {
+    "median": -0.007571933638808081,
+    "iqr": 0.17422603444396978,
+    "lo": -1.3041327395966629,
+    "hi": 2.2381494065292857
+  },
+  "delta_1y__derived__current_ratio": {
+    "median": 0.003283323829948559,
+    "iqr": 0.4375638602438531,
+    "lo": -19.70455342495045,
+    "hi": 21.672085266166963
+  },
+  "trend_1y__derived__current_ratio": {
+    "median": 0.002651716825871742,
+    "iqr": 0.29950877733765313,
+    "lo": -2.5794221204292214,
+    "hi": 4.707007536798807
+  },
+  "delta_1y__derived__roa_proxy": {
+    "median": -0.0031452559303914614,
+    "iqr": 0.048084674762451644,
+    "lo": -0.8776854409114404,
+    "hi": 0.8912535100351554
+  },
+  "trend_1y__derived__roa_proxy": {
+    "median": -0.07511820285278784,
+    "iqr": 1.0171198725003983,
+    "lo": -12.985738587556844,
+    "hi": 11.153296582720849
+  },
+  "delta_1y__derived__receivables_turnover_proxy": {
+    "median": 0.03734015445341754,
+    "iqr": 1.1984968859973575,
+    "lo": -71.80855332653034,
+    "hi": 75.16907596617472
+  },
+  "trend_1y__derived__receivables_turnover_proxy": {
+    "median": 0.008108450580995002,
+    "iqr": 0.2384216184547101,
+    "lo": -2.2274650875158124,
+    "hi": 3.3020006672455744
+  },
+  "delta_1y__derived__payables_turnover_proxy": {
+    "median": 0.06264499402584,
+    "iqr": 2.592384735047644,
+    "lo": -256.3746805662693,
+    "hi": 359.80591063531983
+  },
+  "trend_1y__derived__payables_turnover_proxy": {
+    "median": 0.017364277907771522,
+    "iqr": 0.2940270551130749,
+    "lo": -3.9553328016531295,
+    "hi": 5.711683656639245
+  },
+  "delta_1y__derived__inventory_turnover_proxy": {
+    "median": -0.004544741161031318,
+    "iqr": 1.1164183325863524,
+    "lo": -513.3661123534056,
+    "hi": 508.5792822735109
+  },
+  "trend_1y__derived__inventory_turnover_proxy": {
+    "median": -0.00794935536922766,
+    "iqr": 0.2128379826163468,
+    "lo": -2.555296305246519,
+    "hi": 5.021641121841574
+  },
+  "delta_1y__derived__short_debt_to_total_debt": {
+    "median": 0.0,
+    "iqr": 0.003961349253761459,
+    "lo": -0.937962618284131,
+    "hi": 0.9838287310679785
+  },
+  "trend_1y__derived__short_debt_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": -2.2946646145714085,
+    "hi": 4.429306291542849
+  },
+  "delta_1y__derived__long_debt_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": -0.9512096642025972,
+    "hi": 0.9089774969435758
+  },
+  "trend_1y__derived__long_debt_to_total_debt": {
+    "median": -0.06780136128857732,
+    "iqr": 1e-06,
+    "lo": -3.8322806276619543,
+    "hi": 9.262746234315657
+  },
+  "delta_1y__derived__bond_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": -0.877299016772701,
+    "hi": 0.8812752700657285
+  },
+  "trend_1y__derived__bond_to_total_debt": {
+    "median": -0.013881444153340992,
+    "iqr": 1e-06,
+    "lo": -2.0,
+    "hi": 2.2046888823815998
+  },
+  "delta_1y__derived__cash_to_short_debt": {
+    "median": 0.0024057763506181323,
+    "iqr": 0.01798606873245235,
+    "lo": -40.070808745010666,
+    "hi": 68.24563211000496
+  },
+  "trend_1y__derived__cash_to_short_debt": {
+    "median": 0.030191292655267123,
+    "iqr": 0.1536942568590677,
+    "lo": -10.342680125853303,
+    "hi": 33.230868026853464
+  },
+  "delta_1y__derived__ocf_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "trend_1y__derived__ocf_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "peer_pct__derived__operating_margin": {
+    "median": 0.5,
+    "iqr": 0.44357100480017253,
+    "lo": 0.005850412599104686,
+    "hi": 0.994338358233105
+  },
+  "peer_pct__derived__cogs_to_revenue": {
+    "median": 0.5,
+    "iqr": 0.4452969095518042,
+    "lo": 0.06971037160886684,
+    "hi": 0.9942304891861281
+  },
+  "peer_pct__derived__sga_to_revenue": {
+    "median": 0.5,
+    "iqr": 0.4456474839544793,
+    "lo": 0.005472870934685291,
+    "hi": 0.9942035219243839
+  },
+  "peer_pct__derived__financial_cost_to_revenue": {
+    "median": 0.5,
+    "iqr": 0.4453778113370369,
+    "lo": 0.023164877838304298,
+    "hi": 0.9940716520144545
+  },
+  "peer_pct__derived__debt_to_assets": {
+    "median": 0.5,
+    "iqr": 0.4602154639446476,
+    "lo": 0.005496961405908816,
+    "hi": 0.994450422246192
+  },
+  "peer_pct__derived__current_ratio": {
+    "median": 0.5,
+    "iqr": 0.4461548803441785,
+    "lo": 0.005860311911804248,
+    "hi": 0.9944892444205431
+  },
+  "peer_pct__derived__roa_proxy": {
+    "median": 0.5,
+    "iqr": 0.45998526742258816,
+    "lo": 0.005600747152140169,
+    "hi": 0.9948713530293862
+  },
+  "peer_pct__derived__receivables_turnover_proxy": {
+    "median": 0.5,
+    "iqr": 0.4347495787176442,
+    "lo": 0.005716870631785408,
+    "hi": 0.9942002541506672
+  },
+  "peer_pct__derived__payables_turnover_proxy": {
+    "median": 0.5,
+    "iqr": 0.3954338304924243,
+    "lo": 0.023407907196969696,
+    "hi": 0.9936983605587121
+  },
+  "peer_pct__derived__inventory_turnover_proxy": {
+    "median": 0.5,
+    "iqr": 0.37680080238283387,
+    "lo": 0.020819403075800862,
+    "hi": 0.9937406540635828
+  },
+  "peer_pct__derived__short_debt_to_total_debt": {
+    "median": 0.5,
+    "iqr": 0.30208582663703193,
+    "lo": 0.11639596512224312,
+    "hi": 1.0
+  },
+  "peer_pct__derived__long_debt_to_total_debt": {
+    "median": 0.5,
+    "iqr": 0.30068387758591214,
+    "lo": 0.3319541802017439,
+    "hi": 1.0
+  },
+  "peer_pct__derived__bond_to_total_debt": {
+    "median": 0.7146385195710274,
+    "iqr": 0.21463851957102742,
+    "lo": 0.5,
+    "hi": 1.0
+  },
+  "peer_pct__derived__cash_to_short_debt": {
+    "median": 0.5,
+    "iqr": 0.21154367091056842,
+    "lo": 0.007814906543864401,
+    "hi": 0.991836809720986
+  },
+  "peer_pct__derived__ocf_to_total_debt": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "context__year_normalized": {
+    "median": 0.5263157894736842,
+    "iqr": 0.47368421052631576,
+    "lo": 0.0,
+    "hi": 0.8947368421052632
+  },
+  "context__market_code": {
+    "median": 0.0,
+    "iqr": 1e-06,
+    "lo": 0.0,
+    "hi": 0.0
+  },
+  "transition__distance_to_positive_transition_origin": {
+    "median": 0.0016660265380212674,
+    "iqr": 0.0022037239376878574,
+    "lo": 3.052029043917423e-05,
+    "hi": 0.14082971602621092
+  },
+  "transition__distance_to_anti_transition_origin": {
+    "median": 0.0017310544090895427,
+    "iqr": 0.002180766883094607,
+    "lo": 2.987552869246556e-05,
+    "hi": 0.13994888642177183
+  },
+  "transition__positive_transition_prior_score": {
+    "median": 0.5000083912673433,
+    "iqr": 0.0005475845056351902,
+    "lo": 0.4857880488280918,
+    "hi": 0.5164743473707787
+  },
+  "transition__anti_transition_risk_score": {
+    "median": 0.4999916087326567,
+    "iqr": 0.0005475845056351902,
+    "lo": 0.48352565262922137,
+    "hi": 0.5142119511719082
+  },
+  "transition__nearest_positive_cluster_id": {
+    "median": 1.0,
+    "iqr": 1.0,
+    "lo": 0.0,
+    "hi": 1.0
+  },
+  "transition__nearest_anti_cluster_id": {
+    "median": 0.0,
+    "iqr": 1.0,
+    "lo": 0.0,
+    "hi": 1.0
+  }
+}

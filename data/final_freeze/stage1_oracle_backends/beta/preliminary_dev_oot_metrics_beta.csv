@@ -1,0 +1,3 @@
+n,exact,within1,mae,rho,rho_abs,bias_pred_minus_actual_notch,specification,split
+2032,0.468,0.9198,0.65,-0.6756,0.6756,-0.0669,beta_ordered_logit,dev
+1790,0.5223,0.9358,0.579,-0.7288,0.7288,-0.0056,beta_ordered_logit,oot

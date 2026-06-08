@@ -1,0 +1,11 @@
+﻿action_dim,action_column,source_method,formula,observed_count,observed_rate,nonzero_rate,mean,std,min,max
+ppe_pct,action__ppe_pct,direct_data_raw_all_xlsx_selected_columns,"(유형자산_t+1 - 유형자산_t) / max(abs(유형자산_t), abs(유형자산_t+1 if zero-base))",37971,0.5071793981326886,0.5069656858161807,0.024179158156846778,0.1710633356494672,-0.5,0.5
+inv_turnover_chg,action__inv_turnover_chg,direct_data_raw_all_xlsx_selected_columns,(매출원가/재고자산)_t+1 - (매출원가/재고자산)_t,32427,0.4331280804626872,0.4251940107123299,-0.00102106079523102,1.2671461975732952,-3.0,3.0
+ar_turnover_chg,action__ar_turnover_chg,direct_data_raw_all_xlsx_selected_columns,(매출액/매출채권)_t+1 - (매출액/매출채권)_t,36033,0.48129349379566433,0.48129349379566433,0.014631766795537977,1.1984081765526726,-3.0,3.0
+ap_turnover_chg,action__ap_turnover_chg,direct_data_raw_all_xlsx_selected_columns,(매출원가/매입채무)_t+1 - (매출원가/매입채무)_t,33409,0.44624467388836203,0.4370016161993936,0.041310833936812126,1.5233682528027144,-3.0,3.0
+short_debt_pct,action__short_debt_pct,direct_data_raw_all_xlsx_selected_columns,"(단기차입금_t+1 - 단기차입금_t) / max(abs(단기차입금_t), abs(단기차입금_t+1 if zero-base))",27887,0.372487210653559,0.34925935325310214,0.03128798803548761,0.36980598813502574,-1.0,1.0
+long_debt_pct,action__long_debt_pct,direct_data_raw_all_xlsx_selected_columns,"(장기차입금_t+1 - 장기차입금_t) / max(abs(장기차입금_t), abs(장기차입금_t+1 if zero-base))",21828,0.29155702779595816,0.28104505322772383,-0.010278521575995934,0.2199171713648055,-0.5,0.5
+bond_pct,action__bond_pct,direct_data_raw_all_xlsx_selected_columns,"(사채_t+1 - 사채_t) / max(abs(사채_t), abs(사채_t+1 if zero-base))",11041,0.14747485541026087,0.13769751693002258,-0.00018078702504984595,0.16637544631908283,-0.5,0.5
+revenue_growth,action__revenue_growth,direct_data_raw_all_xlsx_selected_columns,"(매출액_t+1 - 매출액_t) / max(abs(매출액_t), abs(매출액_t+1 if zero-base))",37140,0.4960797146940575,0.49601292959514875,0.01162079116201824,0.08243782012332791,-0.15,0.15
+cogs_ratio_chg,action__cogs_ratio_chg,direct_data_raw_all_xlsx_selected_columns,(매출원가/매출액)_t+1 - (매출원가/매출액)_t,37054,0.49493101099282727,0.46200595723082266,0.0004558207726610192,0.015982915545655983,-0.03,0.03
+sga_ratio_chg,action__sga_ratio_chg,direct_data_raw_all_xlsx_selected_columns,(판관비/매출액)_t+1 - (판관비/매출액)_t,37054,0.49493101099282727,0.49493101099282727,0.00045413110339483624,0.010953834961041678,-0.02,0.02

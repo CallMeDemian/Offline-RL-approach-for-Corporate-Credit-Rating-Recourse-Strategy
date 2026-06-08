@@ -1,0 +1,65 @@
+{
+  "schema_version": "candidate_projection_diagnostics_v32",
+  "created_utc": "2026-06-06T09:44:23.189729+00:00",
+  "projection_distance": "active_action_first_signed_intent_with_l1_diagnostics",
+  "projection_mode": "active_intent",
+  "a0_policy": "allow_nearest",
+  "a0_margin": 0.0,
+  "weighted_l1_preset": "",
+  "weighted_l1_weights": {},
+  "candidate_library_hash": "e3340d5b5a2e5f5ccdaa6d892659de198a50c8c458f7a83153de463164fa8590",
+  "final_action_contract_hash": "3f6958feeecd4101e19278540cab806be1d9a7f6355232334bb896914c43162b",
+  "diagnostics": [
+    {
+      "phase": "phase1_pretrain",
+      "n": 38190,
+      "mean_projection_distance": 0.4250950217247009,
+      "p95_projection_distance": 0.7172878623008727,
+      "out_of_library_rate": 0.37059439643885833,
+      "near_tie_rate": 0.8879811468970935,
+      "n_labels": 11,
+      "projection_mode": "active_intent",
+      "a0_policy": "allow_nearest",
+      "a0_margin": 0.0,
+      "a0_raw_best_rate": 0.33736580256611676,
+      "a0_override_rate": 0.0,
+      "a0_primary_rate": 0.08997119664833726
+    },
+    {
+      "phase": "phase2_bc",
+      "n": 38190,
+      "mean_projection_distance": 0.4250950217247009,
+      "p95_projection_distance": 0.7172878623008727,
+      "out_of_library_rate": 0.37059439643885833,
+      "near_tie_rate": 0.8879811468970935,
+      "n_labels": 11,
+      "projection_mode": "active_intent",
+      "a0_policy": "allow_nearest",
+      "a0_margin": 0.0,
+      "a0_raw_best_rate": 0.33736580256611676,
+      "a0_override_rate": 0.0,
+      "a0_primary_rate": 0.08997119664833726
+    },
+    {
+      "phase": "phase3_iql",
+      "n": 3159,
+      "mean_projection_distance": 0.46393677592277527,
+      "p95_projection_distance": 0.7158270895481109,
+      "out_of_library_rate": 0.4140550807217474,
+      "near_tie_rate": 0.8841405508072174,
+      "n_labels": 11,
+      "projection_mode": "active_intent",
+      "a0_policy": "allow_nearest",
+      "a0_margin": 0.0,
+      "a0_raw_best_rate": 0.26622348844571064,
+      "a0_override_rate": 0.0,
+      "a0_primary_rate": 0.009813232035454257
+    }
+  ],
+  "artifacts": {
+    "candidate_projection_diagnostics_csv": "candidate_projection_diagnostics.csv",
+    "projection_support_by_candidate_csv": "projection_support_by_candidate.csv",
+    "high_distance_projection_rows_parquet": "high_distance_projection_rows.parquet",
+    "candidate_library_metadata_json": "candidate_library_metadata.json"
+  }
+}

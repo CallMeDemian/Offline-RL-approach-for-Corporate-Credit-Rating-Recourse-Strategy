@@ -1,0 +1,112 @@
+[
+  {
+    "variable_id": "R006",
+    "is_binary": false,
+    "n_unique_dev": 2031,
+    "p01_dev": -1.7235907030026039,
+    "p99_dev": 0.7223696822885991,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2031,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "R064",
+    "is_binary": false,
+    "n_unique_dev": 2032,
+    "p01_dev": -1.2255604525021144,
+    "p99_dev": 0.8987615086799674,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "R085",
+    "is_binary": false,
+    "n_unique_dev": 1963,
+    "p01_dev": 0.0,
+    "p99_dev": 0.6319240783901541,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2031,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "R133",
+    "is_binary": false,
+    "n_unique_dev": 2032,
+    "p01_dev": -1.8459171767369922,
+    "p99_dev": 2.2230459803713796,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "R157",
+    "is_binary": false,
+    "n_unique_dev": 1961,
+    "p01_dev": 0.3134103056360542,
+    "p99_dev": 136.1831509398493,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 1961,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "R182",
+    "is_binary": false,
+    "n_unique_dev": 1961,
+    "p01_dev": -0.5142719788021786,
+    "p99_dev": 2.0630305694752797,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 1961,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "industry_avg_rating_lag1_self_excl",
+    "is_binary": false,
+    "n_unique_dev": 329,
+    "p01_dev": 2.727272727272727,
+    "p99_dev": 5.20887500000004,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "cap_change_count_3y",
+    "is_binary": false,
+    "n_unique_dev": 52,
+    "p01_dev": 0.0,
+    "p99_dev": 35.0,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "log_assets",
+    "is_binary": false,
+    "n_unique_dev": 2032,
+    "p01_dev": 16.846563672603242,
+    "p99_dev": 23.59726653751168,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": false
+  },
+  {
+    "variable_id": "operating_loss_freq_3y",
+    "is_binary": false,
+    "n_unique_dev": 4,
+    "p01_dev": 0.0,
+    "p99_dev": 3.0,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": true
+  },
+  {
+    "variable_id": "ratio_missing_rate",
+    "is_binary": false,
+    "n_unique_dev": 15,
+    "p01_dev": 0.0,
+    "p99_dev": 0.25899280575539574,
+    "winsor_applied": true,
+    "n_dev_nonmissing": 2032,
+    "special_handling_flag": true
+  }
+]

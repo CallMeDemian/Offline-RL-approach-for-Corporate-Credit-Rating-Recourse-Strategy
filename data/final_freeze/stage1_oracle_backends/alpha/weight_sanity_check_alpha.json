@@ -1,0 +1,132 @@
+{
+  "direction_consistent": true,
+  "per_variable": [
+    {
+      "variable_id": "R006",
+      "block": "financial",
+      "spearman_rho": -0.3561,
+      "signal_category": "strong",
+      "weight_prior": 0.186346,
+      "weight_optimized": 0.256565,
+      "delta": 0.070218,
+      "delta_pct": 37.68,
+      "flags": []
+    },
+    {
+      "variable_id": "R064",
+      "block": "financial",
+      "spearman_rho": -0.4926,
+      "signal_category": "strong",
+      "weight_prior": 0.186534,
+      "weight_optimized": 0.234449,
+      "delta": 0.047915,
+      "delta_pct": 25.69,
+      "flags": []
+    },
+    {
+      "variable_id": "R085",
+      "block": "financial",
+      "spearman_rho": 0.4012,
+      "signal_category": "strong",
+      "weight_prior": 0.187786,
+      "weight_optimized": 0.113237,
+      "delta": -0.074549,
+      "delta_pct": -39.7,
+      "flags": []
+    },
+    {
+      "variable_id": "R133",
+      "block": "financial",
+      "spearman_rho": -0.2371,
+      "signal_category": "medium",
+      "weight_prior": 0.116109,
+      "weight_optimized": 0.093102,
+      "delta": -0.023008,
+      "delta_pct": -19.82,
+      "flags": []
+    },
+    {
+      "variable_id": "R157",
+      "block": "financial",
+      "spearman_rho": -0.3924,
+      "signal_category": "strong",
+      "weight_prior": 0.195702,
+      "weight_optimized": 0.194177,
+      "delta": -0.001525,
+      "delta_pct": -0.78,
+      "flags": []
+    },
+    {
+      "variable_id": "R182",
+      "block": "financial",
+      "spearman_rho": -0.117,
+      "signal_category": "weak",
+      "weight_prior": 0.127522,
+      "weight_optimized": 0.108471,
+      "delta": -0.019051,
+      "delta_pct": -14.94,
+      "flags": []
+    },
+    {
+      "variable_id": "industry_avg_rating_lag1_self_excl",
+      "block": "nonfinancial",
+      "spearman_rho": 0.2361,
+      "signal_category": "medium",
+      "weight_prior": 0.138702,
+      "weight_optimized": 0.224625,
+      "delta": 0.085924,
+      "delta_pct": 61.95,
+      "flags": []
+    },
+    {
+      "variable_id": "cap_change_count_3y",
+      "block": "nonfinancial",
+      "spearman_rho": 0.2472,
+      "signal_category": "medium",
+      "weight_prior": 0.239072,
+      "weight_optimized": 0.278382,
+      "delta": 0.039309,
+      "delta_pct": 16.44,
+      "flags": []
+    },
+    {
+      "variable_id": "log_assets",
+      "block": "nonfinancial",
+      "spearman_rho": -0.4718,
+      "signal_category": "strong",
+      "weight_prior": 0.239072,
+      "weight_optimized": 0.299395,
+      "delta": 0.060323,
+      "delta_pct": 25.23,
+      "flags": []
+    },
+    {
+      "variable_id": "operating_loss_freq_3y",
+      "block": "nonfinancial",
+      "spearman_rho": 0.3822,
+      "signal_category": "strong",
+      "weight_prior": 0.215165,
+      "weight_optimized": 0.145493,
+      "delta": -0.069672,
+      "delta_pct": -32.38,
+      "flags": []
+    },
+    {
+      "variable_id": "ratio_missing_rate",
+      "block": "nonfinancial",
+      "spearman_rho": 0.0174,
+      "signal_category": "weak",
+      "weight_prior": 0.167988,
+      "weight_optimized": 0.052105,
+      "delta": -0.115884,
+      "delta_pct": -68.98,
+      "flags": []
+    }
+  ],
+  "suspicious": [],
+  "block_sums": {
+    "financial_sum": 1.0,
+    "nonfinancial_sum": 1.0
+  },
+  "recommendation": "Weight changes appear sensible. No γ_REG adjustment needed."
+}

@@ -1,0 +1,11 @@
+filename,size
+acceptance_beta.csv,140
+benchmark_beta_params.json,9573
+benchmark_firm_year_output_beta.csv,2166108
+benchmark_firm_year_output_beta.parquet,744102
+confusion_matrix_beta_dev.csv,253
+confusion_matrix_beta_oot.csv,251
+cross_oracle_alpha_beta_comparison.csv,151
+ordered_logit_coefficients_beta.csv,1772
+ordered_logit_summary_beta.txt,3190
+preliminary_dev_oot_metrics_beta.csv,224

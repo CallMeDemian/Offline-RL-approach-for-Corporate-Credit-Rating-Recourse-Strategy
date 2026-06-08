@@ -1,0 +1,21 @@
+{
+  "stage_name": "stage0_validation",
+  "status": "PASS",
+  "errors": [],
+  "metadata": {
+    "inferred_columns": {
+      "code": "\uac70\ub798\uc18c\ucf54\ub4dc",
+      "year": "year",
+      "rating": "rating__rating",
+      "security_code": "rating__\uc99d\uad8c\uad6c\ubd84",
+      "agency_code": "rating__\ud3c9\uac00\uc0ac\uad6c\ubd84",
+      "eval_date": "rating__\ud3c9\uac00\uc77c"
+    },
+    "rows": 4924,
+    "bad_security_rows": 0,
+    "bad_agency_rows": 0,
+    "bad_grade_rows": 0,
+    "duplicate_firm_year_rows": 0
+  },
+  "created_utc": "2026-06-06T06:45:18.294256+00:00"
+}

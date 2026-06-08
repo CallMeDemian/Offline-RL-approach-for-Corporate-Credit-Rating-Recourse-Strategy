@@ -1,0 +1,17 @@
+﻿field,matched_columns,coverage,status
+revenue,"['raw__revenue', 'sim__revenue']",1.0,PASS
+cogs,"['raw__cogs', 'sim__cogs']",1.0,PASS
+sga,"['raw__sga', 'sim__sga']",1.0,PASS
+total_assets,"['raw__total_assets', 'sim__total_assets']",1.0,PASS
+current_assets,"['raw__current_assets', 'sim__current_assets']",1.0,PASS
+current_liabilities,"['raw__current_liabilities', 'sim__current_liabilities']",1.0,PASS
+cash,"['raw__cash', 'raw__avs__U01A111010000__토지_IFRS_천원', 'sim__cash']",1.0,PASS
+inventory,"['raw__inventory', 'sim__inventory']",1.0,PASS
+receivables,"['raw__accounts_receivable', 'raw__receivables', 'sim__receivables']",1.0,PASS
+payables,"['raw__accounts_payable', 'raw__payables', 'sim__payables']",1.0,PASS
+ppe,"['raw__ppe', 'sim__ppe']",1.0,PASS
+short_term_debt,"['raw__short_debt', 'raw__short_term_debt', 'sim__short_term_debt']",1.0,PASS
+long_term_debt,"['raw__long_debt', 'raw__long_term_debt', 'sim__long_term_debt']",1.0,PASS
+bonds,"['raw__bond', 'raw__bonds', 'sim__bonds']",1.0,PASS
+total_liabilities,"['raw__total_liabilities', 'sim__total_liabilities']",1.0,PASS
+total_equity,"['raw__total_equity', 'sim__total_equity']",1.0,PASS

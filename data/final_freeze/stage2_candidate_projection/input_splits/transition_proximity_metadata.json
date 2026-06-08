@@ -1,0 +1,24 @@
+{
+  "schema_version": "transition_proximity_metadata_v1",
+  "status": "PASS",
+  "broad": {
+    "transition_proximity_status": "computed",
+    "method": "deterministic_1d_transition_signal_prototypes",
+    "positive_origin": 0.06901752717765774,
+    "anti_origin": -0.07218799478897994,
+    "scale": 47.22867657077642,
+    "n_rows": 40753,
+    "n_positive_signal": 17327,
+    "n_anti_signal": 17467
+  },
+  "rated": {
+    "transition_proximity_status": "computed",
+    "method": "deterministic_1d_transition_signal_prototypes",
+    "positive_origin": 0.062238431218609114,
+    "anti_origin": -0.06735604099423567,
+    "scale": 0.7613048607449256,
+    "n_rows": 3159,
+    "n_positive_signal": 1172,
+    "n_anti_signal": 1264
+  }
+}

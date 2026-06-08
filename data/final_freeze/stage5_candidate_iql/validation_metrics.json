@@ -1,0 +1,29 @@
+{
+  "n_train": 34749,
+  "seeds": [
+    2
+  ],
+  "best_seed": 2,
+  "best_critic_proxy_value": 0.5597976012311436,
+  "selected_actor_argmax_population_entropy": 1.5232469268241322,
+  "selection_report": {
+    "epoch": 76,
+    "q": 0.6325448448494899,
+    "entropy": 1.5232469268241322,
+    "selection_score": 0.5597976012311436,
+    "q_norm": 0.5597976012311436,
+    "entropy_norm": 0.6672017201929702,
+    "frontier_size": 9,
+    "q_min": 0.5732405633802067,
+    "q_max": 0.6791793550771653,
+    "entropy_min": 0.97510129366273,
+    "entropy_max": 1.796660376278503
+  },
+  "selection_metric": "q_pareto_knee",
+  "transition_source": "counterfactual",
+  "actor_extraction_mode": "awr",
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.002,
+  "lr_scheduler": "none"
+}

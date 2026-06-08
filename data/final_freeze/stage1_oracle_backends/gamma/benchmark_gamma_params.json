@@ -1,0 +1,201 @@
+{
+  "model_name": "Gamma-ML Tree-Boosting Regressor-to-Notch Rating Benchmark",
+  "version": "stage4_gamma_ml_tree_boosting_regressor_to_notch_v1.0",
+  "role": "nonlinear ML rating-prediction robustness backend",
+  "evaluation_note": "Final Stage6 is the simulator-mediated multi-oracle evaluation engine; Gamma-ML is only a scoring backend.",
+  "split_policy": {
+    "dev": "2002-2019",
+    "oot": "2020-2023"
+  },
+  "sample_size": {
+    "total": 3822,
+    "dev": 2032,
+    "oot": 1790
+  },
+  "selected_variables": [
+    "R006",
+    "R064",
+    "R085",
+    "R133",
+    "R157",
+    "R182",
+    "industry_avg_rating_lag1_self_excl",
+    "cap_change_count_3y",
+    "log_assets",
+    "operating_loss_freq_3y",
+    "ratio_missing_rate"
+  ],
+  "grade_order": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "CC",
+    "C",
+    "D"
+  ],
+  "modeled_grades": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "CC",
+    "C",
+    "D"
+  ],
+  "modeled_grade_nums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_boundaries": {},
+  "fallback_grade": "D",
+  "score_definition": "R_score_gamma = 100 * (10 - predicted_rating_num_gamma) / 9; R_grade_gamma is assigned by rounded/clipped predicted rating number, not by score-boundary remapping",
+  "grade_assignment_rule": "rounded_clipped_predicted_rating_num",
+  "tree_boosting_params": {
+    "loss": "huber",
+    "n_estimators": 120,
+    "learning_rate": 0.04,
+    "max_depth": 3,
+    "min_samples_leaf": 30,
+    "subsample": 0.85,
+    "random_state": 42
+  },
+  "model_artifact": "benchmark_gamma_model.joblib",
+  "feature_importance": [
+    {
+      "variable": "log_assets",
+      "importance_gain": 0.35158295755263186,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R064",
+      "importance_gain": 0.34631883409042563,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R085",
+      "importance_gain": 0.1148988759944738,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "industry_avg_rating_lag1_self_excl",
+      "importance_gain": 0.04333847447095294,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "operating_loss_freq_3y",
+      "importance_gain": 0.042945483157266894,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R157",
+      "importance_gain": 0.03339526042116726,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R133",
+      "importance_gain": 0.025445110611736984,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "cap_change_count_3y",
+      "importance_gain": 0.02519455734113555,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "ratio_missing_rate",
+      "importance_gain": 0.006464979556469362,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R006",
+      "importance_gain": 0.005555452501838549,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    },
+    {
+      "variable": "R182",
+      "importance_gain": 0.004860014301901126,
+      "note": "sklearn GradientBoostingRegressor impurity-based feature importance"
+    }
+  ],
+  "metrics": [
+    {
+      "n": 2032,
+      "exact": 0.5861,
+      "within1": 0.9606,
+      "mae_continuous": 0.55,
+      "rmse_continuous": 0.797,
+      "rho": -0.7993,
+      "rho_abs": 0.7993,
+      "bias_pred_minus_actual_notch": -0.0273,
+      "specification": "gamma_ml_tree_boosting_regressor_to_notch",
+      "split": "dev"
+    },
+    {
+      "n": 1790,
+      "exact": 0.5464,
+      "within1": 0.9615,
+      "mae_continuous": 0.555,
+      "rmse_continuous": 0.723,
+      "rho": -0.75,
+      "rho_abs": 0.75,
+      "bias_pred_minus_actual_notch": 0.0112,
+      "specification": "gamma_ml_tree_boosting_regressor_to_notch",
+      "split": "oot"
+    }
+  ],
+  "cross_oracle_alpha_gamma_ml": [
+    {
+      "split": "dev",
+      "n": 2032,
+      "spearman_alpha_gamma_ml": 0.8632,
+      "in_operating_band": true,
+      "grade_exact_agree": 0.6634,
+      "within1_agree": 0.9872
+    },
+    {
+      "split": "oot",
+      "n": 1790,
+      "spearman_alpha_gamma_ml": 0.8934,
+      "in_operating_band": true,
+      "grade_exact_agree": 0.6497,
+      "within1_agree": 0.9777
+    }
+  ],
+  "acceptance_gates": {
+    "spearman_dev": {
+      "value": 0.7993,
+      "pass": true
+    },
+    "within1_dev": {
+      "value": 0.9606,
+      "pass": true
+    },
+    "spearman_oot": {
+      "value": 0.75,
+      "pass": true
+    },
+    "within1_oot": {
+      "value": 0.9615,
+      "pass": true
+    },
+    "oot_psi": {
+      "value": 0.0365,
+      "pass": true
+    }
+  }
+}

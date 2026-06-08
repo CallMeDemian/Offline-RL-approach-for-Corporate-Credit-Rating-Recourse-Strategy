@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "audits": [
+    {
+      "status": "PASS",
+      "selected_variables": [
+        "R006",
+        "R064",
+        "R085",
+        "R133",
+        "R157",
+        "R182",
+        "industry_avg_rating_lag1_self_excl",
+        "cap_change_count_3y",
+        "log_assets",
+        "operating_loss_freq_3y",
+        "ratio_missing_rate"
+      ],
+      "formula_rows": [
+        {
+          "variable_id": "R006",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "세전이익률",
+          "formula_source": "pretax_income/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R064",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "이익잉여금/총자산",
+          "formula_source": "retained_earnings/total_assets",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R085",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "금융비용부담률",
+          "formula_source": "financial_cost/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R133",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "FCF/유동부채",
+          "formula_source": "(operating_cf-capex)/current_liabilities",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R157",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "자본금회전율",
+          "formula_source": "revenue/average_capital_stock",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R182",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "비유동자산증가율",
+          "formula_source": "non_current_assets_t/non_current_assets_t-1 - 1",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "industry_avg_rating_lag1_self_excl",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "cap_change_count_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "log_assets",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "operating_loss_freq_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "ratio_missing_rate",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stage2_phi_aliases_are_not_used_as_oracle_formula_source": true,
+      "backend": "alpha",
+      "params": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_backends\\alpha\\oracle_alpha_params.json"
+    },
+    {
+      "status": "PASS",
+      "selected_variables": [
+        "R006",
+        "R064",
+        "R085",
+        "R133",
+        "R157",
+        "R182",
+        "industry_avg_rating_lag1_self_excl",
+        "cap_change_count_3y",
+        "log_assets",
+        "operating_loss_freq_3y",
+        "ratio_missing_rate"
+      ],
+      "formula_rows": [
+        {
+          "variable_id": "R006",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "세전이익률",
+          "formula_source": "pretax_income/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R064",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "이익잉여금/총자산",
+          "formula_source": "retained_earnings/total_assets",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R085",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "금융비용부담률",
+          "formula_source": "financial_cost/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R133",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "FCF/유동부채",
+          "formula_source": "(operating_cf-capex)/current_liabilities",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R157",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "자본금회전율",
+          "formula_source": "revenue/average_capital_stock",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R182",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "비유동자산증가율",
+          "formula_source": "non_current_assets_t/non_current_assets_t-1 - 1",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "industry_avg_rating_lag1_self_excl",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "cap_change_count_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "log_assets",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "operating_loss_freq_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "ratio_missing_rate",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stage2_phi_aliases_are_not_used_as_oracle_formula_source": true,
+      "backend": "beta",
+      "params": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_backends\\beta\\benchmark_beta_params.json"
+    },
+    {
+      "status": "PASS",
+      "selected_variables": [
+        "R006",
+        "R064",
+        "R085",
+        "R133",
+        "R157",
+        "R182",
+        "industry_avg_rating_lag1_self_excl",
+        "cap_change_count_3y",
+        "log_assets",
+        "operating_loss_freq_3y",
+        "ratio_missing_rate"
+      ],
+      "formula_rows": [
+        {
+          "variable_id": "R006",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "세전이익률",
+          "formula_source": "pretax_income/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R064",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "이익잉여금/총자산",
+          "formula_source": "retained_earnings/total_assets",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R085",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "금융비용부담률",
+          "formula_source": "financial_cost/revenue",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R133",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "FCF/유동부채",
+          "formula_source": "(operating_cf-capex)/current_liabilities",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R157",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "자본금회전율",
+          "formula_source": "revenue/average_capital_stock",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "R182",
+          "status": "FORMULA_REGISTERED",
+          "formula_name": "비유동자산증가율",
+          "formula_source": "non_current_assets_t/non_current_assets_t-1 - 1",
+          "metadata_name": "",
+          "metadata_token_match": null
+        },
+        {
+          "variable_id": "industry_avg_rating_lag1_self_excl",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "cap_change_count_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "log_assets",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "operating_loss_freq_3y",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        },
+        {
+          "variable_id": "ratio_missing_rate",
+          "status": "NONFINANCIAL_PASSTHROUGH_OR_CONTEXT",
+          "metadata_name": ""
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "stage2_phi_aliases_are_not_used_as_oracle_formula_source": true,
+      "backend": "gamma",
+      "params": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_backends\\gamma\\benchmark_gamma_params.json"
+    }
+  ]
+}

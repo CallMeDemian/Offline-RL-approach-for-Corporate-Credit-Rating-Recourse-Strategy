@@ -1,0 +1,28 @@
+item,status,note
+split_stage3_created,True,
+dev_period_2002_2019,True,
+oot_period_2020_2023,True,
+metrics_calculated_dev_only,True,
+financial_total_candidates_134,False,
+financial_main_candidates_124,False,
+appendix_excluded_from_main,True,
+nonfinancial_candidates_ge_23,True,actual=33
+total_screening_ge_157,True,actual=172
+final_selected_10_or_11,True,actual=11
+6_financial_categories,True,
+4_or_5_nonfinancial_categories,True,actual=5
+direction_encoding_matches_selected,True,
+collinearity_matrix_matches_selected,True,
+collinearity_checked,True,
+unresolved_collinearity,False,WARNING if True
+stage1c_stable_alias_not_v2,True,
+industry_selected_in_lag1_self_excl_allowlist,True,
+r185_weight_prior_v3_le_0_021,False,
+financial_data_completeness_weight_prior_v3_le_0_021_if_present,True,
+financial_weight_sum_is_1,True,
+nonfinancial_weight_sum_is_1,True,
+weights_within_cap,True,
+domain_filter_log_written,True,
+gameable_liquidity_exclusion_policy_active,True,"active=['R122', 'R136']"
+gameable_liquidity_r_codes_not_selected,True,selected_overlap=[]
+override_log_written,True,

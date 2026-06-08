@@ -1,0 +1,9 @@
+magnitude_quantile,encoder_finetune,encoder_lr_scale,checkpoint,status
+50,False,0.0,stage4_bc_selection__P50__frozen.pt,SELECTED_RUN
+50,True,0.1,stage4_bc_selection__P50__lr_scale_0.1.pt,REGISTERED_NOT_RUN
+65,False,0.0,stage4_bc_selection__P65__frozen.pt,REGISTERED_NOT_RUN
+65,True,0.1,stage4_bc_selection__P65__lr_scale_0.1.pt,REGISTERED_NOT_RUN
+75,False,0.0,stage4_bc_selection__P75__frozen.pt,REGISTERED_NOT_RUN
+75,True,0.1,stage4_bc_selection__P75__lr_scale_0.1.pt,REGISTERED_NOT_RUN
+85,False,0.0,stage4_bc_selection__P85__frozen.pt,REGISTERED_NOT_RUN
+85,True,0.1,stage4_bc_selection__P85__lr_scale_0.1.pt,REGISTERED_NOT_RUN

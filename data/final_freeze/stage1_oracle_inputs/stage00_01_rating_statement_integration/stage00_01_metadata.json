@@ -1,0 +1,49 @@
+{
+  "stage": "stage00_01_final_stage0_adapter_memlite",
+  "status": "PASS",
+  "read_only_stage0": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage0_oracle_foundation",
+  "output": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_01_rating_statement_integration",
+  "firm_year_rows": 4924,
+  "context_contract_repair": {
+    "status": "PASS",
+    "rows": 4924,
+    "market_known": 4924,
+    "sector_known": 0,
+    "columns_added": [
+      "산업코드",
+      "산업명",
+      "업종코드",
+      "stage00_01_context_source"
+    ],
+    "columns_present": [
+      "거래소코드",
+      "year",
+      "시장",
+      "sector_7",
+      "산업코드",
+      "산업명",
+      "업종코드",
+      "stage00_01_context_source"
+    ],
+    "raw_context": {
+      "code_year_lookup_rows": 76954,
+      "code_static_lookup_rows": 4130
+    }
+  },
+  "cleaned_statement_files": 6,
+  "precomputed_ratio_materialization": {
+    "ratio_raw_files": 7,
+    "ratio_raw_rows_read": 75721,
+    "ratio_rows": 4861,
+    "ratio_cols": 200,
+    "ratio_output": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\stage1_oracle_inputs\\stage00_01_rating_statement_integration\\cleaned_statement_panels\\재무비율_clean.parquet"
+  },
+  "statement_type_canonical_counts": {
+    "재무상태표": 32846934,
+    "현금흐름표": 19578153,
+    "손익계산서": 18811866,
+    "자본변동표": 3952119,
+    "이익잉여금처분계산서": 1888461
+  },
+  "methodology_note": "Stage0 is frozen; adapter exposes legacy Stage00-01 contract without regenerating raw foundation. Memory-lite version reads only required statement columns."
+}

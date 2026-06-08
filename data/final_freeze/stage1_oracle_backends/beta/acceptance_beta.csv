@@ -1,0 +1,6 @@
+gate,value,pass
+spearman_dev,0.6756,True
+within1_dev,0.9198,True
+spearman_oot,0.7288,True
+within1_oot,0.9358,True
+oot_psi,0.0424,True

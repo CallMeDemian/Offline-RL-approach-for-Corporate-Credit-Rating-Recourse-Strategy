@@ -1,0 +1,187 @@
+﻿ratio_id,ratio_name_ko,category,required_items,all_items_found,missing_items,ambiguous_items,available_firm_year_count,available_firm_year_rate,eligible_for_direct_calculation,fallback_possible,fallback_source,decision,availability_status,requires_lag,requires_average_denominator,requires_growth_base,priority
+R001,매출총이익률,수익성,U01B201014400|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R002,영업이익률,수익성,U01B430000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R003,정상영업이익률,수익성,U01B430000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R004,EBIT마진,수익성,U01B430000000|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R005,EBITDA마진,수익성,U01B350014100|U01B430000000|U01B350014300|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R006,세전이익률,수익성,U01B100000000|U01B700000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R007,순이익률,수익성,U01B840000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R008,계속사업이익률,수익성,U01B800000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R009,총포괄이익률,수익성,U01B900000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R010,영업현금흐름마진,수익성,U01D100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R012,매출총이익/총자산,수익성,U01B201014400|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R013,영업이익/총자산,수익성,U01B430000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R014,EBIT/총자산,수익성,U01B430000000|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,True,False,확장
+R015,EBITDA/총자산,수익성,U01B350014100|U01B430000000|U01B350014300|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,True,False,확장
+R016,세전이익/총자산,수익성,U01A100000000|U01B700000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R017,당기순이익/총자산(ROA),수익성,U01B840000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,핵심
+R018,총포괄이익/총자산,수익성,U01B900000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R019,영업현금흐름/총자산,수익성,U01D100000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R021,영업이익/자기자본,수익성,U01A600000000|U01B430000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R022,당기순이익/자기자본(ROE),수익성,U01B840000000|U01A600000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R023,총포괄이익/자기자본,수익성,U01A600000000|U01B900000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R031,현금이익전환율,수익성,U01D100000000|U01B840000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R032,영업현금흐름/영업이익,수익성,U01D100000000|U01B430000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R033,EBITDA 대비 OCF,수익성,U01B350014100|U01D100000000|U01B430000000|U01B350014300,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R043,부채비율,안정성,U01A800000000|U01A600000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R044,총부채/총자산,안정성,U01A800000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R045,자기자본비율,안정성,U01A600000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R046,차입금의존도,안정성,U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R047,순차입금의존도,안정성,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R048,유이자부채/총자산,안정성,U01A811012800|U01A811026700|U01A100000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R049,금융부채/총부채,안정성,U01A800000000|U01A811012800|U01A811026700|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R050,총차입금/자기자본,안정성,U01A811027400|U01A811012800|U01A811026700|U01A600000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R051,순차입금/자기자본,안정성,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A600000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R052,유이자부채/자기자본,안정성,U01A811012800|U01A811026700|U01A600000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R053,유동부채비율,안정성,U01A600000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R054,비유동부채비율,안정성,U01A810000000|U01A600000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R055,유동부채/총부채,안정성,U01A800000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R056,비유동부채/총부채,안정성,U01A810000000|U01A800000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R057,단기차입금비중,안정성,U01A811012800|U01A811026700|U01A811000000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R058,장기차입금비중,안정성,U01A811012800|U01A811026700|U01A811000000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R059,단기금융부채/총자산,안정성,U01A811026700|U01A100000000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R060,장기금융부채/총자산,안정성,U01A811012800|U01A811000000|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R061,순차입금/총차입금,안정성,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R063,유보율,안정성,U01A611000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R064,이익잉여금/총자산,안정성,U01A100000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R065,이익잉여금/자기자본,안정성,U01A600000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R067,자본금/총자산,안정성,U01A611000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R071,비유동비율,안정성,U01A110000000|U01A600000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R076,순운전자본/총자산,안정성,U01A111038600|U01A100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R077,운전자본/매출액,안정성,U01A111038600|U01B100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R079,이자보상배율,부채상환능력,U01B430000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R080,EBIT 이자보상배율,부채상환능력,U01B430000000|U01B550000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R081,EBITDA 이자보상배율,부채상환능력,U01B350014100|U01B430000000|U01B350014300|U01B550000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R082,세전이익 이자보상배율,부채상환능력,U01B700000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R083,OCF 이자보상배율,부채상환능력,U01D100000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R085,금융비용부담률,부채상환능력,U01B100000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R086,이자비용/매출액,부채상환능력,U01B100000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R087,이자비용/영업이익,부채상환능력,U01B430000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R088,이자비용/EBITDA,부채상환능력,U01B350014100|U01B350014300|U01B430000000|U01B550000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R089,금융비용/EBITDA,부채상환능력,U01B350014100|U01B350014300|U01B430000000|U01B550000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R090,금융비용/영업현금흐름,부채상환능력,U01D100000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R091,OCF/총부채,부채상환능력,U01A800000000|U01D100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R092,OCF/총차입금,부채상환능력,U01A811027400|U01A811012800|U01A811026700|U01D100000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R093,OCF/순차입금,부채상환능력,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01D100000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R094,OCF/유동부채,부채상환능력,U01D100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R095,OCF/단기차입금,부채상환능력,U01A811026700|U01D100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R099,EBITDA/총차입금,부채상환능력,U01B350014100|U01B350014300|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R100,EBITDA/순차입금,부채상환능력,U01B350014100|U01B350014300|U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R101,총차입금/EBITDA,부채상환능력,U01B350014100|U01B350014300|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R102,순차입금/EBITDA,부채상환능력,U01B350014100|U01B350014300|U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R103,총부채/EBITDA,부채상환능력,U01B350014100|U01A800000000|U01B430000000|U01B350014300,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R104,순차입금/OCF,부채상환능력,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01D100000000|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R105,총차입금/OCF,부채상환능력,U01A811027400|U01A811012800|U01D100000000|U01A811026700|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R106,총부채/OCF,부채상환능력,U01D100000000|U01A800000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R107,단기차입금/OCF,부채상환능력,U01D100000000|U01A811026700,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R108,단기금융부채/EBITDA,부채상환능력,U01B350014100|U01B350014300|U01A811027400|U01A811026700|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R109,단기금융부채/현금성자산,부채상환능력,U01A811026700|U01A111050000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R110,현금성자산/총차입금,부채상환능력,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R111,현금성자산/단기차입금,부채상환능력,U01A811026700|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R112,내부자금조달률,부채상환능력,U01D100000000|U01D206012400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R114,순차입금상환가능기간,부채상환능력,U01B350014100|U01B350014300|U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R115,유동비율,유동성,U01A111038600|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R116,당좌비율,유동성,U01A111038600|U01A111038700|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R117,현금비율,유동성,U01A811026000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R118,순운전자본비율,유동성,U01A111038600|U01A100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,핵심
+R119,순운전자본/매출액,유동성,U01A111038600|U01B100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R120,유동자산/총자산,유동성,U01A111038600|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R121,유동부채/총자산,유동성,U01A100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R122,유동부채/매출액,유동성,U01B100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R123,유동자산/매출액,유동성,U01A111038600|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R124,현금성자산/총자산,유동성,U01A100000000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R125,현금성자산/매출액,유동성,U01B100000000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R126,현금성자산/총부채,유동성,U01A800000000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R127,현금성자산/유동부채,유동성,U01A811026000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R128,현금성자산/단기금융부채,유동성,U01A811026700|U01A111050000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R130,즉시가용유동성/단기금융부채,유동성,U01A811027400|U01A811026700|U01A111050000|U01A111043200,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R131,OCF/유동부채,유동성,U01D100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,핵심
+R132,OCF/단기금융부채,유동성,U01A811026700|U01D100000000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R133,FCF/유동부채,유동성,U01D100000000|U01D206012400|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R134,재고자산/유동자산,유동성,U01A111038600|U01A111038700,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R135,매출채권/유동자산,유동성,U01A111038600|U01A111045400,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R136,매입채무/유동부채,유동성,U01A811030700|U01A811026000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R137,재고자산/매출액,유동성,U01B100000000|U01A111038700,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R138,매출채권/매출액,유동성,U01B100000000|U01A111045400,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R139,매입채무/매출액,유동성,U01A811030700|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R140,순영업운전자본/매출액,유동성,U01A111038700|U01A811030700|U01B100000000|U01A111045400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R141,영업운전자본/총자산,유동성,U01A111038700|U01A811030700|U01A100000000|U01A111045400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R143,총자산회전율,활동성,U01A100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,핵심
+R145,비유동자산회전율,활동성,U01A110000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R146,유동자산회전율,활동성,U01A111038600|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R147,자기자본회전율,활동성,U01A600000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R148,타인자본회전율,활동성,U01A800000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,핵심
+R150,운전자본회전율,활동성,U01A111038600|U01B100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,True,False,확장
+R152,재고자산회전율,활동성,U01A111038700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,핵심
+R153,매출채권회전율,활동성,U01A111045400|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,핵심
+R154,매입채무회전율,활동성,U01A811030700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R155,순영업운전자본회전율,활동성,U01A111038700|U01A111045400|U01A811030700|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,True,False,확장
+R156,현금성자산회전율,활동성,U01B100000000|U01A111050000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R157,자본금회전율,활동성,U01A611000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,True,False,확장
+R158,매출채권회전일수,활동성,U01B100000000|U01A111045400,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R159,재고자산회전일수,활동성,U01B200000000|U01A111038700,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R160,매입채무회전일수,활동성,U01A811030700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R163,재고보유기간,활동성,U01B200000000|U01A111038700,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R164,매출채권회수기간,활동성,U01B100000000|U01A111045400,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R165,매입채무지급기간,활동성,U01A811030700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,False,확장
+R169,매출액증가율,성장성,U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,핵심
+R170,매출총이익증가율,성장성,U01B201014400,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R171,영업이익증가율,성장성,U01B430000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,핵심
+R172,정상영업이익증가율,성장성,U01B430000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R173,EBIT증가율,성장성,U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R174,EBITDA증가율,성장성,U01B350014100|U01B430000000|U01B350014300,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,핵심
+R175,세전이익증가율,성장성,U01B700000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R176,순이익증가율,성장성,U01B840000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R177,총포괄이익증가율,성장성,U01B900000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R178,OCF증가율,성장성,U01D100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R179,FCF증가율,성장성,U01D100000000|U01D206012400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R180,총자산증가율,성장성,U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,핵심
+R181,유동자산증가율,성장성,U01A111038600,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R182,비유동자산증가율,성장성,U01A110000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R184,자기자본증가율,성장성,U01A600000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,핵심
+R185,이익잉여금증가율,성장성,U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R186,총차입금증가율,성장성,U01A811012800|U01A811026700|U01A811000000|U01A811027400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R187,순차입금증가율,성장성,U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R188,CAPEX증가율,성장성,U01D206012400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R196,매출-자산 성장괴리,성장성,U01A100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R197,영업이익-매출 성장괴리,성장성,U01B430000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R198,EBITDA-매출 성장괴리,성장성,U01B350014100|U01B430000000|U01B350014300|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R199,차입금-매출 성장괴리,성장성,U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R200,순차입금-EBITDA 성장괴리,성장성,U01B350014100|U01B350014300|U01A111050000|U01A811027400|U01A811012800|U01A811026700|U01A811000000|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R201,자기자본-총자산 성장괴리,성장성,U01A600000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R202,OCF-매출 성장괴리,성장성,U01D100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_with_lag,True,False,True,확장
+R203,FCF-매출 성장괴리,성장성,U01D100000000|U01D206012400|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,True,False,True,확장
+R204,투자부담률,성장성,U01D206012400|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R205,CAPEX/감가상각비,성장성,U01B350014100|U01D206012400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R210,Altman 운전자본/총자산,기타/복합,U01A111038600|U01A100000000|U01A811026000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R211,Altman 이익잉여금/총자산,기타/복합,U01A100000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R212,Altman EBIT/총자산,기타/복합,U01B430000000|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R213,Altman 매출액/총자산,기타/복합,U01A100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R214,OCF/총자산,기타/복합,U01D100000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R215,FCF/총자산,기타/복합,U01D100000000|U01D206012400|U01A100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R216,OCF/매출액,기타/복합,U01D100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R217,FCF/매출액,기타/복합,U01D100000000|U01D206012400|U01B100000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R218,CAPEX/OCF,기타/복합,U01D100000000|U01D206012400,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R219,CAPEX/EBITDA,기타/복합,U01B350014100|U01B350014300|U01D206012400|U01B430000000,True,,,4457,0.9392,True,False,,use_derived_component,available_derived,False,False,False,확장
+R220,OCF/순이익 비율,CF_품질,U01D100000000|U01B840000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R221,OCF마진,CF_품질,U01D100000000|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R222,FCF/총자산,CF_품질,U01A100000000,True,,num=영업활동현금흐름-CAPEX_proxy,4457,0.9392,False,True,NICE_재무비율_panel_for_audit,use_precomputed_ratio_for_validation_only,ambiguous,False,False,False,확장
+R223,CAPEX/감가상각비,CF_품질,U01B350014100,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R224,CAPEX/총자산,CF_품질,U01A100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R225,OCF이자보상배율,CF_품질,U01D100000000|U01B550000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R226,이익잉여금/총자산,자본효율성,U01A100000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R227,이익잉여금/자본,자본효율성,U01A600000000|U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R228,OCF/총자산(평균),자본효율성,U01D100000000|U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R229,배당성향(CF),자본효율성,U01D100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R230,리스부채/총자산,IFRS16_리스,U01A100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R231,리스부채/자본,IFRS16_리스,U01A600000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R232,OCF/리스부채,IFRS16_리스,U01D100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R233,무형자산/총자산,무형자산_RD,U01A100000000,True,,num=무형자산,4457,0.9392,False,True,NICE_재무비율_panel_for_audit,use_precomputed_ratio_for_validation_only,ambiguous,False,False,False,확장
+R234,R&D비용/매출액,무형자산_RD,U01B100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R235,영업권/총자산,무형자산_RD,U01A100000000,True,,,4457,0.9392,False,False,,exclude_candidate,unknown,False,False,False,확장
+R236,매입채무회전율,활동성,U01A811030700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R237,매출채권회전율,활동성,U01A111045400|U01B100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R238,재고자산회전율,활동성,U01A111038700|U01B200000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R239,OCF성장률,성장성,U01D100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R240,총자산성장률,성장성,U01A100000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,False,확장
+R241,이익잉여금증가율,성장성,U01A615000000,True,,,4457,0.9392,True,False,,use_direct,available_direct,False,False,True,확장

@@ -1,0 +1,92 @@
+[
+  {
+    "boundary_id": 0,
+    "upper_grade": "AAA",
+    "lower_grade": "AA",
+    "threshold_score": 94.11,
+    "estimable": true,
+    "fixed": "True",
+    "sparse_tail_flag": "True",
+    "reason": "sparse_tail_fixed"
+  },
+  {
+    "boundary_id": 1,
+    "upper_grade": "AA",
+    "lower_grade": "A",
+    "threshold_score": 88.98,
+    "estimable": true,
+    "fixed": false,
+    "sparse_tail_flag": false,
+    "reason": "joint_optimized"
+  },
+  {
+    "boundary_id": 2,
+    "upper_grade": "A",
+    "lower_grade": "BBB",
+    "threshold_score": 73.38,
+    "estimable": true,
+    "fixed": false,
+    "sparse_tail_flag": false,
+    "reason": "joint_optimized"
+  },
+  {
+    "boundary_id": 3,
+    "upper_grade": "BBB",
+    "lower_grade": "BB",
+    "threshold_score": 51.01,
+    "estimable": true,
+    "fixed": false,
+    "sparse_tail_flag": false,
+    "reason": "joint_optimized"
+  },
+  {
+    "boundary_id": 4,
+    "upper_grade": "BB",
+    "lower_grade": "B",
+    "threshold_score": 18.93,
+    "estimable": true,
+    "fixed": false,
+    "sparse_tail_flag": false,
+    "reason": "joint_optimized"
+  },
+  {
+    "boundary_id": 5,
+    "upper_grade": "B",
+    "lower_grade": "CCC",
+    "threshold_score": 5.72,
+    "estimable": true,
+    "fixed": false,
+    "sparse_tail_flag": false,
+    "reason": "joint_optimized"
+  },
+  {
+    "boundary_id": 6,
+    "upper_grade": "CCC",
+    "lower_grade": "CC",
+    "threshold_score": 4.44,
+    "estimable": true,
+    "fixed": "True",
+    "sparse_tail_flag": "True",
+    "reason": "sparse_tail_fixed"
+  },
+  {
+    "boundary_id": 7,
+    "upper_grade": "CC",
+    "lower_grade": "C",
+    "threshold_score": 3.16,
+    "estimable": false,
+    "fixed": true,
+    "sparse_tail_flag": true,
+    "reason": "deterministic_tail_extrapolation"
+  },
+  {
+    "boundary_id": 8,
+    "upper_grade": "C",
+    "lower_grade": "D",
+    "threshold_score": 1.88,
+    "estimable": false,
+    "fixed": "True",
+    "sparse_tail_flag": "True",
+    "reason": "deterministic_tail_extrapolation"
+  }
+]

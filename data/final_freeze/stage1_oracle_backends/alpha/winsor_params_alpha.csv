@@ -1,0 +1,12 @@
+variable_id,is_binary,n_unique_dev,p01_dev,p99_dev,winsor_applied,n_dev_nonmissing,special_handling_flag
+R006,False,2031,-1.7235907030026039,0.7223696822885991,True,2031,False
+R064,False,2032,-1.2255604525021144,0.8987615086799674,True,2032,False
+R085,False,1963,0.0,0.6319240783901541,True,2031,False
+R133,False,2032,-1.8459171767369922,2.2230459803713796,True,2032,False
+R157,False,1961,0.3134103056360542,136.1831509398493,True,1961,False
+R182,False,1961,-0.5142719788021786,2.0630305694752797,True,1961,False
+industry_avg_rating_lag1_self_excl,False,329,2.727272727272727,5.20887500000004,True,2032,False
+cap_change_count_3y,False,52,0.0,35.0,True,2032,False
+log_assets,False,2032,16.846563672603242,23.59726653751168,True,2032,False
+operating_loss_freq_3y,False,4,0.0,3.0,True,2032,True
+ratio_missing_rate,False,15,0.0,0.25899280575539574,True,2032,True

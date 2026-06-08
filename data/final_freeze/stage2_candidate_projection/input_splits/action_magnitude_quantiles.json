@@ -1,0 +1,136 @@
+{
+  "schema_version": "action_magnitude_quantiles_v32",
+  "created_utc": "2026-06-06T09:39:38.325066+00:00",
+  "source": "train_period_historical_pseudo_actions_phase2_plus_phase3",
+  "eval_distribution_used": false,
+  "winsorization": {
+    "lower": 0.01,
+    "upper": 0.99
+  },
+  "recalibration_policy": "audit_only_with_explicit_acceptance_reason",
+  "automatic_recalibration_performed": false,
+  "candidate_library_path": "data\\final_freeze\\configs\\final_candidate_library.yaml",
+  "candidate_library_sha256": "e3340d5b5a2e5f5ccdaa6d892659de198a50c8c458f7a83153de463164fa8590",
+  "dimensions": {
+    "action__ppe_pct": {
+      "action_dim": "action__ppe_pct",
+      "improvement_direction": "negative",
+      "n": 1320,
+      "p25": 0.022628286218283673,
+      "p50": 0.053880599182066745,
+      "p65": 0.08733830606422013,
+      "p75": 0.1393822521493597,
+      "p85": 0.2383618200066378,
+      "p90": 0.3572770461632609,
+      "p95": 0.5
+    },
+    "action__inv_turnover_chg": {
+      "action_dim": "action__inv_turnover_chg",
+      "improvement_direction": "positive",
+      "n": 1160,
+      "p25": 0.45266688295627283,
+      "p50": 1.5034912098542568,
+      "p65": 3.0,
+      "p75": 3.0,
+      "p85": 3.0,
+      "p90": 3.0,
+      "p95": 3.0
+    },
+    "action__ar_turnover_chg": {
+      "action_dim": "action__ar_turnover_chg",
+      "improvement_direction": "positive",
+      "n": 1295,
+      "p25": 0.3846901706021857,
+      "p50": 1.0547625797934286,
+      "p65": 1.837236127507528,
+      "p75": 2.7740705553251432,
+      "p85": 3.0,
+      "p90": 3.0,
+      "p95": 3.0
+    },
+    "action__ap_turnover_chg": {
+      "action_dim": "action__ap_turnover_chg",
+      "improvement_direction": "negative",
+      "n": 1185,
+      "p25": 0.8011919903663625,
+      "p50": 2.1729763484188336,
+      "p65": 3.0,
+      "p75": 3.0,
+      "p85": 3.0,
+      "p90": 3.0,
+      "p95": 3.0
+    },
+    "action__short_debt_pct": {
+      "action_dim": "action__short_debt_pct",
+      "improvement_direction": "negative",
+      "n": 923,
+      "p25": 0.1295023282745214,
+      "p50": 0.3007181328545781,
+      "p65": 0.46703982306343717,
+      "p75": 0.6235610652190322,
+      "p85": 0.9637527859135051,
+      "p90": 1.0,
+      "p95": 1.0
+    },
+    "action__long_debt_pct": {
+      "action_dim": "action__long_debt_pct",
+      "improvement_direction": "negative",
+      "n": 931,
+      "p25": 0.2250374463918016,
+      "p50": 0.45,
+      "p65": 0.5,
+      "p75": 0.5,
+      "p85": 0.5,
+      "p90": 0.5,
+      "p95": 0.5
+    },
+    "action__bond_pct": {
+      "action_dim": "action__bond_pct",
+      "improvement_direction": "negative",
+      "n": 410,
+      "p25": 0.3333333333333333,
+      "p50": 0.5,
+      "p65": 0.5,
+      "p75": 0.5,
+      "p85": 0.5,
+      "p90": 0.5,
+      "p95": 0.5
+    },
+    "action__revenue_growth": {
+      "action_dim": "action__revenue_growth",
+      "improvement_direction": "positive",
+      "n": 1545,
+      "p25": 0.05987662804425812,
+      "p50": 0.14471550781620224,
+      "p65": 0.15,
+      "p75": 0.15,
+      "p85": 0.15,
+      "p90": 0.15,
+      "p95": 0.15
+    },
+    "action__cogs_ratio_chg": {
+      "action_dim": "action__cogs_ratio_chg",
+      "improvement_direction": "negative",
+      "n": 1225,
+      "p25": 0.008668212864904157,
+      "p50": 0.02253119231089118,
+      "p65": 0.03,
+      "p75": 0.03,
+      "p85": 0.03,
+      "p90": 0.03,
+      "p95": 0.03
+    },
+    "action__sga_ratio_chg": {
+      "action_dim": "action__sga_ratio_chg",
+      "improvement_direction": "negative",
+      "n": 1218,
+      "p25": 0.005235927503281703,
+      "p50": 0.014492111464340977,
+      "p65": 0.02,
+      "p75": 0.02,
+      "p85": 0.02,
+      "p90": 0.02,
+      "p95": 0.02
+    }
+  }
+}

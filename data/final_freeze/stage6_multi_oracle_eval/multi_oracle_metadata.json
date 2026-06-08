@@ -1,0 +1,55 @@
+{
+  "stage": "final_stage6_multi_oracle_eval",
+  "status": "PASS_SCORED_REAL_BACKENDS_FULL_SIMULATOR",
+  "created_utc": "2026-06-06T12:24:09.475674+00:00",
+  "unscored_pending": false,
+  "final_result_allowed": true,
+  "registry": "C:\\Users\\Demian\\Desktop\\RL_repo\\data\\final_freeze\\configs\\oracle_backend_registry.yaml",
+  "no_placeholder_scoring": true,
+  "generic_proxy_scoring": false,
+  "intervention_mode": "full_financial_statement_simulator",
+  "full_statement_simulator_used": true,
+  "preserve_current_non_current_residual": true,
+  "sim_business_plan_mode": "calibrated",
+  "deploy_qargmax_as_policy": false,
+  "oracle_proxy_scoring": false,
+  "simulator_package": "credit_recourse.simulator.FinancialSimulator",
+  "eval_base_year": 2024,
+  "predicted_fiscal_year": 2025,
+  "rollout_target_year": 2025,
+  "stage6_temporal_rule": "select policy on eval_base_year state; simulate one-year rollout and score predicted fiscal year",
+  "backend_scoring_equivalence_report": "backend_scoring_equivalence_report.json",
+  "oracle_variable_formula_audit": "oracle_variable_formula_audit.json",
+  "derived_comparators": "data/final_freeze/ledgers/stage6_derived_comparators.json",
+  "simulated_oracle_input_frame": "simulated_oracle_input_frame.parquet",
+  "iql_q_diagnostic": {
+    "status": "PASS",
+    "schema_version": "stage6_iql_q_diagnostic_v2_rerank_and_argmax_k4",
+    "policy_type": "rl_internal_critic_q_diagnostics_no_oracle_selection",
+    "deployability": "selection_requires_encoder_critic_and_candidate_library_only; oracle_scores_used_only_for_posthoc_evaluation",
+    "ks": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "q_value_basis": "candidate_q_values.parquet q_min__* from Stage5 IQL critic min(q1,q2)",
+    "actor_pool_basis": "candidate_probabilities.parquet prob__* top-k pool for q_rerank only; q_argmax ignores actor pool",
+    "selection_rule_q_rerank": "within actor top-k candidates, choose max IQL critic q_min; do not use Alpha/Beta/Gamma oracle scores for selection",
+    "selection_rule_q_argmax": "choose max IQL critic q_min over all active action-vocabulary candidates; do not use Alpha/Beta/Gamma oracle scores for selection",
+    "diagnostic_file": "iql_q_diagnostic_selection.csv",
+    "distribution_file": "iql_q_diagnostic_candidate_distribution.csv",
+    "q_rerank_compat_files": [
+      "iql_q_rerank_selection_diagnostics.csv",
+      "iql_q_rerank_candidate_distribution.csv"
+    ],
+    "derived_policies": [
+      "C3_candidate_iql_q_argmax",
+      "C3_candidate_iql_q_rerank_at_3",
+      "C3_candidate_iql_q_rerank_at_5",
+      "C3_candidate_iql_q_rerank_at_7",
+      "C3_candidate_iql_q_rerank_at_9"
+    ],
+    "n_rows_per_policy": 575
+  }
+}

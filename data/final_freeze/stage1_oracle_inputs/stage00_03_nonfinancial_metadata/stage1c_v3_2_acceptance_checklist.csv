@@ -1,0 +1,11 @@
+﻿criterion,key,threshold,actual,pass,required,severity
+신규 산업위험 9개 column 존재,industry_v3_2_columns,9,9,True,True,required
+신규 산업위험 quality_pass ≥ 기준,industry_v3_2_quality_pass,1,9,True,True,required
+신규 산업위험 selected_eligible ≥ 기준,industry_v3_2_selected,1,9,True,True,required
+경영위험 후보 ≥ 1,경영위험_pass,1,6,True,True,required
+영업위험 후보 ≥ 1,영업위험_pass,1,3,True,True,required
+재무위험 후보 ≥ 1,재무위험_pass,1,6,True,True,required
+신뢰도 후보 ≥ 1,신뢰도_pass,1,4,True,True,required
+firm-year rows retained or expanded after KONEX merge,panel_size,4908,4924,True,False,diagnostic
+eligible_for_stage2 커버 ≥ configured threshold,elig_coverage,4662,4924,True,True,required
+Task 1-10 필수 output 모두 생성,required_outputs,12/12,12/12,True,True,required

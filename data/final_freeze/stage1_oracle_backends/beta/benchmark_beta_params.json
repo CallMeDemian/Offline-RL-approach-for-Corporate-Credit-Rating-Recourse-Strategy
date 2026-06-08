@@ -1,0 +1,414 @@
+{
+  "model_name": "Beta Ordered Logistic Rating Benchmark",
+  "version": "stage4_beta_ordered_logit_v1.0",
+  "role": "linear/statistical ordinal rating-prediction robustness backend",
+  "split_policy": {
+    "dev": "2002-2019",
+    "oot": "2020-2023"
+  },
+  "sample_size": {
+    "total": 3822,
+    "dev": 2032,
+    "oot": 1790
+  },
+  "selected_variables": [
+    "R006",
+    "R064",
+    "R085",
+    "R133",
+    "R157",
+    "R182",
+    "industry_avg_rating_lag1_self_excl",
+    "cap_change_count_3y",
+    "log_assets",
+    "operating_loss_freq_3y",
+    "ratio_missing_rate"
+  ],
+  "grade_order": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "CC",
+    "C",
+    "D"
+  ],
+  "configured_modeled_grades": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "CC",
+    "C",
+    "D"
+  ],
+  "configured_modeled_grade_nums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "modeled_grades": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "C",
+    "D"
+  ],
+  "modeled_grade_nums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "probability_output_grades": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "CCC",
+    "C",
+    "D"
+  ],
+  "probability_output_grade_nums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "probability_output_columns": [
+    "prob_beta_grade_AAA",
+    "prob_beta_grade_AA",
+    "prob_beta_grade_A",
+    "prob_beta_grade_BBB",
+    "prob_beta_grade_BB",
+    "prob_beta_grade_B",
+    "prob_beta_grade_CCC",
+    "prob_beta_grade_C",
+    "prob_beta_grade_D"
+  ],
+  "ordered_logit_threshold_names": [
+    "1/2",
+    "2/3",
+    "3/4",
+    "4/5",
+    "5/6",
+    "6/7",
+    "7/9",
+    "9/10"
+  ],
+  "ordered_logit_threshold_raw_params": [
+    -6.115942287807284,
+    1.192247070208629,
+    0.8605191545894263,
+    0.6560645498979273,
+    0.7823727066514148,
+    0.8197197625328041,
+    -0.6613544204735526,
+    0.3804196383202386
+  ],
+  "ordered_logit_finite_cutpoints": [
+    -6.115942287807284,
+    -2.821466473180371,
+    -0.45707861523847626,
+    1.470114403645193,
+    3.656768808314485,
+    5.926632455869449,
+    6.442784230188183,
+    7.9056825790407075
+  ],
+  "predicted_output_grades": [
+    "AAA",
+    "AA",
+    "A",
+    "BBB",
+    "BB",
+    "B",
+    "C",
+    "D"
+  ],
+  "metadata_consistency_note": "modeled_grades equals the fitted posterior probability classes in prob_beta_grade_* columns; configured_model_grades is retained separately as provenance.",
+  "final_boundaries": {},
+  "fallback_grade": "D",
+  "score_definition": "R_score_beta = 100 * (10 - E[rating_num_10]) / 9; R_grade_beta is assigned by ordered-logit posterior MAP class, not by score-boundary remapping",
+  "grade_assignment_rule": "posterior_MAP_class_from_ordered_logit_probabilities",
+  "standardization_params": {
+    "R006": {
+      "mean": -0.04437827332940171,
+      "std": 1.1450042409937375
+    },
+    "R064": {
+      "mean": 0.24268508277755305,
+      "std": 0.47686072032554716
+    },
+    "R085": {
+      "mean": 0.05326299063976783,
+      "std": 0.4244387621363468
+    },
+    "R133": {
+      "mean": 0.022603792143016284,
+      "std": 3.1195744974005395
+    },
+    "R157": {
+      "mean": 23.034205286248483,
+      "std": 48.68229773308125
+    },
+    "R182": {
+      "mean": 0.22550565961277372,
+      "std": 3.5570270596189495
+    },
+    "industry_avg_rating_lag1_self_excl": {
+      "mean": 3.735251951587744,
+      "std": 0.4876186137440688
+    },
+    "cap_change_count_3y": {
+      "mean": 3.423228346456693,
+      "std": 8.954225886771145
+    },
+    "log_assets": {
+      "mean": 19.38155466827527,
+      "std": 1.4634074081012556
+    },
+    "operating_loss_freq_3y": {
+      "mean": 0.53001968503937,
+      "std": 0.8818401927768723
+    },
+    "ratio_missing_rate": {
+      "mean": 0.014438055854528972,
+      "std": 0.048494204002220265
+    }
+  },
+  "fit": {
+    "log_likelihood": -2584.805,
+    "aic": 5207.6099,
+    "bic": 5314.3286,
+    "converged": true
+  },
+  "coefficients": [
+    {
+      "variable": "R006",
+      "coefficient": -0.03501305936136901,
+      "std_err": 0.052572866981379106,
+      "z_stat": -0.6659910591098325,
+      "p_value": 0.5054168152557714
+    },
+    {
+      "variable": "R064",
+      "coefficient": -0.9446785053984149,
+      "std_err": 0.06888074083060398,
+      "z_stat": -13.714697228963173,
+      "p_value": 8.291176797491929e-43
+    },
+    {
+      "variable": "R085",
+      "coefficient": -0.18893682202812048,
+      "std_err": 0.05112920215653685,
+      "z_stat": -3.695282031776531,
+      "p_value": 0.00021964284051944152
+    },
+    {
+      "variable": "R133",
+      "coefficient": -0.09680489965010203,
+      "std_err": 0.04395809342939307,
+      "z_stat": -2.2022087879128156,
+      "p_value": 0.027650563591393302
+    },
+    {
+      "variable": "R157",
+      "coefficient": -0.19462015770904012,
+      "std_err": 0.045555205740049,
+      "z_stat": -4.272182608933834,
+      "p_value": 1.9356895611098673e-05
+    },
+    {
+      "variable": "R182",
+      "coefficient": -0.0008349021553252352,
+      "std_err": 0.03638897384056206,
+      "z_stat": -0.022943822460708866,
+      "p_value": 0.9816950843160887
+    },
+    {
+      "variable": "industry_avg_rating_lag1_self_excl",
+      "coefficient": 0.33414386274543223,
+      "std_err": 0.04291026210112049,
+      "z_stat": 7.787038493449494,
+      "p_value": 6.85980580666877e-15
+    },
+    {
+      "variable": "cap_change_count_3y",
+      "coefficient": 0.17849105185766728,
+      "std_err": 0.049175784042929445,
+      "z_stat": 3.6296534022080515,
+      "p_value": 0.00028380203260423484
+    },
+    {
+      "variable": "log_assets",
+      "coefficient": -0.9423752426099883,
+      "std_err": 0.0502096255491055,
+      "z_stat": -18.768816383391194,
+      "p_value": 1.3587919325924582e-78
+    },
+    {
+      "variable": "operating_loss_freq_3y",
+      "coefficient": 0.3942445376312148,
+      "std_err": 0.04884338831135229,
+      "z_stat": 8.071605006558965,
+      "p_value": 6.938001583060308e-16
+    },
+    {
+      "variable": "ratio_missing_rate",
+      "coefficient": -0.07300925457922543,
+      "std_err": 0.0432786443832825,
+      "z_stat": -1.6869579816928635,
+      "p_value": 0.09161143174057876
+    },
+    {
+      "variable": "1/2",
+      "coefficient": -6.115942287807284,
+      "std_err": 0.2765135945670793,
+      "z_stat": -22.118052811770962,
+      "p_value": 2.1187804785786847e-108
+    },
+    {
+      "variable": "2/3",
+      "coefficient": 1.192247070208629,
+      "std_err": 0.08129738608066162,
+      "z_stat": 14.665257121867432,
+      "p_value": 1.0760875714308515e-48
+    },
+    {
+      "variable": "3/4",
+      "coefficient": 0.8605191545894263,
+      "std_err": 0.03656378197927268,
+      "z_stat": 23.534741430118974,
+      "p_value": 1.7991023722987631e-122
+    },
+    {
+      "variable": "4/5",
+      "coefficient": 0.6560645498979273,
+      "std_err": 0.035642696047743026,
+      "z_stat": 18.406703831245974,
+      "p_value": 1.1607573181806743e-75
+    },
+    {
+      "variable": "5/6",
+      "coefficient": 0.7823727066514148,
+      "std_err": 0.04923890670603674,
+      "z_stat": 15.889319219094178,
+      "p_value": 7.513916277215985e-57
+    },
+    {
+      "variable": "6/7",
+      "coefficient": 0.8197197625328041,
+      "std_err": 0.09458049207820683,
+      "z_stat": 8.666901012261526,
+      "p_value": 4.440406922297787e-18
+    },
+    {
+      "variable": "7/9",
+      "coefficient": -0.6613544204735526,
+      "std_err": 0.30256376634397586,
+      "z_stat": -2.185834835628263,
+      "p_value": 0.0288276911418162
+    },
+    {
+      "variable": "9/10",
+      "coefficient": 0.3804196383202386,
+      "std_err": 0.30044989993085014,
+      "z_stat": 1.2661666334646604,
+      "p_value": 0.20545343060820742
+    }
+  ],
+  "metrics": [
+    {
+      "n": 2032,
+      "exact": 0.468,
+      "within1": 0.9198,
+      "mae": 0.65,
+      "rho": -0.6756,
+      "rho_abs": 0.6756,
+      "bias_pred_minus_actual_notch": -0.0669,
+      "specification": "beta_ordered_logit",
+      "split": "dev"
+    },
+    {
+      "n": 1790,
+      "exact": 0.5223,
+      "within1": 0.9358,
+      "mae": 0.579,
+      "rho": -0.7288,
+      "rho_abs": 0.7288,
+      "bias_pred_minus_actual_notch": -0.0056,
+      "specification": "beta_ordered_logit",
+      "split": "oot"
+    }
+  ],
+  "cross_oracle_alpha_beta": [
+    {
+      "split": "dev",
+      "n": 2032,
+      "spearman_alpha_beta": 0.7981,
+      "in_operating_band": true,
+      "grade_exact_agree": 0.6289,
+      "within1_agree": 0.9808
+    },
+    {
+      "split": "oot",
+      "n": 1790,
+      "spearman_alpha_beta": 0.8573,
+      "in_operating_band": true,
+      "grade_exact_agree": 0.6279,
+      "within1_agree": 0.9615
+    }
+  ],
+  "acceptance_gates": {
+    "spearman_dev": {
+      "value": 0.6756,
+      "pass": true
+    },
+    "within1_dev": {
+      "value": 0.9198,
+      "pass": true
+    },
+    "spearman_oot": {
+      "value": 0.7288,
+      "pass": true
+    },
+    "within1_oot": {
+      "value": 0.9358,
+      "pass": true
+    },
+    "oot_psi": {
+      "value": 0.0424,
+      "pass": true
+    }
+  }
+}

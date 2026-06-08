@@ -1,0 +1,4 @@
+﻿event_type,total_rows,parse_success,parse_fail,notes
+capital_change,104974,104947,27,변동일 NaN/형식불량
+ma,0,0,0,일자 NaN/형식불량
+lawsuit,0,0,0,회계년월 NaN/형식불량 (소송상대방 not null filter 후)
