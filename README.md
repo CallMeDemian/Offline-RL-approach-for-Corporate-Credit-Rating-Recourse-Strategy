@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **학번 / 이름** | `<A67035>` / 조종선 (Demian) |
+| **학번 / 이름** | A67035 / 조종선 (Demian) |
 | **소속** | 서강대학교 AI·SW대학원 — 강화학습의 기초 (GITA401) |
 | **GitHub** | https://github.com/CallMeDemian/Offline-RL-approach-for-Corporate-Credit-Rating-Recourse-Strategy |
 | **팀 구성** | 1인 (단독) |
@@ -56,13 +56,13 @@ RL_repo/
 ├── tools/                      # 실행 러너 (PowerShell)
 │   ├── run_oracle_stage0_stage1_RL_repo.ps1     #  Stage 0–1
 │   └── run_rl_unified_stage3456.ps1             #  Stage 2–6
-├── data/                       # (git 미포함) final_freeze 산출물 + raw 입력 자리
+├── data/                       # final_freeze 산출물 + config (.pt 제외). raw 입력은 미포함
 ├── results/                    # (git 미포함) 시드별 실험 셀 + 학습된 .pt
 ├── requirements.txt
 └── README.md
 ```
 
-> `data/`와 `results/`는 용량·데이터 보호 때문에 `.gitignore` 처리되어 있다 (§5, §6 참조).
+> `results/`와 모든 `.pt` 모델 가중치는 `.gitignore`로 제외되어 §6의 Release로 제공한다. `data/final_freeze/`(Stage0–1 산출물·config)는 repo에 포함된다(`.pt` 제외).
 
 ---
 
@@ -93,42 +93,43 @@ $env:PYTHONPATH = "src"         # Windows PowerShell
 | 구분 | 포함 여부 | 비고 |
 |---|---|---|
 | `data/raw/` (원시 상장사 재무·등급) | ❌ 미배포 | 데이터 라이선스/보호. Stage0부터 재현하려면 사용자가 직접 배치 |
-| `data/final_freeze/` (Stage0–1 파생 산출물) | ⚠️ git 미포함 | canonical 패널 · Oracle 백엔드 산출물 등. 별도 다운로드(§6) |
+| `data/final_freeze/` (Stage0–1 파생 산출물) | ✅ repo 포함 | Stage1 Oracle 산출물(params·bin table·parquet·gamma model)·materialized config 등. 모델 `.pt`는 제외(§6 Release) |
 
 - 데이터 전처리(비율 공학, 결측/이상치 필터, 비재무 메타 결합, 변수 선택)는 모두 Stage 0–1 파이프라인에 코드로 포함되어 있다 (`oracle/stage0`, `oracle/stage1/stage00_01~04`).
-- **재현 범위**: 배포된 `data/final_freeze` 산출물이 있으면 RL Stage 2–6을 그대로 재현 가능. Stage 0(Raw→canonical)은 Raw 데이터가 있어야 재실행 가능.
+- **재현 범위**: repo의 `data/final_freeze/` 산출물로 RL Stage 2–6을 그대로 재현 가능(RL 모델 `.pt`가 필요하면 §6 Release에서 받는다). Stage 0(Raw→canonical)은 Raw 데이터가 있어야 재실행 가능.
 
 ---
 
-## 6. 학습된 모델 / 데이터 다운로드
+## 6. 학습된 모델 / 실험 결과 다운로드
 
-> 과제 요건에 따라 학습된 모델은 리포에 커밋하지 않고 다운로드 링크로 제공
+> 과제 요건에 따라 학습된 모델은 리포에 커밋하지 않고 GitHub Release로 제공한다.
 
-**학습된 모델 (대표 시드 1개 셀 = `m0p05_f0p45_liq0p45_s1 / P50_L1p5_G0p6_T0p85`)**
+**Release**: [`v1.0-RL_outputs(w_model)`](https://github.com/CallMeDemian/Offline-RL-approach-for-Corporate-Credit-Rating-Recourse-Strategy/releases/tag/v1.0-RL_outputs%28w_model%29)
+첨부 파일 **`Multi.seed.run.outputs.zip` (≈694MB)** — 7개 시드 실험 셀 전체(seed 1–5 + stage3/stage4·5 교차 seed 조합 2개). Stage0–1 Oracle 산출물·config는 repo의 `data/final_freeze/`에 포함되어 있다(§5).
 
-| 파일 | 크기 | 설명 |
+각 시드 셀(`m{merton}_f{fcff}_liq{liquidity}_s{seed} / P50_L1p5_G0p6_T0p85`)은 아래를 포함한다:
+
+| 항목 | 크기 | 설명 |
 |---|---|---|
-| `stage3_encoder_avs256_final_refit_fulltrain.pt` | ~14.5 MB | SSL Transformer Encoder |
-| `stage4_bc_final_refit_fulltrain.pt` | ~29 MB | Class+Family Balanced BC |
-| `stage5_candidate_iql_final_refit_fulltrain.pt` | ~52.6 MB | **최종 IQL 정책** |
+| `outputs/stage3_acd_ssl/stage3_encoder_avs256_final_refit_fulltrain.pt` | ~14.5 MB | SSL Transformer Encoder |
+| `outputs/stage4_candidate_bc/stage4_bc_final_refit_fulltrain.pt` | ~29 MB | Class+Family Balanced BC |
+| `outputs/stage5_candidate_iql/stage5_candidate_iql_final_refit_fulltrain.pt` | ~52.6 MB | **최종 IQL 정책** |
+| `outputs/stage6_*` | — | multi-Oracle 평가 산출물 (CSV/JSON) |
 
-**다운로드**: `<여기에 링크 — 아래 둘 중 하나로 채우세요>`
-
-- **방법 A (권장) GitHub Release**: 파일당 최대 2GB까지 첨부 가능. §9의 절차 참조.
-- **방법 B Google Drive 등 외부 스토리지**: 공유 링크를 위 표/이 줄에 기입.
+> 추론에는 encoder(stage3) + 정책(stage5)이 둘 다 필요하다.
 
 ---
 
 ## 7. 보고서
 
-프로젝트 주제·설계·구현·실험 결과를 담은 PPT 보고서는 리포 루트에 포함되어 있으며, Cyber Campus에도 별도 제출한다.
-→ `Offline RL approach for Corporate Credit Rating Recourse Strategy.pdf` (또는 `.pptx`)
+프로젝트 주제·설계·구현·실험 결과를 담은 보고서를 리포 루트에 함께 제출하며, Cyber Campus로도 PPT 형태로 별도 제출한다.
+→ `Offline RL 기반 기업 신용등급 개선정책 학습.pdf` (보고서 첫 슬라이드에 학번/이름 및 본 GitHub 링크 표기)
 
 ---
 
 ## 8. 실행 방법
 
-> 두 러너 모두 멱등(idempotent)하게 설계됨: 산출물이 이미 있으면 SKIP, 다시 만들려면 clean/force 플래그 사용.
+> 두 러너 모두 idempotent하게 설계됨: 산출물이 이미 있으면 SKIP, 다시 만들려면 clean/force 플래그 사용.
 > **⚠️ 경로 주의**: `run_rl_unified_stage3456.ps1`의 기본 `-ProjectRoot`는 `thesis_repo`로 되어 있다. 실제 폴더명이 `RL_repo`이면 **반드시 `-ProjectRoot`를 명시**하거나 스크립트 기본값을 수정할 것.
 
 ### 8.1 Stage 0–1 — Oracle 신용모형 개발
@@ -201,7 +202,7 @@ python -m credit_recourse.oracle.stage1.run_stage1_oracle_development --project-
 
 ---
 
-## 10. 재현성 노트 (읽어두면 좋은 함정들)
+## 10. 재현성
 
 - **러너 기본값 ≠ 최종 config**: `run_rl_unified_stage3456.ps1`의 param 기본값(Stage5 epochs 150 / batch 256 / γ 0.8 / τ 0.9 / β 10 / linear head)은 탐색용 기본치이며, **최종 실험 값은 §8.2의 명시 인자**(epochs 80 / batch 128 / γ 0.6 / τ 0.85 / β 15 / cross_attention)다.
 - **skip 모드 주의**: `-Stage3Mode skip`은 Stage 1/2 일부를 디스크에서 로드한다. 중간 산출물이 시드 간 달라지면 평가 패널이 어긋날 수 있다.
