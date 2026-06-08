@@ -1,0 +1,25 @@
+# Offline RL — Corporate Credit Rating Recourse
+# 코드 전반(src/credit_recourse)에서 실제 import되는 서드파티 패키지의 합집합입니다.
+# 버전 하한은 각 oracle backend의 requirements.txt에서 가져왔습니다.
+
+# --- 핵심 수치/데이터 ---
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+pyarrow>=14.0.0          # parquet I/O (stage 전반에서 필수)
+PyYAML>=6.0
+
+# --- 모델링 ---
+scikit-learn>=1.3.0
+statsmodels>=0.14.0      # beta backend: ordered logit (10-grade)
+joblib>=1.3.0            # gamma backend 모델 직렬화(.joblib)
+
+# --- 딥러닝 (Stage3 SSL encoder / Stage4 BC / Stage5 IQL) ---
+# torch는 버전 핀이 코드에 없습니다. CUDA가 있으면 자동 사용, 없으면 CPU로 폴백합니다.
+# GPU 환경은 https://pytorch.org 의 플랫폼별 설치 안내를 따르세요.
+torch>=2.0.0
+
+# --- 보조 ---
+openpyxl>=3.1.0          # stage00_04 변수선택: xlsx 입력
+tabulate                 # 진단 테이블 출력
+greenlet>=3.0.0          # beta/gamma backend 의존성으로 명시되어 있음

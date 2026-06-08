@@ -1,0 +1,38 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ===== 가상환경 =====
+.venv/
+venv/
+env/
+
+# ===== 대용량 / 파생 산출물 (git에 커밋하지 않음) =====
+# 데이터: data/raw 원시 재무데이터(미배포) + data/final_freeze 파생 산출물(~120MB)
+data/
+# 실험 결과: 시드별 셀 아카이브 + 학습된 .pt 모델(셀당 ~96MB, 7시드 ≈ 670MB+)
+results/
+
+# ===== 학습된 모델 가중치 (Release/외부 스토리지로 배포, README 링크) =====
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+
+# ===== 로그 =====
+*.log
+logs/
+
+# ===== OS / 에디터 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ===== 추적 예외 =====
+# 리포트(PPT/PDF)는 루트에 두고 추적합니다. 결과 요약 CSV를 리포에 노출하고 싶으면
+# results/ 대신 추적되는 results_summary/ 폴더로 복사해서 커밋하세요.
+!results_summary/
